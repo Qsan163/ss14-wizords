@@ -1,0 +1,10 @@
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformJapaneseKahama
+  name: Kahama Japanese clother
+  description: Japanese clother, which used for training.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/kahama_jap_clother.rsi
+  - type: Clothing
+    sprite: BROtania_textures/kahama_jap_clother.rsi

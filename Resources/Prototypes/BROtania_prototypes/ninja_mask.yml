@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingMaskSimpleNinja
+  name: ninja mask
+  description: Black ninja mask to hide identity.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/ninja_mask.rsi
+  - type: Clothing
+    sprite: BROtania_textures/ninja_mask.rsi
+    quickEquip: true
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair

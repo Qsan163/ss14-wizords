@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadJapSakkatHat
+  name: sakkat hat
+  description: Japanese hat made from rice
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/sakkat_hat.rsi
+  - type: Clothing
+    sprite: BROtania_textures/sakkat_hat.rsi
+  - type: Tag
+    tags:
+    - HidesHair

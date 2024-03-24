@@ -1,0 +1,10 @@
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformSimpleNinja
+  name: Ninja uniform
+  description: Traditional ninja uniform.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/ninja_clother.rsi
+  - type: Clothing
+    sprite: BROtania_textures/ninja_clother.rsi

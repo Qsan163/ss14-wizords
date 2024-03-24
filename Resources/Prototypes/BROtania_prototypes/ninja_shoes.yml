@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsNinja
+  name: ninja shoes
+  description: Dark silent ninja shoes.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/ninja_shoes.rsi
+  - type: Clothing
+    sprite: BROtania_textures/ninja_shoes.rsi

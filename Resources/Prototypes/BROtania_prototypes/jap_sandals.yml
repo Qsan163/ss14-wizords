@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsJapSandals
+  name: Japanese sandals
+  description: Traditional Japanese sandals made of wood.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/jap_sandals.rsi
+  - type: Clothing
+    sprite: BROtania_textures/jap_sandals.rsi
