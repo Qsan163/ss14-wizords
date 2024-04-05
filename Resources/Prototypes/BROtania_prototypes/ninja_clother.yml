@@ -5,6 +5,44 @@
   description: Traditional ninja uniform.
   components:
   - type: Sprite
-    sprite: BROtania_textures/ninja_clother.rsi
+    sprite: BROtania_textures/japan_clother/ninja_clother.rsi
   - type: Clothing
-    sprite: BROtania_textures/ninja_clother.rsi
+    sprite: BROtania_textures/japan_clother/ninja_clother.rsi
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasNinja
+  name: ninja gas mask
+  description: An original ninja gas mask.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/japan_clother/ninja_gas_mask.rsi
+  - type: Clothing
+    sprite: BROtania_textures/japan_clother/ninja_gas_mask.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingMaskSimpleNinja
+  name: ninja mask
+  description: Black ninja mask to hide identity.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/japan_clother/ninja_mask.rsi
+  - type: Clothing
+    sprite: BROtania_textures/japan_clother/ninja_mask.rsi
+    quickEquip: true
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsNinja
+  name: ninja shoes
+  description: Dark silent ninja shoes.
+  components:
+  - type: Sprite
+    sprite: BROtania_textures/japan_clother/ninja_shoes.rsi
+  - type: Clothing
+    sprite: BROtania_textures/japan_clother/ninja_shoes.rsi

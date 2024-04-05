@@ -1,8 +1,0 @@
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckCloakOnePunch
-  name: white hero cloak
-  description: A real hero cloak.
-  components:
-  - type: Sprite
-    sprite: BROtania_textures/saitama/cloak.rsi

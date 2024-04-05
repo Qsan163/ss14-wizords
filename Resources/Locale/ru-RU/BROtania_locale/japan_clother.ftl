@@ -1,0 +1,14 @@
+ent-ClothingShoesBootsJapSandals = деревянные сандали
+    .desc = Традиционные японские сандалии из дерева.
+ent-ClothingUniformJapaneseKahama = кахама
+    .desc = Японская одежда для тренировок.
+ent-ClothingHeadJapSakkatHat = соломенная шляпа
+    .desc = Японская шляпа, сделанная из риса.
+ent-ClothingUniformSimpleNinja = форма ниндзи
+    .desc = Скрытная форма ниндзи.
+ent-ClothingMaskGasNinja = дыхательная маска ниндзи
+    .desc = Оригинальная дыхательная маска ниндзи.
+ent-ClothingMaskSimpleNinja = маска ниндзи
+    .desc = Чёрная маска ниндзя для сокрытия личности.
+ent-ClothingShoesBootsNinja = обувь ниндзи
+    .desc = Тёмная бесшумная обувь ниндзи.
