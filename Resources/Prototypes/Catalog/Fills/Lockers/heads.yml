@@ -47,6 +47,8 @@
       - id: MedalCase
       - id: ControlModsuitMagnate #Edited in Imperial Space by @sentryprimies in the name of modsuits
       - id: ClothingHeadHatCapcap
+      - id: ClothingUniformJumpsuitCaptainAlt #ImperialClothes Водолазки капитана
+      - id: ClothingUniformJumpskirtCaptainAlt #ImperialClothes Водолазки капитана
 
 - type: entity
   id: LockerCaptainFilled
@@ -75,6 +77,8 @@
       - id: MedalCase
       - id: ClothingHeadHatCapcap
       - id: ControlModsuitMagnate #Edited in Imperial Space by @sentryprimies in the name of modsuits
+      - id: ClothingUniformJumpsuitCaptainAlt #ImperialClothes Водолазки капитана
+      - id: ClothingUniformJumpskirtCaptainAlt #ImperialClothes Водолазки капитана
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -281,6 +285,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingNeckCloakHosFormal #Imperial cloak /Добавляет формальный плащ, нарисованный нашими спрайтерами
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -305,6 +310,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: ClothingNeckCloakHosFormal #Imperial cloak /Добавляет формальный плащ, нарисованный нашими спрайтерами
 
 - type: entity
   id: LockerFreezerVaultFilled
