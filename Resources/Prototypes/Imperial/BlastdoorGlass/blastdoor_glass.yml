@@ -6,7 +6,7 @@
   description: This one says 'BLAST DONGER'.
   components:
   - type: Sprite
-    sprite: Imperial/BlastdoorGlass/BlastDoorGlass.rsi
+    sprite: Imperial/Doors/BlastDoorGlass.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
