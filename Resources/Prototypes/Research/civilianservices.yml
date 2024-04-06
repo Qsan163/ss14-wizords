@@ -107,7 +107,6 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-    - ClothingNeckBodyFlashLight
     - ComputerTelevisionCircuitboard
     - SynthesizerInstrument
     - BorgModuleMusique
