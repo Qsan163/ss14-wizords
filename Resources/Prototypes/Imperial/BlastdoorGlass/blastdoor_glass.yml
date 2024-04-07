@@ -2,11 +2,11 @@
 - type: entity
   id: BlastDoorGlass
   parent: BaseShutter
-  name: blast door
+  name: glass blast door
   description: This one says 'BLAST DONGER'.
   components:
   - type: Sprite
-    sprite: Imperial/Doors/BlastDoorGlass.rsi
+    sprite: Imperial/BlastdoorGlass/BlastDoorGlass.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
