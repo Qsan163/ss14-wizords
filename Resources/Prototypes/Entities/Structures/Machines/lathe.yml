@@ -132,6 +132,8 @@
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
+      - CellRechargerProCircuitboard    # Улучшенный зарядник батарей (х5 speed)
+      - WeaponCapacitorRechargerProCircuitboard   # Улучшенный зарядник оружия (x5 speed)
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol

@@ -1,0 +1,47 @@
+- type: entity
+  parent: PowerCellRecharger
+  id: PowerCellRechargerPro
+  name: cell recharger mx-2000
+  components:
+  - type: Sprite
+    sprite: Imperial/ProRechargers/cell_recharger_pro.rsi
+  - type: Charger
+    slotId: charger_slot
+    chargeRate: 100
+    baseChargeRate: 100
+  - type: StaticPrice
+    price: 85
+
+
+
+#- type: entity
+#  id: CellRechargerProCircuitboard
+#  parent: PowerCellRechargerPro
+#  name: cell recharger pro machine board
+#  description: A machine printed circuit board for a cell recharger pro.
+#  components:
+#    - type: Sprite
+#      sprite: Objects/Misc/module.rsi
+#      state: charger_APC
+#    - type: MachineBoard
+#      prototype: PowerCellRecharger
+#      requirements:
+#        Capacitor: 3
+#      materialRequirements:
+#        Cable: 5
+#    - type: PhysicalComposition
+#      materialComposition:
+#        Steel: 50
+#        Plastic: 30
+#    - type: StaticPrice
+#      price: 25
+#
+#
+#- type: latheRecipe
+#  id: CellRechargerProCircuitboard
+#  result: CellRechargerProCircuitboard
+#  completetime: 4
+#  materials:
+#    Steel: 50
+#    Plastic: 50
+#

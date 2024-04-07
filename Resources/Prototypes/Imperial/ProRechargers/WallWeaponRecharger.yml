@@ -1,0 +1,20 @@
+
+- type: entity
+  parent: WallWeaponCapacitorRecharger
+  id: WallWeaponCapacitorRechargerPro
+  name: wall recharger mx-2000
+  components:
+  - type: Sprite
+    sprite: Imperial/ProRechargers/wall_recharger_pro.rsi
+    layers:
+    - map: ["enum.PowerChargerVisualLayers.Base"]
+      state: "empty"
+    - map: ["enum.PowerChargerVisualLayers.Light"]
+      state: "light-off"
+      shader: "unshaded"
+  - type: Charger
+    slotId: charger_slot
+    chargeRate: 70
+    baseChargeRate: 125
+  - type: StaticPrice
+    price: 85
