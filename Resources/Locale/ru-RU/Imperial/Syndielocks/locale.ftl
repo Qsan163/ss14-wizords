@@ -9,3 +9,7 @@ ent-AirlockSyndicateImperial = { ent-AirlockSyndicate }
 
 ent-AirlockSyndicateGlassImperial = { ent-AirlockSyndicateGlass }
     .desc = { ent-AirlockSyndicateGlass.desc }
+
+ent-SuitStorageEVASyndicateImperialEmpty = { ent-SuitStorageSyndie }
+    .desc = { ent-SuitStorageSyndie.desc }
+    .suffix = {"Пустой"}

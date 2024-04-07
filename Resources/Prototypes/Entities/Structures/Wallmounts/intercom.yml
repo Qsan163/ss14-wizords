@@ -216,3 +216,13 @@
     - Security
     - Service
     - Supply
+
+
+- type: entity
+  id: IntercomSyndicate
+  parent: Intercom
+  suffix: Syndicate
+  components:
+  - type: Intercom
+    supportedChannels:
+    - Syndicate

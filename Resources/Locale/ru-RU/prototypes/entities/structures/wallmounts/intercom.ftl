@@ -31,3 +31,7 @@ ent-IntercomAll = { ent-Intercom }
 ent-IntercomCommon = { ent-Intercom }
     .suffix = Общий
     .desc = { ent-Intercom.desc }
+
+ent-IntercomSyndicate = { ent-Intercom }
+    .suffix = Синдикат
+    .desc = { ent-Intercom.desc }

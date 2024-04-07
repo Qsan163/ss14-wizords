@@ -27,3 +27,13 @@
         - id: ClothingMaskGasSyndicate
   - type: Sprite
     sprite: Imperial/SyndieLocks/storage.rsi
+
+
+- type: entity
+  id: SuitStorageSyndieImperialEmpty
+  parent: SuitStorageSyndie
+  suffix: Empty
+  components:
+  - type: StorageFill
+  - type: Sprite
+    sprite: Imperial/SyndieLocks/storage.rsi
