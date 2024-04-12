@@ -217,6 +217,7 @@
   - type: EntityStorageVisuals
     stateDoorOpen: box-open
     stateDoorClosed: box
+  - type: MultiHandedItem #Imperial Space TFG change
   - type: StaticPrice
     price: 0
 
