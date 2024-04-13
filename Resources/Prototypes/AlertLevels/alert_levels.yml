@@ -56,7 +56,7 @@
       announcement: alert-level-epsilon-announcement
       selectable: false
       sound:
-        path: /Audio/Misc/epsilon.ogg
+        path: /Audio/Imperial/ERT_and_deathsquad/DeathSquad.ogg ## Измененная музыка от Imperial Space. В оригинале /Audio/Misc/epsilon.ogg
         params:
           volume: -2
       disableSelection: true
