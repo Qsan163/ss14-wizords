@@ -190,7 +190,7 @@
     - HamsterWearable
     - WhitelistChameleon
     - ClothMade
-  - type: ItemCooldown
+  ##- type: ItemCooldown
   - type: MeleeWeapon
     damage:
       types:
@@ -201,7 +201,7 @@
       - Prying
     useSound:
       path: /Audio/Items/crowbar.ogg
-  - type: TilePrying
+ # - type: TilePrying
   - type: StaticPrice
     price: 499
   - type: Prying
