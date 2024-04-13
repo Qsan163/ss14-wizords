@@ -1,0 +1,217 @@
+
+- type: body
+  name: "reptilian"
+  id: MonsterTriangleWorker
+  root: torso
+  slots:
+    torso:
+      part: TorsoReptilian
+      connections:
+      - left arm
+      - right arm
+      - left leg
+      - right leg
+    right arm:
+      part: RightArmReptilian
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmReptilian
+      connections:
+      - left hand
+    right hand:
+      part: RightHandReptilian
+    left hand:
+      part: LeftHandReptilian
+    right leg:
+      part: RightLegReptilian
+    left leg:
+      part: LeftLegReptilian
+
+
+
+
+
+
+
+- type: entity
+  save: false
+  parent:
+  - BaseMob
+  - MobDamageable
+  id: BaseSimpleMobtest124
+  abstract: true
+  components:
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+      Acidic: [Touch, Ingestion]
+  - type: Buckle
+  - type: StandingState
+
+
+
+- type: entity
+  abstract: true
+  parent:
+  - BaseSimpleMobtest124
+  - MobCombat
+  - MobBloodstream
+  id: SimpleSpaceMobBasetest124 # Mob without barotrauma, freezing and asphyxiation (for space carps!?)
+  components:
+#  - type: HTN
+#    rootTask:
+#      task: IdleCompound
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 5
+  - type: Body
+    prototype: Animal
+  - type: Climbing
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+
+
+
+- type: entity
+  parent:
+  - SimpleSpaceMobBasetest124
+  id: SimpleMobBasetest124 # for air breathers
+  abstract: true
+  components:
+  - type: StatusEffects
+    allowed:
+    - Muted
+    - SlowedDown
+    - TemporaryBlindness
+  - type: Bloodstream
+    bloodMaxVolume: 200
+  - type: FloatingVisuals
+  - type: Puller
+    needsHands: false
+
+
+- type: entity
+  name: Scary monster
+  parent: SimpleMobBasetest124
+  id: MonsterTriangleWorker
+  description: Very scary!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Imperial/HorrorTriangleIvent/monster1.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: monster1_4
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Strippable
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: monster1_4
+      Dead:
+        Base: monster1_dead
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 20
+    damage:
+      types:
+        Heat: -0.7
+      groups:
+        Brute: -0.7
+  - type: Eye
+    drawFov: false
+  - type: GhostTakeoverAvailable
+  - type: Muted
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: MindContainer
+  - type: MovementSpeedModifier
+    hasMind: true
+  - type: Insulated
+  - type: Hands
+  - type: Internals
+
+
+
+
+
+- type: entity
+  name: Scary monster
+  parent: SimpleMobBasetest124
+  id: MonsterTriangleBlind
+  description: Very scary!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Imperial/HorrorTriangleIvent/monster3.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: monster3_4
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Strippable
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: monster3_4
+      Dead:
+        Base: monster3_dead
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 20
+    damage:
+      types:
+        Heat: -0.5
+      groups:
+        Brute: -0.5
+  - type: Eye
+    drawFov: true
+  - type: GhostTakeoverAvailable
+  - type: Muted
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: MindContainer
+  - type: MovementSpeedModifier
+    hasMind: true
+  - type: Hands
+  - type: Internals
+  - type: PermanentBlindness
+  - type: MeleeWeapon
+    angle: 20
+    animation: WeaponArcBite
+    attackRate: 1.15
+    damage:
+      types:
+        Slash: 15

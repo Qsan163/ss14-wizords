@@ -1,0 +1,9 @@
+ent-Loudspeaker = Громкоговоритель
+    .desc = Берегите уши!
+ent-loudspeakerMicrophone = Микрофон колонок
+    .desc = Микрофон, который может разговаривать по колонкам.
+ent-EncryptionKeyLoudspeak = Ключ шифрования колонок
+    .desc = Вставьте, чтобы вещать частоте Громкоговорителей.
+ent-loudspeakerMicrophoneAll = Микрофон колонок
+    .desc = Микрофон, который может разговаривать по колонкам.
+chat-loudspeak = Колонки

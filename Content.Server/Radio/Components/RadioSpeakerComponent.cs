@@ -12,6 +12,12 @@ namespace Content.Server.Radio.Components;
 [Access(typeof(RadioDeviceSystem))]
 public sealed partial class RadioSpeakerComponent : Component
 {
+    public enum SpeachType
+    {
+        Whisper,
+        Speak,
+        Emote
+    }
     /// <summary>
     /// Whether or not interacting with this entity
     /// toggles it on or off.
@@ -24,4 +30,8 @@ public sealed partial class RadioSpeakerComponent : Component
 
     [DataField("enabled")]
     public bool Enabled;
+
+    [DataField("speachType")]
+
+    public SpeachType speachType = SpeachType.Whisper;
 }

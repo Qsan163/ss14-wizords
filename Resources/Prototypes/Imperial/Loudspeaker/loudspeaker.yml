@@ -1,0 +1,249 @@
+# Машинная плата
+#- type: entity
+#  id: LoudspeakerElectronics
+#  parent: BaseElectronics
+#  name: loudspeaker electronics
+#  description: An electronics board used in loudspeaker
+#  components:
+#  - type: Sprite
+#    sprite: Objects/Misc/module.rsi
+#    state: id_mod
+#  - type: Tag
+#    tags:
+#      - DroneUsable
+#      - IntercomElectronics
+#  - type: StaticPrice
+#    price: 55
+#
+#- type: latheRecipe
+#  id: LoudspeakerElectronics
+#  result: LoudspeakerElectronics
+#  completetime: 2
+#  materials:
+#     Steel: 50
+#     Plastic: 300
+
+
+# канал
+
+- type: radioChannel
+  id: Loudspeak
+  name: chat-loudspeak
+  keycode: 'л'
+  frequency: 1172
+  color: "#9c3117"
+
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyLoudspeak
+  name: Louspeak key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - Loudspeak
+    defaultChannel: Loudspeak
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: 10_label
+
+
+
+# громкоговоритель
+
+- type: entity
+  id: LoudspeakerBase
+  name: loudspeaker
+  description: An loudspeaker. For when the station just needs to know something.
+  abstract: true
+  components:
+  - type: WallMount
+  - type: ApcPowerReceiver
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: RadioSpeaker
+    toggleOnInteract: false
+    speachType: Speak
+  - type: Intercom
+  - type: Speech
+    speechVerb: Robotic
+  - type: ExtensionCableReceiver
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Appearance
+#  - type: ContainerFill
+#    containers:
+#      board: [ LoudspeakerElectronics ]
+#  - type: ContainerContainer
+#    containers:
+#      board: !type:Container
+  - type: Sprite
+    noRot: false
+    sprite: Imperial/loudspeaker.rsi
+    layers:
+    - state: base
+    - state: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      shader: unshaded
+    - state: speaker
+      map: ["enum.RadioDeviceVisualLayers.Speaker"]
+      shader: unshaded
+      visible: false
+  - type: Transform
+    noRot: false
+    anchored: true
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-intercom
+    layoutId: Intercom
+  - type: Construction
+    graph: Intercom
+    node: intercom
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/metalbreak.ogg
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+      enum.RadioDeviceVisuals.Speaker:
+        enum.RadioDeviceVisualLayers.Speaker:
+          True: { visible: true }
+          False: { visible: false }
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wallmount
+
+
+# без интерфейса, всегда включен
+- type: entity
+  id: Loudspeaker
+  parent: LoudspeakerBase
+  suffix: only turned on
+  components:
+  - type: Intercom
+    supportedChannels:
+    - Loudspeak
+  - type: RadioSpeaker
+    enabled: true
+    toggleOnInteract: false
+    speachType: Speak
+
+
+
+
+
+# Микрофон
+
+- type: entity
+  id: loudspeakerMicrophone
+  name: loudspeaker microphone
+  description: An microphone for loudspeakers.
+  parent: BaseStructure
+  components:
+  - type: WallMount
+  - type: ApcPowerReceiver
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: RadioMicrophone
+    powerRequired: true
+    unobstructedRequired: true
+    listenRange: 2
+    toggleOnInteract: false
+  - type: Intercom
+    supportedChannels:
+    - Loudspeak
+  - type: ExtensionCableReceiver
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Appearance
+#  - type: ContainerFill
+#    containers:
+#      board: [ LoudspeakMicroElectronics ]
+#  - type: ContainerContainer
+#    containers:
+#      board: !type:Container
+  - type: Sprite
+    noRot: false
+    sprite: Imperial/loudspeaker.rsi
+    layers:
+    - state: microphone
+  - type: Transform
+    noRot: false
+    anchored: true
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-intercom
+    layoutId: Intercom
+  - type: Construction
+    graph: Intercom
+    node: intercom
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/metalbreak.ogg
+  - type: ActivatableUIRequiresPower
+  - type: ActivatableUI
+    key: enum.IntercomUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.IntercomUiKey.Key
+        type: MicrophoneBoundUserInterface
+
+
+- type: entity
+  id: loudspeakerMicrophoneAll
+  suffix: All
+  parent: loudspeakerMicrophone
+  components:
+  - type: Intercom
+    supportedChannels:
+    - Loudspeak
+    - Common
+    - Command
+    - Engineering
+    - Medical
+    - Science
+    - Security
+    - Service
+    - Supply

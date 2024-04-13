@@ -203,7 +203,18 @@ public sealed class RadioDeviceSystem : EntitySystem
             ("originalName", nameEv.Name));
 
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
+        /*if (component.speachType == "Whisper")
         _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        else if (component.speachType == "Speak")
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Speak, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        else if (component.speachType == "Emote")
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Emote, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);*/
+        if (component.speachType == RadioSpeakerComponent.SpeachType.Whisper)
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        else if (component.speachType == RadioSpeakerComponent.SpeachType.Speak)
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Speak, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
+        else if (component.speachType == RadioSpeakerComponent.SpeachType.Emote)
+        _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Emote, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
     }
 
     private void OnBeforeIntercomUiOpen(EntityUid uid, IntercomComponent component, BeforeActivatableUIOpenEvent args)

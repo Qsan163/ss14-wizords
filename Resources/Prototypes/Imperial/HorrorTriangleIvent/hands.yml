@@ -1,0 +1,75 @@
+
+- type: entity
+  name: hand crowbar
+  suffix: Unremoveable
+  parent: BaseItem
+  id: MonsterCrowbarRightHand
+  description: Right hand, working like crowbar
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+  - type: Tag
+    tags:
+    - Crowbar
+    - JawsOfLife
+  - type: Sprite
+    sprite: Imperial/HorrorTriangleIvent/monster1.rsi
+    state: right_hand
+  - type: Item
+    sprite: Imperial/HorrorTriangleIvent/monster1.rsi
+    state: right_hand
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 10
+        Structural: 20
+  - type: Tool
+    qualities:
+      - Prying
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: TilePrying
+  - type: Prying
+    force: true
+    pryPowered: true
+  - type: Unremoveable
+
+
+
+
+- type: entity
+  name: hand wirecutter
+  suffix: Unremoveable
+  parent: BaseItem
+  id: MonsterWirecutterRightHand
+  description: This kills the wire.
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/wirecutter_drop.ogg
+  - type: Tag
+    tags:
+    - PlantSampleTaker
+    - Wirecutter
+  - type: Sprite
+    sprite: Imperial/HorrorTriangleIvent/monster1.rsi
+    state: left_hand
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 5
+    soundHit:
+      path: "/Audio/Items/wirecutter.ogg"
+  - type: Tool
+    qualities:
+      - Cutting
+    useSound:
+      path: /Audio/Items/wirecutter.ogg
+  - type: Item
+    sprite: Imperial/HorrorTriangleIvent/monster1.rsi
+    state: left_hand
+  - type: LatticeCutting
+  - type: Unremoveable

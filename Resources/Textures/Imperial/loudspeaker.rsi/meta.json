@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Cataclysm DDA/BN, Edited by BROtania/BRO",
+    "states": [
+        {
+            "name": "base",
+            "directions": 4
+        },
+        {
+            "name": "broadcasting",
+            "directions": 4
+        },
+        {
+            "name": "build",
+            "directions": 4
+        },
+        {
+            "name": "speaker",
+            "directions": 4
+        },
+        {
+            "name": "unshaded",
+            "directions": 4
+        },
+        {
+            "name": "microphone"
+        }
+    ]
+}
