@@ -29,7 +29,6 @@
     tags:
     - Pizza
     - Fruit # Tomato? idk
-  - type: MultiHandedItem #Imperial Space TFG change
   - type: StaticPrice
     price: 150 #Imperial price balance
 

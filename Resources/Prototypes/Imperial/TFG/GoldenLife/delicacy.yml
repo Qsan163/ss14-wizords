@@ -103,7 +103,6 @@
   - type: EntityStorageVisuals
     stateDoorOpen: box-open
     stateDoorClosed: box
-  - type: MultiHandedItem
   - type: StaticPrice
     price: 0
   - type: StorageFill
