@@ -83,3 +83,14 @@
             - Multitool
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+
+  - type: listing
+  id: UplinkClothingSyndicateAdditionalBelt
+  name: uplink-clothing-syndicate-utility-belt-name
+  description: uplink-clothing-syndicate-utility-belt-desc
+  icon: { sprite: Clothing/Belt/utility.rsi, state: icon }
+  productEntity: ClothingBeltSyndicateUtility
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkArmor
