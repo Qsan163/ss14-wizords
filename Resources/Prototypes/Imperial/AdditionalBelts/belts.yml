@@ -12,10 +12,11 @@
   - type: Clothing
     sprite: Clothing/Belt/utility.rsi
   - type: Storage
-    capacity: 90
+    capacity: 65
     # TODO: Fill this out more.
     whitelist:
       tags:
+        - Explosive
         - Powerdrill
         - Wirecutter
         - Crowbar
