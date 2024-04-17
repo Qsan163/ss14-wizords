@@ -33,6 +33,7 @@
         - AppraisalTool
         - DiscreteHealthAnalyzer
       components:
+        - Explosive
         - SprayPainter
         - NetworkConfigurator
         - RCD
