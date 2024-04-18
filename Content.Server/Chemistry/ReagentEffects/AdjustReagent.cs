@@ -14,7 +14,7 @@ namespace Content.Server.Chemistry.ReagentEffects
         /// <summary>
         ///     The reagent ID to remove. Only one of this and <see cref="Group"/> should be active.
         /// </summary>
-        [DataField("reagent", customTypeSerializer:typeof(PrototypeIdSerializer<ReagentPrototype>))]
+        [DataField("reagent", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
         public string? Reagent = null;
         // TODO use ReagentId
 
@@ -22,7 +22,7 @@ namespace Content.Server.Chemistry.ReagentEffects
         ///     The metabolism group to remove, if the reagent satisfies any.
         ///     Only one of this and <see cref="Reagent"/> should be active.
         /// </summary>
-        [DataField("group", customTypeSerializer:typeof(PrototypeIdSerializer<MetabolismGroupPrototype>))]
+        [DataField("group", customTypeSerializer: typeof(PrototypeIdSerializer<MetabolismGroupPrototype>))]
         public string? Group = null;
 
         [DataField("amount", required: true)]
@@ -53,7 +53,7 @@ namespace Content.Server.Chemistry.ReagentEffects
                         if (proto.Metabolisms != null && proto.Metabolisms.ContainsKey(Group))
                         {
                             if (amount < 0)
-                                solutionSys.RemoveReagent(args.SolutionEntity, args.Source, quant.Reagent, amount);
+                                solutionSys.RemoveReagent(args.SolutionEntity, args.Source, quant.Reagent, -amount); // Визарды забыли поставить минус, поэтому выведение по группам не работало.
                             if (amount > 0)
                                 solutionSys.TryAddReagent(args.SolutionEntity, args.Source, quant.Reagent, amount, out _);
                         }

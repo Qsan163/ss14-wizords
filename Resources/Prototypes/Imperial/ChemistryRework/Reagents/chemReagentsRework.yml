@@ -189,7 +189,7 @@
           reagent: Ketopiride
           min: 1
         reagent: Lexorin
-        amount: 4  
+        amount: 4
 
 - type: reagent
   id: Flexitaine

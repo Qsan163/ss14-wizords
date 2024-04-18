@@ -12,3 +12,5 @@ tiles-glass-uran-floor = пол из уранового стекла
 tiles-glass-plasma-floor = пол из плазменного стекла
 tiles-glass-ruran-floor = пол из уранового бронестекла
 tiles-glass-rplasma-floor = пол из плазменного бронестекла
+
+tiles-ice-sheet-floor = ледяная плитка
