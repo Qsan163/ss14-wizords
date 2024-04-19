@@ -1,5 +1,3 @@
-# Belts that need/have visualizers
-
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltSyndicateUtility
@@ -91,6 +89,6 @@
   icon: { sprite: Clothing/Belt/utility.rsi, state: icon }
   productEntity: ClothingBeltSyndicateUtility
   cost:
-    Telecrystal: 2
+    Telecrystal: 4
   categories:
   - UplinkArmor
