@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: The standard security belt of the S-o.N.A. AI Dynamics corporation.
   components:
+  - type: Item
+    size: Small
   - type: Sprite
     sprite: Imperial/Sona/Belt.rsi
   - type: Clothing

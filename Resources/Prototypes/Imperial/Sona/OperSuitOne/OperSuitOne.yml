@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: An advanced spacesuit combining the technologies of several corporations at once. Probably stolen...
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: Imperial/Sona/OperSuitOne.rsi
   - type: Clothing

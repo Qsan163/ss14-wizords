@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: Vest of S-o.N.A. AI Dynamics corporation, with new generation plates.
   components:
+  - type: Item
+    size: Large
   - type: Sprite
     sprite: Imperial/Sona/Vest.rsi
   - type: Clothing

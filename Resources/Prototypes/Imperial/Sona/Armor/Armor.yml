@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: The bulletproof vest of S-o.N.A. AI Dynamics corporation, designed to bring maximum convenience to the wearer, also giving decent protection.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Imperial/Sona/Armor.rsi
   - type: Clothing

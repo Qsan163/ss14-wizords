@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: Bright blue magnetic boots of S-o.N.A. AI Dynamics corporation, with a built-in jetpack.
   components:
+  - type: Item
+    size: Small
   - type: Sprite
     sprite: Imperial/Sona/MagBoots.rsi
     state: icon

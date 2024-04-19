@@ -16,7 +16,7 @@
     soundHit:
         path: /Audio/Weapons/eblade1.ogg
   - type: Item
-    size: Small
+    size: Large
     sprite: Imperial/Sona/Katana.rsi
   - type: StaminaDamageOnHit
     damage: 15

@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: The standard turtleneck of the fighters of the S-o.N.A. AI Dynamics corporation, which has additional protection against burns.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Imperial/Sona/SonaHead.rsi
   - type: Clothing

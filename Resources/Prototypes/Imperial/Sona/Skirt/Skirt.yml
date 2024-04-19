@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: A bright blue skirt used by employees of S-o.N.A. AI Dynamics corporation.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Imperial/Sona/Skirt.rsi
   - type: Clothing

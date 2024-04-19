@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCentcom
+  name: centcom skirt
+  description: Stylish skirt made of high-quality materials. For the most beautiful ladies of the Central Command.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/centcomskirt.yml
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/centcomskirt.yml

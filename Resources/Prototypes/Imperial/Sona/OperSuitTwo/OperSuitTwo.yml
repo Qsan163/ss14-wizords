@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: The standard helmet that goes with the operatives' suit.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Imperial/Sona/OperSuitTwo.rsi
   - type: Clothing

@@ -5,6 +5,8 @@
   suffix: S-o.N.A
   description: A beautiful blue flower, it smells like an orchid.
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Imperial/Sona/HeadFlower.rsi
   - type: Clothing
