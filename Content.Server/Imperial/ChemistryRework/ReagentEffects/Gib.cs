@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Взрывает тело.
+///     Explodes the body
 /// </summary>
 
 [DataDefinition]
@@ -23,7 +23,7 @@ public sealed partial class Gib : ReagentEffect
         var damageSystem = args.EntityManager.System<DamageableSystem>();
         var protoManager = IoCManager.Resolve<IPrototypeManager>();
 
-        damageSystem.TryChangeDamage( // Я бы мог использовать BodySystem, но при гибе почему-то не выпадает мозг и органы.
+        damageSystem.TryChangeDamage( // I could use the BodySystem, but for some reason the brain and organs don't fall out when it gibs.
             args.SolutionEntity,
             new DamageSpecifier(protoManager.Index<DamageTypePrototype>("Blunt"), 10000),
             true

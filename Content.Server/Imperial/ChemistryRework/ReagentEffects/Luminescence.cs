@@ -7,17 +7,17 @@ using Robust.Shared.Random;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Заставляет сущность светиться.
+///     Causes the entity to glow.
 /// </summary>
 /// <remarks>
-///     Поскольку я опять сделал костыль, то это не работает при нанесении на кожу сущности.
+///     Since I made a crutch again, it does not work when applying the essence to the skin.
 /// </remarks>
 
 [DataDefinition]
 public sealed partial class Luminescence : ReagentEffect
 {
     /// <summary>
-    ///     Если цвет не был передан, то генерирует случайный цвет каждый цикл метаболизации
+    ///     If the color was not transferred, then generates a random color every metabolization cycle
     /// </summary>
     [DataField("color")]
     public string? PaintingСolor;
@@ -49,7 +49,7 @@ public sealed partial class Luminescence : ReagentEffect
     {
         var pointLightSystem = args.EntityManager.System<PointLightSystem>();
 
-        // Если на следующем тике метаболизации реагент закончится, то мы вырубаем свечение.
+        // If the next time the reagent metabolization ends, we turn off the glow.
 
         var totalReagentCount = GetReagentCount(args);
 
@@ -61,7 +61,7 @@ public sealed partial class Luminescence : ReagentEffect
             return;
         }
 
-        // Если источник света уже была привязан к сущности, то мы просто изменяем его параметры, а не создаем новый.
+        // If the light source has already been applied to nature, then we simply change its parameters, rather than creating new ones.
 
         if (pointLightSystem.TryGetLight(args.SolutionEntity, out var existLight))
         {
@@ -73,7 +73,7 @@ public sealed partial class Luminescence : ReagentEffect
             return;
         }
 
-        // Добавление источника света к существу.
+        // Add point light to the entity
 
         var light = pointLightSystem.EnsureLight(args.SolutionEntity);
 

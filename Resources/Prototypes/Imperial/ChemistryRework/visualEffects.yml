@@ -1,5 +1,5 @@
-# Оке, я не придумал ничего лучше, чем просто спавнить сущности эффектов при реакции
-# Так что добавляем в копилку говнокода еще один костыль
+# Okay, I couldn't think of anything better than just spawning effect entities upon reaction
+# So let's add another crutch to the shitty code money box
 
 - type: entity
   name: WhiteHoleEffect

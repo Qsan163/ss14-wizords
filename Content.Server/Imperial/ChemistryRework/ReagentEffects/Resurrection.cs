@@ -9,14 +9,11 @@ using Robust.Shared.Prototypes;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Админское воскрешение сущности с моментальным возвращением призрака в тело.
+///     Resurrection of an entity with the instant return of the ghost to the body.
 /// </summary>
 [DataDefinition]
 public sealed partial class Resurrection : ReagentEffect
 {
-    /// <summary>
-    ///     Штраф за воскрешение.
-    /// </summary>
     [JsonPropertyName("penaltyDamage")]
     [DataField("penaltyDamage")]
     public DamageSpecifier PenaltyDamage = new()!;

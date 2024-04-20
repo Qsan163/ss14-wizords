@@ -7,7 +7,7 @@ using Robust.Shared.Random;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Телепортирует персонажа в определенном радиусе от эпицентра на X координаты.
+///     Teleports a entity within a certain radius from the epicenter to X coordinates.
 /// </summary>
 
 [DataDefinition]
@@ -32,8 +32,8 @@ public sealed partial class Teleport : ReagentEffect
     public float MaxRange = float.MaxValue;
 
     /// <summary>
-    ///     Random или FaceRotation.
-    ///     FaceRotation - телепортация по прямому всектору взгялда сущноти
+    ///     Random or FaceRotation.
+    ///     FaceRotation - teleportation along the direct sector of the view of the entity
     /// </summary>
 
     [DataField("teleportType")]

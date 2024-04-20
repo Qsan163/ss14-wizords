@@ -53,7 +53,7 @@ namespace Content.Server.Chemistry.ReagentEffects
                         if (proto.Metabolisms != null && proto.Metabolisms.ContainsKey(Group))
                         {
                             if (amount < 0)
-                                solutionSys.RemoveReagent(args.SolutionEntity, args.Source, quant.Reagent, -amount); // Pyrotechnic: Визарды забыли поставить минус, поэтому выведение по группам не работало.
+                                solutionSys.RemoveReagent(args.SolutionEntity, args.Source, quant.Reagent, -amount); // Imperial Pyrotechnic: The wizards forgot to put a minus, so the groups didn`t work
                             if (amount > 0)
                                 solutionSys.TryAddReagent(args.SolutionEntity, args.Source, quant.Reagent, amount, out _);
                         }

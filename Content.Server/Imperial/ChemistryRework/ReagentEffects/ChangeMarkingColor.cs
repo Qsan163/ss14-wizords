@@ -7,26 +7,26 @@ using Robust.Shared.Random;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Изменяет цвет слоя сущности. Также способен менять цвет ее кожи.
+///     Changes the mark of the entity layer. Also able to change the color of her skin.
 /// </summary>
 
 [DataDefinition]
 public sealed partial class ChangeMarkingColor : ReagentEffect
 {
     /// <summary>
-    ///     Включает все енумы отсюда <see cref="Shared.Humanoid.Markings.MarkingCategories"/> и кожу.
+    ///     Includes all enums from <see cref="Shared.Humanoid.Markings.MarkingCategories"/> and Skin.
     /// </summary>
     [DataField("markingCategory")]
     public string MarkingCategory = "Hair";
 
     /// <summary>
-    ///     При этом параметре игнорирует параметр <see cref="PaintingСolor"/> и инвертирует цвет.
+    ///     This option ignores the <see cref="PaintingColor"/> parameter and inverts the color.
     /// </summary>
     [DataField("invertColor")]
     public bool InvertColor = false;
 
     /// <summary>
-    ///     Если цвет не был передан и <see cref="InvertColor"/> в значении false, то генерирует случайный цвет каждый цикл метаболизации
+    ///    If no color was passed in and <see cref="InvertColor"/> is set to false, then generates a random color every metabolization cycle.
     /// </summary>
     [DataField("color")]
     public string? PaintingСolor;

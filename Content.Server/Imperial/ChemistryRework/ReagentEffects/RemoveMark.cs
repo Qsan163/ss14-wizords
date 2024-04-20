@@ -5,14 +5,14 @@ using Robust.Shared.Prototypes;
 namespace Content.Server.Chemistry.ReactionEffects;
 
 /// <summary>
-///     Удаляет часть сущности.
+///     Remove part of an entity.
 /// </summary>
 
 [DataDefinition]
 public sealed partial class RemoveMark : ReagentEffect
 {
     /// <summary>
-    ///     Все типы слоев можно увидеть в <see cref="Shared.Humanoid.Markings.MarkingCategories"/>.
+    ///     All types of marks can be seen in <see cref="Shared.Humanoid.Markings.MarkingCategories"/>.
     /// </summary>
     [DataField("MarkingCategory")]
     public string MarkingCategory = "Hair";

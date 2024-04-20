@@ -155,7 +155,7 @@
       amount: 1
   effects:
     - !type:ExplosionReactionEffect
-      explosionType: Cryo # Это не костыль, а великий замысел.
+      explosionType: Cryo # This is not a crutch. This is great plan.
       maxIntensity: 1
       intensitySlope: 0.001
       maxTotalIntensity: 1
