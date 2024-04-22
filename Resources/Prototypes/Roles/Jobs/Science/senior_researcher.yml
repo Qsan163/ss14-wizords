@@ -20,7 +20,7 @@
     head: ClothingHeadHatBeretRND
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
     back: ClothingBackpackScienceFilled
-    shoes: ClothingShoesColorBlack
+    shoes: ClothingShoesBootsScienceImperial #Imperial Edit
     outerClothing: ClothingOuterCoatLabSeniorResearcher
     id: SeniorResearcherPDA
     ears: ClothingHeadsetScience
