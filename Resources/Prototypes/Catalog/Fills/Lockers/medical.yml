@@ -122,6 +122,7 @@
       - id: ClothingMaskSterile
       - id: HandLabeler
         prob: 0.5
+      - id: ClothingHeadHelmetScienceMask #Imperial edit
 
 - type: entity
   id: LockerParamedicFilled
