@@ -34,7 +34,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitResearchDirector
     back: ClothingBackpackResearchDirectorFilled
-    shoes: ClothingShoesColorBrown
+    shoes: ClothingShoesBootsScienceImperial #Imperial Edit
     outerClothing: ClothingOuterCoatRD
     id: RnDPDA
     ears: ClothingHeadsetRD

@@ -19,8 +19,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitScientist
     back: ClothingBackpackScienceFilled
-    shoes: ClothingShoesColorWhite
-    outerClothing: ClothingOuterCoatRnd
+    shoes: ClothingShoesBootsScienceImperial #Imperial Edit
+    #outerClothing: ClothingOuterCoatRnd Imperial edit
     id: SciencePDA
     ears: ClothingHeadsetScience
   innerClothingSkirt: ClothingUniformJumpskirtScientist
