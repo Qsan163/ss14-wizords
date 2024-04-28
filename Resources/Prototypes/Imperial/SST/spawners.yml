@@ -1,0 +1,51 @@
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentGorlex
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: GorlexGear
+      prototypes: [GorlexGear]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentCybersun
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: CybersunGear
+      prototypes: [CybersunGear]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentInterdyne
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: InterdyneReinforcementLabcoatGear
+      prototypes: [InterdyneReinforcementLabcoatGear]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentWaffleCo
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: WaffleCoGear
+      prototypes: [WaffleCoGear]
+
+- type: entity
+  name: Filler
+  id: SpawnReinforcementSyndieAgents
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - MobHumanSyndicateAgentGorlex
+        - MobHumanSyndicateAgentCybersun
+        - MobHumanSyndicateAgentInterdyne
+        - MobHumanSyndicateAgentWaffleCo

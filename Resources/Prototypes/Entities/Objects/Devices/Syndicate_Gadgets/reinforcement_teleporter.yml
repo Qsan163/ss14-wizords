@@ -13,7 +13,7 @@
     description: ghost-role-information-syndicate-reinforcement-description
     rules: ghost-role-information-syndicate-reinforcement-rules
   - type: GhostRoleMobSpawner
-    prototype: MobHumanSyndicateAgent
+    prototype: SpawnReinforcementSyndieAgents
   - type: EmitSoundOnUse
     sound: /Audio/Effects/Emotes/parp1.ogg
   - type: UseDelay
