@@ -9,7 +9,7 @@
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatPlus
     outerClothing: ClothingOuterArmorSSTMarauder
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     belt: ClothingBeltGorlexWebbing #Todo
     pocket1: BaseUplinkRadio40TC
@@ -25,7 +25,7 @@
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
     outerClothing: ClothingOuterArmorSSTMarauder
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     belt: ClothingBeltGorlexWebbing #Todo
     pocket1: BaseUplinkRadio40TC
@@ -41,7 +41,7 @@
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
     outerClothing: ClothingOuterArmorSSTMarauder
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     belt: ClothingBeltGorlexWebbing #Todo
     pocket1: BaseUplinkRadio40TC
@@ -55,7 +55,7 @@
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     belt: ClothingBeltGorlexWebbing
 
@@ -68,7 +68,7 @@
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     belt: ClothingBeltGorlexWebbing #Todo
 
@@ -81,7 +81,7 @@
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
-    id: ERTLeaderPDA #Todo
+    id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorGorlexCoat
     head: ClothingHeadHelmetGorlexCap
@@ -125,6 +125,18 @@
     gloves: ClothingHandsGlovesInterdyneRedNitrile
     ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorInterdyneLabcoat
+    belt: ClothingBeltMedicalInterdyne 
+
+- type: startingGear
+  id: InterdyneReinforcementLabcoatGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTraumaTeam
+    back: ClothingBackpackDuffelSyndicateOperative
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesInterdyneRedNitrile
+    outerClothing: ClothingOuterArmorInterdyneLabcoat
     belt: ClothingBeltMedicalInterdyne #Todo
 
 - type: startingGear
@@ -135,8 +147,7 @@
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
-    gloves: ClothingHandsGlovesInterdyneRedNitrile
+    gloves: ClothingHandsGlovesColorBlack
     ears: ClothingHeadsetAltSyndicate
     head: ClothingHeadHatHardhatWaffleCo
-    outerClothing: ClothingOuterArmorInterdyneLabcoat
     belt: ClothingBeltMedicalInterdyne #Todo
