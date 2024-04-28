@@ -1,0 +1,146 @@
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorSyndicateLight
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/light.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/light.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7 #Оно должно быть лучше рига, поскольку бронированные скафы - бред + оно не защищает от разгерметизации. У ССТ стоит 80% армора ради паритета с эскадроном. Во всяком случае числовое превосходство на стороне эскадрона смерти. Значительное числовое превосходство. 4 против 12.
+        Heat: 0.7
+        Caustic: 0.7
+        Cold: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: Item
+    size: Large
+
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorSyndicateHardened
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/hardened.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/hardened.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6 #Оно должно быть лучше рига, поскольку бронированные скафы - бред + оно не защищает от разгерметизации. У ССТ стоит 80% армора ради паритета с эскадроном. Во всяком случае числовое превосходство на стороне эскадрона смерти. Значительное числовое превосходство. 4 против 12.
+        Heat: 0.6
+        Caustic: 0.6
+        Cold: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: Item
+    size: Large
+
+- type: entity
+  parent: SyndieClothingOuterBaseLarge
+  id: ClothingOuterArmorSyndicateEpic
+  name: "captain's carapace"
+  description: "An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to the station's finest."
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/OuterClothing/epic.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/OuterClothing/epic.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.6 #Оно должно быть лучше рига, поскольку бронированные скафы - бред + оно не защищает от разгерметизации. У ССТ стоит 80% армора ради паритета с эскадроном. Во всяком случае числовое превосходство на стороне эскадрона смерти. Значительное числовое превосходство. 4 против 12.
+        Heat: 0.4
+        Caustic: 0.6
+        Cold: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Item
+    size: Large
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetSyndieGrey
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/grey.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/grey.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetSyndieEnclosed
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/enclosed.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/enclosed.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetSyndieBulletproof
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/bulletproof.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/bulletproof.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair

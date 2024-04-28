@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWaffleCo
+  name: cargo tech jumpsuit
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Uniforms/waffleco.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Uniforms/waffleco.rsi
+
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: ClothingHeadHatHardhatWaffleCo
+  name: dark yellow hard hat
+  description: A hard hat, painted in dark yellow, used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/wafflecohardhat.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/wafflecohardhat.rsi

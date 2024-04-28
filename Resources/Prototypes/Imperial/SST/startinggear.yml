@@ -50,6 +50,19 @@
   id: GorlexGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitGorlexCombat
+    back: ClothingBackpackDuffelSyndicateOperative
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesCombatSST
+    id: ERTLeaderPDA #Todo
+    ears: ClothingHeadsetAltSyndicate
+    belt: ClothingBeltGorlexWebbing
+
+- type: startingGear
+  id: GorlexModsuitGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGorlexCombat
     back: ClothingControlModsuitOperativeSealedFractionBoom
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesHudSyndicate
@@ -78,41 +91,52 @@
   id: CybersunGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCybersun
-    back: ClothingControlModsuitOperativeSealedFractionBoom
+    back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskCybersunWhiteBalaclava
     gloves: ClothingHandsGlovesBlackGauntlets
-    id: ERTLeaderPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorCybersun
-    belt: ClothingBeltGorlexWebbing #Todo
+    belt: ClothingBeltAssault #Todo
 
 - type: startingGear
   id: InterdyneTraumaTeamGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitTraumaTeam
-    back: ClothingControlModsuitOperativeSealedFractionBoom
+    back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesInterdyneRedNitrile
-    id: ERTLeaderPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorTraumaTeam
     head: ClothingHeadHelmetTraumaTeam
-    belt: ClothingBeltGorlexWebbing #Todo
+    belt: ClothingBeltMedicalInterdyne #Todo
 
 - type: startingGear
   id: InterdyneLabcoatGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitTraumaTeam
-    back: ClothingControlModsuitOperativeSealedFractionBoom
+    back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesHudSyndicate
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesInterdyneRedNitrile
-    id: ERTLeaderPDA #Todo
     ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorInterdyneLabcoat
-    belt: ClothingBeltGorlexWebbing #Todo
+    belt: ClothingBeltMedicalInterdyne #Todo
+
+- type: startingGear
+  id: WaffleCoGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWaffleCo
+    back: ClothingBackpackDuffelSyndicateOperative
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesHudSyndicate
+    mask: ClothingMaskGorlexAdvancedGasmask
+    gloves: ClothingHandsGlovesInterdyneRedNitrile
+    ears: ClothingHeadsetAltSyndicate
+    head: ClothingHeadHatHardhatWaffleCo
+    outerClothing: ClothingOuterArmorInterdyneLabcoat
+    belt: ClothingBeltMedicalInterdyne #Todo

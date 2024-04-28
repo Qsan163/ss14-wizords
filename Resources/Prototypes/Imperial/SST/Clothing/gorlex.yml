@@ -75,6 +75,27 @@
     - HidesHair
 
 - type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetGorlexBeret
+  name: helmet
+  description: Standard security gear. Protects the head from impacts.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Clothing/Helmet/gorlexberet.rsi
+  - type: Clothing
+    sprite: Imperial/SST/Clothing/Helmet/gorlexberet.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
   parent: ClothingNeckBase 
   id: ClothingNeckCloakGorlexStranger
   name: Filler
