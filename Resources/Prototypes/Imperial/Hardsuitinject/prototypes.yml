@@ -82,7 +82,7 @@
         canMix: true
         reagents:
         - ReagentId: Bicaridine
-          Quantity: 20
+          Quantity: 15
 
 - type: entity
   parent: Ampula
@@ -97,7 +97,7 @@
         canMix: true
         reagents:
         - ReagentId: Dermaline
-          Quantity: 20
+          Quantity: 10
 
 - type: entity
   parent: Ampula

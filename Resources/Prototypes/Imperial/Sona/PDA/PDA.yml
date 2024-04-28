@@ -1,0 +1,22 @@
+- type: entity
+  parent: BasePDA
+  id: SonaPDA
+  name: PDA S-o.N.A
+  suffix: S-o.N.A
+  description: A beautiful and advanced PDA of S-o.N.A. AI Dynamics Corporation.
+  components:
+    - type: Item
+      size: Small
+    - type: Pda
+      id: SonaIDCard
+      state: pda-sona
+    - type: Icon
+      state: pda-sona
+    - type: PdaBorderColor
+      borderColor: "#f2f2f2"
+      accentHColor: "#00f1f5"
+      accentVColor: "#00f1f5"
+    - type: HealthAnalyzer
+      scanDelay: 0
+      scanningEndSound:
+        path: "/Audio/Items/Medical/healthscanner.ogg"

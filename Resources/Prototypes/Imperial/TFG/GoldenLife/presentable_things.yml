@@ -85,7 +85,9 @@
   components:
   - type: Sprite
     sprite: Imperial/TFG/GoldenLife/presentableBox.rsi
-    state: presentable
+    layers:
+    - state: presentable
+    - state: sign_imperial
   - type: Item
     sprite: Imperial/TFG/GoldenLife/presentableBox.rsi
     size: Normal
@@ -101,3 +103,15 @@
       Steel: 100
   - type: StaticPrice
     price: 20
+
+- type: entity
+  id: ToolboxPresentable
+  parent: ToolboxBase
+  name: presentable toolbox
+  description: Damn it. This is the toolbox of a very big shot!
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/presentableToolbox.rsi
+    state: icon
+  - type: Item
+    sprite: Imperial/TFG/GoldenLife/presentableToolbox.rsi
