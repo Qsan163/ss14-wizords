@@ -121,6 +121,8 @@ ent-DrinkJuiceOrangeCartonXL = апельсиновый сок XL
     .desc = Двойной удар витамина C!
 ent-DrinkCartonOrange = пакет от апельсинового сока
     .desc = пустой пакет
+ent-DrinkSodaWaterBottleFull = бутылка газированной воды
+    .desc = Как вода, только злая!
 
 ent-DrinkBloodGlass =  стакан метаморф
     .desc = Я надеюсь, что это кетчуп.
