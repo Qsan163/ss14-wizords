@@ -10,6 +10,7 @@
     sprite: Imperial/SST/Clothing/Gloves/black_gauntlets.rsi
   - type: GloveHeatResistance
     heatResistance: 1400
+
 - type: entity
   parent: SyndieClothingOuterBaseLarge
   id: ClothingOuterArmorCybersun
