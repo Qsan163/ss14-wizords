@@ -15,3 +15,5 @@ ent-MagazineBoxPistolRubber = коробка патронов (.35 авто ре
     .suffix = { "" }
 ent-MagazineBoxPistolIncendiary = коробка патронов (.35 авто зажигательные)
     .desc = { ent-BaseMagazineBoxPistol.desc }
+ent-MagazineBoxPistolUranium = коробка патронов (.35 авто урановые)
+    .desc = BaseMagazineBoxPistol

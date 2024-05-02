@@ -6,3 +6,7 @@ ent-StationMap = карта станции
     .desc = { ent-StationMapBroken.desc }
 ent-StationMapAssembly = каркас карты станции
     .desc = Каркас карты станции.
+ent-ArrivalsShuttleTimer = экран прибытия
+    .desc = Экран с таймером
+ent-Screen = экран
+    .desc = экран с таймером

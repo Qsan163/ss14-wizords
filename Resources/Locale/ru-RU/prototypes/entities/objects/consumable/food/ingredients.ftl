@@ -98,3 +98,7 @@ ent-FoodDoughCornmealSlice = кусочек кукурузного теста
     .desc = Кусок кукурузного теста.
 ent-FoodCocoaBeans = какао бобы
     .desc = Шоколада много не бывает!
+ent-FoodDoughTortillaSlice = кусочек теста для тортильи
+    .desc = Кусочек теста для тортильи.
+ent-FoodDoughTortilla = тесто для тортильи
+    .desc = Кусок теста для тортильи.

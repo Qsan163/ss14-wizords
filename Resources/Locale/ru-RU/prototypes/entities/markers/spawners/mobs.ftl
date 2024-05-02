@@ -130,23 +130,10 @@ ent-SpawnMobKangarooWillow = спавнер кенгуру Вильям
     .desc = { ent-MarkerBase.desc }
 ent-SpawnMobBehonker = спавнер бехонкер
     .desc = { ent-MarkerBase.desc }
-ent- = спавнер
+ent-SpawnMobCockroach = спавнер таракана
     .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-ent- = спавнер
-    .desc = { ent-MarkerBase.desc }
-
+ent-SpawnMobHellspawn = Спавнер Эдди
+ent-SpawnMobCatKitten = Спавнер котёнкок
 
 
 

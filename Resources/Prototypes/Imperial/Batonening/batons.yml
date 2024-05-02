@@ -1,0 +1,101 @@
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: Telebaton
+  desctiption: A compact and elegant tool for subjugating your staff when they feel like not taking orders.
+  components:
+  - type: Sprite
+    sprite: Imperial/Batonening/telescopic.rsi
+    netsync: false
+    layers:
+    - state: telebaton_retracted
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 3
+    angle: 45
+    animation: WeaponArcSlash
+  - type: Telebaton
+  - type: StaminaDamageOnHit
+    damage: 27
+    sound: /Audio/Imperial/Batonening/bonk-sound-effect.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Item
+    heldPrefix: off
+    size: Tiny
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: telebaton_extended}
+          False: {state: telebaton_retracted}
+  - type: StaticPrice
+    price: 1350
+  - type: ItemToggle
+  - type: ItemToggleSize
+    activatedSize: Normal
+  - type: GuideHelp
+    guides:
+    - Security
+  #- type: QualityOfItem
+  #  qualityWeights:
+  #    0: 0
+  #    1: 0
+  #    2: 0
+  #    3: 75
+  #    4: 25
+  #    5: 0
+  #    6: 0
+
+- type: entity
+  name: telescopic baton
+  parent: BaseItem
+  id: ContractorBaton
+  desctiption: A compact and elegant tool for subjugating your staff when they feel like not taking orders.
+  components:
+  - type: Sprite
+    sprite: Imperial/Batonening/contractor.rsi
+    netsync: false
+    layers:
+    - state: telebaton_retracted #funny
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 3
+    angle: 45
+    animation: WeaponArcSlash
+  - type: Telebaton
+    extendSound: /Audio/Imperial/Batonening/contractor_toggle.ogg
+  - type: StaminaDamageOnHit
+    damage: 55
+    sound: /Audio/Imperial/Batonening/bonk-sound-effect.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Item
+    heldPrefix: off
+    size: Tiny
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: telebaton_extended}
+          False: {state: telebaton_retracted}
+  - type: StaticPrice
+    price: 9400
+  - type: ItemToggle
+  - type: ItemToggleSize
+    activatedSize: Normal
+  #- type: QualityOfItem
+  #  qualityWeights:
+  #    0: 0
+  #    1: 0
+  #    2: 0
+  #    3: 90
+  #    4: 10
+  #    5: 0
+  #    6: 0

@@ -6,3 +6,6 @@ ent-CrateSyndicateSuperSurplusBundle = Ящик суперприпасов
 
 ent-CrateSyndicate = { ent-CrateBaseWeldable }
     .desc = { ent-CrateBaseWeldable.desc }
+
+ent-CrateCybersunJuggernautBundle = Комплект джаггернаута Cybersun
+    .desc = Содержит все, кроме большой пушки для отправки по почте.

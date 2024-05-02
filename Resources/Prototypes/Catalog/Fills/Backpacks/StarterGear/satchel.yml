@@ -91,7 +91,8 @@
       - id: BoxSurvival
       - id: Flash
       #- name: StationCharter
-      #- name: TelescopicBaton
+      - id: Telebaton #Imperial
+
 - type: entity
   noSpawn: true
   parent: ClothingBackpackSatchelEngineering
@@ -101,7 +102,7 @@
     contents:
       - id: BoxSurvivalEngineering
       - id: Flash
-      #- id: TelescopicBaton
+      - id: Telebaton #Imperial
 
 - type: entity
   noSpawn: true
@@ -112,7 +113,7 @@
     contents:
       - id: BoxSurvival
       - id: Flash
-      #- id: TelescopicBaton
+      - id: Telebaton #Imperial
 
 - type: entity
   noSpawn: true
@@ -123,7 +124,7 @@
     contents:
       - id: BoxSurvival
       - id: Flash
-      #- id: TelescopicBaton
+      - id: Telebaton #Imperial
 
 - type: entity
   noSpawn: true
@@ -134,7 +135,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: Flash
-      #- id: TelescopicBaton
+      - id: Telebaton #Imperial
 
 - type: entity
   noSpawn: true
@@ -145,7 +146,7 @@
     contents:
       - id: BoxSurvival
       - id: Flash
-      #- id: TelescopicBaton
+      - id: Telebaton #Imperial
 
 - type: entity
   noSpawn: true

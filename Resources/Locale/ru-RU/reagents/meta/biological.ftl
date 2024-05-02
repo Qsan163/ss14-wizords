@@ -18,3 +18,12 @@ reagent-desc-fat = Независимо от того, как он был пол
 
 reagent-name-vomit = рвота
 reagent-desc-vomit = В нем можно увидеть несколько кусков чьего-то последнего обеда.
+
+reagent-name-insect-blood = кровь насекомого
+reagent-desc-insect-blood = Ладно, это действительно отвратительно. Оно выглядит почти... живым?
+
+reagent-name-ammonia-blood = анаэробная кровь
+reagent-desc-ammonia-blood = Ничто во всей галактике не пахнет так ужасно.
+
+reagent-name-hemocyanin-blood = голубая кровь
+reagent-desc-hemocyanin-blood = Содержит медь, а не железо, что придает ему отчетливый синий цвет.

@@ -22,4 +22,6 @@ ent-ToolboxGolden = золотой ящик для инструментов
 ent-ToolboxElectricalTurret = { ent-ToolboxElectrical }
     .desc = { ent-ToolboxElectrical }
     .suffix = Турель синдиката
-
+ent-ToolboxArtisticFilled = { ent-ToolboxArtistic }
+    .desc = { ent-ToolboxArtistic.desc }
+    .suffix = Заполненный

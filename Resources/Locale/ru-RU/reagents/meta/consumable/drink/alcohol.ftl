@@ -246,3 +246,6 @@ reagent-desc-whiskey-soda = Невероятно освежающе!
 
 reagent-name-white-russian = белый русский
 reagent-desc-white-russian = Но это только твоё мнение, чувак.
+
+reagent-name-gildlager = гильдлагер
+reagent-desc-gildlager = 100 крепких шнапсов с корицей, приготовленных для девочек-алкоголичек на весенних каникулах.

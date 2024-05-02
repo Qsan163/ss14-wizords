@@ -17,6 +17,8 @@ public sealed class CallErt : LocalizedCommands
 {
     public string Description => Loc.GetString("callertcommand-desc");
     public string Help => Loc.GetString("callertcommand-help");
+    [Dependency] private readonly IEntityManager _entity = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
 
     public override string Command => "callert";
 
@@ -24,7 +26,7 @@ public sealed class CallErt : LocalizedCommands
     {
         if (args.Length == 1)
         {
-            var options = IoCManager.Resolve<IPrototypeManager>()
+            var options = _prototype
                 .EnumeratePrototypes<ErtCallPresetPrototype>()
                 .Select(p => new CompletionOption(p.ID, p.Desc));
 
@@ -39,7 +41,7 @@ public sealed class CallErt : LocalizedCommands
         if (args.Length == 0) //123
         {
             shell.WriteError(Loc.GetString("callertcommand-error-args0"));
-            IoCManager.Resolve<SharedAudioSystem>().PlayGlobal("/Audio/Corvax/Adminbuse/noert.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
+            _entity.System<SharedAudioSystem>().PlayGlobal("/Audio/Corvax/Adminbuse/noert.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
             return;
         }
         if (args.Length > 1)
@@ -47,9 +49,9 @@ public sealed class CallErt : LocalizedCommands
             shell.WriteError(Loc.GetString("callertcommand-error-args1"));
             return;
         }
-        var ertSpawnSystem = IoCManager.Resolve<IEntityManager>().System<CallErtSystem>();
+        var ertSpawnSystem = _entity.System<CallErtSystem>();
         var protoId = args[0];
-        var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
+        var prototypeManager = _prototype;
         if (!prototypeManager.TryIndex<ErtCallPresetPrototype>(protoId, out var proto))
         {
             shell.WriteError(Loc.GetString("callertcommand-error-prest-not-found", ("protoid", protoId)));
@@ -57,7 +59,7 @@ public sealed class CallErt : LocalizedCommands
         }
         if (ertSpawnSystem.SpawnErt(proto))
         {
-            IoCManager.Resolve<SharedAudioSystem>().PlayGlobal("/Audio/Corvax/Adminbuse/yesert.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-5f));
+            _entity.System<SharedAudioSystem>().PlayGlobal("/Audio/Corvax/Adminbuse/yesert.ogg", Filter.Broadcast(), true, AudioParams.Default.WithVolume(-5f));
             shell.WriteLine(Loc.GetString("callertcommand-preset-loaded", ("protoid", protoId)));
             return;
         }

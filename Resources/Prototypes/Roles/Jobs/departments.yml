@@ -14,7 +14,7 @@
   weight: -10
   roles:
   - Bartender
-  - Borg
+  #- Borg
   - Botanist
   - Boxer
   - Chaplain

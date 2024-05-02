@@ -15,3 +15,5 @@ ent-CartridgeRifleRubber = патрон (.20 винтовочный резино
     .suffix = { "" }
 ent-CartridgeRifleIncendiary = патрон (.20 винтовочный зажигательный)
     .desc = { ent-BaseCartridgeRifle.desc }
+ent-CartridgeRifleUranium = патрон (.20 винтовочный урановый)
+    .desc = BaseCartridgeRifle

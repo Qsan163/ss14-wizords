@@ -10,3 +10,6 @@ ent-WindowTintedDirectional = направленное тонированное 
 ent-WindowFrostedDirectional = направленное матовое окно
     .desc = Смотри не заляпай.
     .suffix = { "" }
+ent-WindowDiagonal = диагональное окно
+    .desc = Смотри не заляпай.
+    .suffix = Диагональное

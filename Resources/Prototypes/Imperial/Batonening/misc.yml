@@ -1,0 +1,21 @@
+- type: listing
+  id: UplinkContractorBaton
+  name: uplink-weapons-contractor-baton-name
+  description: uplink-weapons-contractor-baton-desc
+  productEntity: ContractorBaton
+  cost:
+    Telecrystal: 8
+  categories:
+    - UplinkWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
+
+- type: latheRecipe
+  id: TelescopicBaton
+  result: Telebaton
+  completetime: 8
+  materials:
+    Steel: 1000

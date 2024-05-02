@@ -21,3 +21,6 @@ ent-EngineParticleAccelerator = { ent-CrateEngineeringParticleAccelerator }
 
 ent-EngineSolar = { ent-CrateEngineeringSolar }
     .desc = { ent-CrateEngineeringSolar.desc }
+
+ent-TeslaGenerator = генератор Теслы
+    .desc = Странное устройство, которое при установке производит мощный шар Теслы.

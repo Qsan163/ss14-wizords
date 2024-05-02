@@ -9,3 +9,5 @@ ent-PinpointerUniversal = универсальный поисковый нави
 ent-PinpointerStation = поисковой навигатор
     .desc = { ent-PinpointerBase.desc }
     .suffix = { "" }
+ent-PinpointerSyndicateNuclear = поисковый навигатор
+    .desc = Создан специально для ядерных операций, захватите этот диск!

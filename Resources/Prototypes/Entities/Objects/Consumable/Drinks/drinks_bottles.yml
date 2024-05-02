@@ -206,7 +206,8 @@
         - ReagentId: Cognac
           Quantity: 100
   - type: Label
-    currentLabel: cognac
+  #Империал перевод
+    currentLabel: коньяк
   - type: Sprite
     sprite: Objects/Consumable/Drinks/cognacbottle.rsi
   - type: Sealable
@@ -224,7 +225,8 @@
         - ReagentId: Cola
           Quantity: 100
   - type: Label
-    currentLabel: cola
+  #Империал перевод
+    currentLabel: кола
   - type: Sprite
     sprite: Objects/Consumable/Drinks/colabottle.rsi
   - type: Sealable
@@ -262,7 +264,8 @@
         - ReagentId: Gin
           Quantity: 100
   - type: Label
-    currentLabel: gin
+  #Империал перевод
+    currentLabel: джин
   - type: Sprite
     sprite: Objects/Consumable/Drinks/ginbottle.rsi
   - type: Sealable
@@ -296,7 +299,8 @@
         - ReagentId: CoffeeLiqueur
           Quantity: 100
   - type: Label
-    currentLabel: coffee liqueur
+  #Империал перевод
+    currentLabel: кофейный ликёр
   - type: Sprite
     sprite: Objects/Consumable/Drinks/coffeeliqueurbottle.rsi
   - type: Sealable
@@ -369,7 +373,8 @@
         - ReagentId: Rum
           Quantity: 100
   - type: Label
-    currentLabel: rum
+  #Империал перевод
+    currentLabel: ром
   - type: Sprite
     sprite: Objects/Consumable/Drinks/rumbottle.rsi
   - type: Sealable
@@ -388,7 +393,8 @@
           Quantity: 100
   - type: Drink
   - type: Label
-    currentLabel: space mountain wind
+  #Империал перевод
+    currentLabel: космический маунтин винда
   - type: Sprite
     sprite: Objects/Consumable/Drinks/space_mountain_wind_bottle.rsi
   - type: Sealable
@@ -407,7 +413,8 @@
           Quantity: 100
   - type: Drink
   - type: Label
-    currentLabel: space-up
+  #Империал перевод
+    currentLabel: спейс-ап
   - type: Sprite
     sprite: Objects/Consumable/Drinks/space-up_bottle.rsi
   - type: Sealable
@@ -425,7 +432,8 @@
         - ReagentId: Tequila
           Quantity: 100
   - type: Label
-    currentLabel: tequila
+  #Империал перевод
+    currentLabel: текила
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tequillabottle.rsi
   - type: Sealable
@@ -443,7 +451,8 @@
         - ReagentId: Vermouth
           Quantity: 100
   - type: Label
-    currentLabel: vermouth
+  #Империал перевод
+    currentLabel: вермут
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vermouthbottle.rsi
   - type: Sealable
@@ -461,7 +470,8 @@
         - ReagentId: Vodka
           Quantity: 100
   - type: Label
-    currentLabel: vodka
+  #Империал перевод
+    currentLabel: водка
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vodkabottle.rsi
   - type: Sealable
@@ -479,7 +489,8 @@
         - ReagentId: Whiskey
           Quantity: 100
   - type: Label
-    currentLabel: whiskey
+  #Империал перевод
+    currentLabel: виски
   - type: Sprite
     sprite: Objects/Consumable/Drinks/whiskeybottle.rsi
   - type: Sealable
@@ -497,7 +508,8 @@
         - ReagentId: Wine
           Quantity: 100
   - type: Label
-    currentLabel: wine
+  #Империал перевод
+    currentLabel: вино
   - type: Sprite
     sprite: Objects/Consumable/Drinks/winebottle.rsi
   - type: Sealable
@@ -538,7 +550,8 @@
         - ReagentId: Beer
           Quantity: 150
   - type: Label
-    currentLabel: beer
+  #Империал перевод
+    currentLabel: пиво
   - type: Sprite
     sprite: Objects/Consumable/Drinks/beer.rsi
   - type: Openable
@@ -579,7 +592,8 @@
         - ReagentId: Ale
           Quantity: 150
   - type: Label
-    currentLabel: ale
+  #Империал перевод
+    currentLabel: эль
   - type: Sprite
     sprite: Objects/Consumable/Drinks/alebottle.rsi
   - type: Openable
@@ -631,7 +645,8 @@
         - ReagentId: SodaWater
           Quantity: 150
   - type: Label
-    currentLabel: soda water
+  #Империал перевод
+    currentLabel: сода
 
 - type: entity
   parent: DrinkWaterBottleFull
@@ -647,7 +662,8 @@
         - ReagentId: TonicWater
           Quantity: 150
   - type: Label
-    currentLabel: tonic water
+  #Империал перевод
+    currentLabel: тоник
 
 # Cartons, TODO: this needs to be moved elsewhere eventually, since cartons shouldnt smash into glass shards
 
@@ -666,7 +682,8 @@
           Quantity: 150
   - type: Drink
   - type: Label
-    currentLabel: lime juice
+  #Империал перевод
+    currentLabel: сок лайма
   - type: Sprite
     sprite: Objects/Consumable/Drinks/limejuice.rsi
 
@@ -685,7 +702,8 @@
           Quantity: 150
   - type: Drink
   - type: Label
-    currentLabel: orange juice
+  #Империал перевод
+    currentLabel: сок апельсина
   - type: Sprite
     sprite: Objects/Consumable/Drinks/orangejuice.rsi
 
@@ -704,7 +722,8 @@
           Quantity: 150
   - type: Drink
   - type: Label
-    currentLabel: cream
+  #Империал перевод
+    currentLabel: сливки
   - type: Sprite
     sprite: Objects/Consumable/Drinks/cream.rsi
 
@@ -725,6 +744,9 @@
         - ReagentId: Sugar
           Quantity: 300
   - type: Drink
+  - type: Label
+  #Империал перевод
+    currentLabel: сахао
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -741,7 +763,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: lemon-lime
+  #Империал перевод
+    currentLabel: лимон-лайм
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -758,7 +781,8 @@
           Quantity: 150
   - type: Drink
   - type: Label
-    currentLabel: mead
+  #Империал перевод
+    currentLabel: медовуха
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -775,7 +799,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: ice
+  #Империал перевод
+    currentLabel: лёд
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -792,7 +817,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: coffee
+  #Империал перевод
+    currentLabel: кофе
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -809,7 +835,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: tea
+  #Империал перевод
+    currentLabel: чай
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -826,7 +853,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: green tea
+  #Империал перевод
+    currentLabel: зелёный чай
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -858,7 +886,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: dr gibb
+  #Империал перевод
+    currentLabel: доктор Гибб
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -875,7 +904,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: root beer
+  #Империал перевод
+    currentLabel: рутбир
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -892,7 +922,8 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: watermelon juice
+  #Империал перевод
+    currentLabel: арбузный сок
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -909,7 +940,8 @@
           Quantity: 100
   - type: Drink
   - type: Label
-    currentLabel: red bool
+  #Империал перевод
+    currentLabel: ред булл
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull

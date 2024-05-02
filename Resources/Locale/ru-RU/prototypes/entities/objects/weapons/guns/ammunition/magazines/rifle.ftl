@@ -13,3 +13,5 @@ ent-MagazineRiflePractice = магазин (.20 винтовочные учеб�
 ent-MagazineRifleRubber = магазин (.20 винтовочные резиновые)
     .desc = { ent-BaseMagazineRifle.desc }
     .suffix = { "" }
+ent-MagazineRifleUranium = магазин (.20 винтовочные урановые)
+    .desc = BaseMagazineRifle

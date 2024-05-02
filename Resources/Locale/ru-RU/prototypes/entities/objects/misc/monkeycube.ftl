@@ -12,3 +12,6 @@ ent-SyndicateSpongeBox = { ent-MonkeyCubeBox }
 ent-SyndicateSpongeWrapped = { ent-MonkeyCubeWrapped }
     .desc = { ent-MonkeyCubeWrapped.desc }
     .suffix = Завёрнутый Синдикат
+
+ent-VariantCubeBox = коробка кубиков кобольдов и обезьян
+    .desc = И кубики кобольдов, и кубики обезьян. Просто добавь воды!

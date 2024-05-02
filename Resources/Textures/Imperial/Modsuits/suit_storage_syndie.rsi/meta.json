@@ -9,15 +9,3 @@
   "states": [
     {
       "name": "base"
-    },
-    {
-      "name": "door"
-    },
-    {
-      "name": "welded"
-    },
-    {
-      "name": "locked"
-    }
-  ]
-}

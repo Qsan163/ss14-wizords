@@ -198,7 +198,9 @@ namespace Content.Server.Chemistry.EntitySystems
 
                 component.StorageSlotIds.Add(storageSlotId);
                 component.StorageSlots.Add(storageComponent);
-                component.StorageSlots[i].Name = "Storage Slot " + (i+1);
+                //Imperial locale fix start
+                component.StorageSlots[i].Name = "Слот для хранения " + (i+1);
+                //Imperial locale fix end
                 _itemSlotsSystem.AddItemSlot(uid, component.StorageSlotIds[i], component.StorageSlots[i]);
             }
 

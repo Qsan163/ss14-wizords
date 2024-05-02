@@ -1,3 +1,14 @@
 ent-Rack = стойка
     .desc = Стойка для хранения вещей.
     .suffix = { "" }
+ent-GlassBoxLaser = ветрина
+    .desc = Прочная витрина для дорогого экспоната.
+ent-GlassBoxLaserFilled = ветрина
+    .desc = Прочная витрина для дорогого экспоната.
+    .suffix = Заполненный
+ent-GlassBoxLaserFilledOpen = ветрина
+    .desc = Прочная витрина для дорогого экспоната.
+    .suffix = Открыт, Заполненный
+ent-GlassBoxLaserOpen = ветрина
+    .desc = Прочная витрина для дорогого экспоната.
+    .suffix = Открыт

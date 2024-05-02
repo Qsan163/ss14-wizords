@@ -7,3 +7,7 @@ ent-ReinforcementRadioSyndicateNukeops = странное радио
 ent-ReinforcementRadioSyndicateMonkey = странное радио
     .desc = Вызывает на помощь специально обученную обезьяну.
     .suffix = { "" }
+ent-ReinforcementRadioSyndicateCyborgAssault = странное радио
+    .desc = Немедленно вызовите хорошо вооруженного штурмового киборга!
+ent-ReinforcementRadioSyndicateMonkeyNukeops = странное радио
+    .desc = Вызывает на помощь специально обученную обезьяну.

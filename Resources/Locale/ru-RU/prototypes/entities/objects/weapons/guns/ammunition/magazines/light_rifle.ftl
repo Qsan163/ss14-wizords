@@ -22,3 +22,5 @@ ent-MagazineLightRifleMaxim = дисковый магазин (.30 винтов�
 ent-MagazineLightRiflePkBox = короб патронов ПК (.30 винтовочные)
     .desc = { ent-BaseMagazineLightRifle.desc }
     .suffix = { "" }
+ent-MagazineLightRifleUranium = магазин (.30 винтовочные урановые)
+    desc. BaseMagazineLightRifle

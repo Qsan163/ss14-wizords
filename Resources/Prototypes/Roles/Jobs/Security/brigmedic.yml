@@ -39,6 +39,7 @@
     ears: ClothingHeadsetBrigmedic
     mask: ClothingMaskRebreatherBrigmedic
     belt: ClothingBeltMilitaryWebbingBrigmedFilled
+    pocket1: Telebaton
   innerclothingskirt: ClothingUniformJumpskirtBrigmedicNew
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled

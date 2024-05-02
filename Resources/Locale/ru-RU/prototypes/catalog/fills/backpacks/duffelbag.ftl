@@ -64,3 +64,6 @@ ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled = медицинский 
     .desc = Все, что вам нужно, чтобы вернуть своих товарищей в бой.
 ent-ClothingBackpackDuffelSyndicateCarpSuit = красный вещмешок
     .desc = Содержит что-то странное внутри.
+ent-ClothingBackpackDuffelCBURNFilled = Cумка РХБЗЗ
+    .desc = Спортивная сумка, содержащая различные средства биологической защиты.
+    .suffix = Заполненный

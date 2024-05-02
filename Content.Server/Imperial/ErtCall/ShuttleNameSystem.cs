@@ -9,6 +9,7 @@ namespace Content.Server.ErtCall
     {
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly IPrototypeManager _prototype = default!;
+        [Dependency] private readonly MetaDataSystem _metadata = default!;
         private string[] SuffixLetters => new[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
         public override void Initialize()
         {
@@ -46,7 +47,7 @@ namespace Content.Server.ErtCall
                 }
             }
             var metadata = MetaData(uid);
-            IoCManager.Resolve<MetaDataSystem>().SetEntityName(uid, res, metadata);
+            _metadata.SetEntityName(uid, res, metadata);
         }
     }
 

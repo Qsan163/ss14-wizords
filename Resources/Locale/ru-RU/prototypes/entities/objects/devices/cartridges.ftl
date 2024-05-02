@@ -8,3 +8,7 @@ ent-NewsReadCartridge = картридж Новостей
     .desc = Программа для чтения новостей
 ent-CrewManifestCartridge = картридж Манифеста экипажа
     .desc = Программа для отображения списка членов экипажа
+ent-LogProbeCartridge = LogProbe
+    .desc = Программа для получения логов доступа с устройств
+ent-NewsReaderCartridge = картридж Новостей
+    .desc = Программа для чтения новостей
