@@ -12,7 +12,7 @@
 
 - type: entity
   id: ActionSSTBootSweep
-  name: Boot Sweep # TODO CM14 description
+  name: Boot Sweep
   components:
   - type: InstantAction
     itemIconStyle: NoItem

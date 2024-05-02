@@ -56,7 +56,7 @@
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
     #id: SyndiPDA #Todo
-    ears: ClothingHeadsetAltSyndicate
+    #ears: ClothingHeadsetAltSyndicate
     #belt: ClothingBeltGorlexWebbing
 
 - type: startingGear
@@ -96,7 +96,7 @@
     eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskCybersunWhiteBalaclava
     gloves: ClothingHandsGlovesBlackGauntlets
-    ears: ClothingHeadsetAltSyndicate
+    #ears: ClothingHeadsetAltSyndicate
     outerClothing: ClothingOuterArmorCybersun
     belt: ClothingBeltAssault #Todo
 
@@ -148,6 +148,6 @@
     eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesColorBlack
-    ears: ClothingHeadsetAltSyndicate
+    #ears: ClothingHeadsetAltSyndicate
     head: ClothingHeadHatHardhatWaffleCo
     belt: ClothingBeltUtilityEngineering
