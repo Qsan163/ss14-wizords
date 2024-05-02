@@ -422,10 +422,10 @@
   id: UplinkReinforcementRadioSyndicate
   name: uplink-reinforcement-radio-name
   description: uplink-reinforcement-radio-desc
-  productEntity: ReinforcementRadioSyndicate
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  productEntity: ReinforcementRadioSyndicateImperial #Imperial Edit
+  icon: { sprite: Imperial/SST/Communication, state: syndiephone } #Imperial Edit
   cost:
-    Telecrystal: 16
+    Telecrystal: 12 #Imperial Edit
   categories:
   - UplinkUtility
   conditions:
@@ -438,8 +438,8 @@
   id: UplinkReinforcementRadioSyndicateNukeops # Version for Nukeops that spawns an agent with the NukeOperative component.
   name: uplink-reinforcement-radio-name
   description: uplink-reinforcement-radio-desc
-  productEntity: ReinforcementRadioSyndicateNukeops
-  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
+  productEntity: ReinforcementRadioSyndicateImperialNukeOps #Imperial Edit
+  icon: { sprite: Imperial/SST/Communication, state: syndiephone } #Imperial Edit
   cost:
     Telecrystal: 16
   categories:

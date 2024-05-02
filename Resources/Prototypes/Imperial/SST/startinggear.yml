@@ -52,12 +52,12 @@
     jumpsuit: ClothingUniformJumpsuitGorlexCombat
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesCombatSST
-    id: SyndiPDA #Todo
+    #id: SyndiPDA #Todo
     ears: ClothingHeadsetAltSyndicate
-    belt: ClothingBeltGorlexWebbing
+    #belt: ClothingBeltGorlexWebbing
 
 - type: startingGear
   id: GorlexModsuitGear
@@ -93,7 +93,7 @@
     jumpsuit: ClothingUniformJumpsuitCybersun
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskCybersunWhiteBalaclava
     gloves: ClothingHandsGlovesBlackGauntlets
     ears: ClothingHeadsetAltSyndicate
@@ -106,7 +106,7 @@
     jumpsuit: ClothingUniformJumpsuitTraumaTeam
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesInterdyneRedNitrile
     ears: ClothingHeadsetAltSyndicate
@@ -120,7 +120,7 @@
     jumpsuit: ClothingUniformJumpsuitTraumaTeam
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesInterdyneRedNitrile
     ears: ClothingHeadsetAltSyndicate
@@ -133,7 +133,7 @@
     jumpsuit: ClothingUniformJumpsuitTraumaTeam
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesInterdyneRedNitrile
     outerClothing: ClothingOuterArmorInterdyneLabcoat
@@ -145,7 +145,7 @@
     jumpsuit: ClothingUniformJumpsuitWaffleCo
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsJack
-    eyes: ClothingEyesHudSyndicate
+    eyes: ClothingEyesGlassesSunglasses
     mask: ClothingMaskGorlexAdvancedGasmask
     gloves: ClothingHandsGlovesColorBlack
     ears: ClothingHeadsetAltSyndicate

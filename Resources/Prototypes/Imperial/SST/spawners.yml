@@ -6,6 +6,11 @@
     - type: Loadout
       prototype: GorlexGear
       prototypes: [GorlexGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-gorlex-reinforcement-name
+      description: ghost-role-information-syndicate-gorlex-reinforcement-description
+      rules: ghost-role-information-syndicate-gorlex-reinforcement-rules
+    - type: GhostTakeoverAvailable
 
 - type: entity
   parent: MobHumanSyndicateAgent
@@ -15,6 +20,11 @@
     - type: Loadout
       prototype: CybersunGear
       prototypes: [CybersunGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-cybersun-reinforcement-name
+      description: ghost-role-information-syndicate-cybersun-reinforcement-description
+      rules: ghost-role-information-syndicate-cybersun-reinforcement-rules
+    - type: GhostTakeoverAvailable
 
 - type: entity
   parent: MobHumanSyndicateAgent
@@ -24,6 +34,11 @@
     - type: Loadout
       prototype: InterdyneReinforcementLabcoatGear
       prototypes: [InterdyneReinforcementLabcoatGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-interdyne-reinforcement-name
+      description: ghost-role-information-syndicate-interdyne-reinforcement-description
+      rules: ghost-role-information-syndicate-interdyne-reinforcement-rules
+    - type: GhostTakeoverAvailable
 
 - type: entity
   parent: MobHumanSyndicateAgent
@@ -33,6 +48,11 @@
     - type: Loadout
       prototype: WaffleCoGear
       prototypes: [WaffleCoGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-waffleco-reinforcement-name
+      description: ghost-role-information-syndicate-waffleco-reinforcement-description
+      rules: ghost-role-information-syndicate-waffleco-reinforcement-rules
+    - type: GhostTakeoverAvailable
 
 - type: entity
   name: Filler
@@ -49,3 +69,124 @@
         - MobHumanSyndicateAgentCybersun
         - MobHumanSyndicateAgentInterdyne
         - MobHumanSyndicateAgentWaffleCo
+
+##Nukeops
+- type: entity
+  parent: MobHumanSyndicateAgentNukeops
+  id: MobHumanSyndicateAgentGorlexNukeOps
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: GorlexGear
+      prototypes: [GorlexGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-gorlex-reinforcement-name
+      description: ghost-role-information-syndicate-gorlex-reinforcement-description
+      rules: ghost-role-information-syndicate-gorlex-reinforcement-rules
+    - type: GhostTakeoverAvailable
+
+- type: entity
+  parent: MobHumanSyndicateAgentNukeops
+  id: MobHumanSyndicateAgentCybersunNukeOps
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: CybersunGear
+      prototypes: [CybersunGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-cybersun-reinforcement-name
+      description: ghost-role-information-syndicate-cybersun-reinforcement-description
+      rules: ghost-role-information-syndicate-cybersun-reinforcement-rules
+    - type: GhostTakeoverAvailable
+
+- type: entity
+  parent: MobHumanSyndicateAgentNukeops
+  id: MobHumanSyndicateAgentInterdyneNukeOps
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: InterdyneReinforcementLabcoatGear
+      prototypes: [InterdyneReinforcementLabcoatGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-interdyne-reinforcement-name
+      description: ghost-role-information-syndicate-interdyne-reinforcement-description
+      rules: ghost-role-information-syndicate-interdyne-reinforcement-rules
+    - type: GhostTakeoverAvailable
+
+- type: entity
+  parent: MobHumanSyndicateAgentNukeops
+  id: MobHumanSyndicateAgentWaffleCoNukeOps
+  suffix: Gorlex
+  components:
+    - type: Loadout
+      prototype: WaffleCoGear
+      prototypes: [WaffleCoGear]
+    - type: GhostRole
+      name: ghost-role-information-syndicate-waffleco-reinforcement-name
+      description: ghost-role-information-syndicate-waffleco-reinforcement-description
+      rules: ghost-role-information-syndicate-waffleco-reinforcement-rules
+    - type: GhostTakeoverAvailable
+
+- type: entity
+  name: Filler
+  id: SpawnReinforcementSyndieAgentsNukeOps
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - MobHumanSyndicateAgentGorlexNukeOps
+        - MobHumanSyndicateAgentCybersunNukeOps
+        - MobHumanSyndicateAgentInterdyneNukeOps
+        - MobHumanSyndicateAgentWaffleCoNukeOps
+
+- type: entity
+  parent: BaseItem
+  id: ReinforcementRadioSyndicateImperial
+  name: syndicate reinforcement radio
+  description: Call in a syndicate agent of questionable quality, instantly! Only basic equipment provided.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Communication
+    layers:
+    - state: syndiephone
+  # - type: GhostRole
+  #   name: ghost-role-information-syndicate-reinforcement-name
+  #   description: ghost-role-information-syndicate-reinforcement-description
+  #   rules: ghost-role-information-syndicate-reinforcement-rules
+  # - type: GhostRoleMobSpawner
+  #   prototype: SpawnReinforcementSyndieAgents
+  - type: SpawnItemsOnUse 
+    items:
+      - id: SpawnReinforcementSyndieAgents 
+  - type: EmitSoundOnUse
+    sound: /Audio/Effects/Emotes/parp1.ogg
+  - type: UseDelay
+    delay: 1
+
+- type: entity
+  parent: BaseItem
+  id: ReinforcementRadioSyndicateImperialNukeOps
+  name: syndicate reinforcement radio
+  description: Call in a syndicate agent of questionable quality, instantly! Only basic equipment provided.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Communication
+    layers:
+    - state: syndiephone
+  # - type: GhostRole
+  #   name: ghost-role-information-syndicate-reinforcement-name
+  #   description: ghost-role-information-syndicate-reinforcement-description
+  #   rules: ghost-role-information-syndicate-reinforcement-rules
+  # - type: GhostRoleMobSpawner
+  #   prototype: SpawnReinforcementSyndieAgents
+  - type: SpawnItemsOnUse 
+    items:
+      - id: SpawnReinforcementSyndieAgentsNukeOps
+  - type: EmitSoundOnUse
+    sound: /Audio/Effects/Emotes/parp1.ogg
+  - type: UseDelay
+    delay: 1

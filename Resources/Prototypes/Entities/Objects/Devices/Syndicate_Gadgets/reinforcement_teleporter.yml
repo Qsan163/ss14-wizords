@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: ReinforcementRadioSyndicate
+  id: ReinforcementRadioSyndicate #Outdated use ReinforcementRadioSyndicateImperial
   name: syndicate reinforcement radio
   description: Call in a syndicate agent of questionable quality, instantly! Only basic equipment provided.
   components:
@@ -21,7 +21,7 @@
 
 - type: entity
   parent: ReinforcementRadioSyndicate
-  id: ReinforcementRadioSyndicateNukeops # Reinforcement radio exclusive to nukeops uplink
+  id: ReinforcementRadioSyndicateNukeops #Outdated use ReinforcementRadioSyndicateNukeOpsImperial
   suffix: NukeOps
   components:
   - type: GhostRoleMobSpawner

@@ -195,3 +195,76 @@
     size: Normal
   - type: StaticPrice
     price: 15000
+
+- type: entity
+  name: china lake
+  parent: BaseWeaponLauncher
+  id: WeaponLauncherSisyphus
+  description: PLOOP
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/sisyphus.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: Imperial/SST/Weapons/sisyphusinhands.rsi
+    size: Normal
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 10
+    proto: GrenadeFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  name: Haarabad Rifle
+  parent: BaseWeaponRifle
+  id: WeaponRifleRavager
+  description: A firearm that is often used by the infamous nuclear operatives. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/SST/Weapons/ravager.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 4
+    minAngle: 2
+    maxAngle: 2
+    angleIncrease: 1
+    angleDecay: 16
+    projectileSpeed: 75
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMagazineRifleRavager
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - BaseMagazineRifleRavager
+  - type: Item
+    sprite: Imperial/SST/Weapons/ravagerinhands.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 6500

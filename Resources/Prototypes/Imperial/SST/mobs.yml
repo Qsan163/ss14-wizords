@@ -11,9 +11,13 @@
   - type: SSTBootSweep
     damage:
       types:
-        Blunt: 30
+        Blunt: 40
   - type: Loadout
     prototypes: [ SSTLeaderGear ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: NukeOperative
 
 - type: entity
   parent: BaseMobHuman
@@ -23,9 +27,18 @@
   - type: SST
     actionIds:
     - ActionSSTZoom 
+    - ActionSSTBootSweep
   - type: SSTZoom
+  - type: SSTBootSweep
+    damage:
+      types:
+        Blunt: 40
   - type: Loadout
     prototypes: [ SSTAssaultGear ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: NukeOperative
 
 - type: entity
   parent: BaseMobHuman
@@ -34,10 +47,19 @@
   components:
   - type: SST
     actionIds:
-    - ActionSSTZoom 
+    - ActionSSTZoom
+    - ActionSSTBootSweep
   - type: SSTZoom #add female gender later
+  - type: SSTBootSweep
+    damage:
+      types:
+        Blunt: 40
   - type: Loadout
     prototypes: [ SSTAssaultGear ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: NukeOperative
 
 - type: entity
   parent: BaseMobHuman
@@ -46,7 +68,16 @@
   components:
   - type: SST
     actionIds:
-    - ActionSSTZoom 
+    - ActionSSTZoom
+    - ActionSSTBootSweep
   - type: SSTZoom
+  - type: SSTBootSweep
+    damage:
+      types:
+        Blunt: 40
   - type: Loadout
     prototypes: [ SSTSupportGear ]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: NukeOperative

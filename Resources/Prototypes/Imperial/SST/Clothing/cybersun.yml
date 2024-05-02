@@ -10,8 +10,6 @@
     sprite: Imperial/SST/Clothing/Gloves/black_gauntlets.rsi
   - type: GloveHeatResistance
     heatResistance: 1400
-  - type: Insulated
-
 - type: entity
   parent: SyndieClothingOuterBaseLarge
   id: ClothingOuterArmorCybersun
@@ -25,9 +23,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.5
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.8
         Heat: 0.5
         Caustic: 0.35
         Stamina: 0.85

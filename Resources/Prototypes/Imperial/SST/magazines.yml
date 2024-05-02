@@ -27,7 +27,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 0
     zeroVisible: false
   - type: Appearance
 
@@ -62,7 +62,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 2
+    steps: 0
     zeroVisible: false
   - type: Appearance
 
@@ -127,3 +127,32 @@
     magState: mag
     steps: 8
     zeroVisible: false
+
+- type: entity
+  id: BaseMagazineRifleRavager  # Yeah it's weird but it's pistol caliber
+  name: Rifle magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - BaseMagazineRifleRavager
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMagnumIncendiary
+    proto: CartridgeMagnumIncendiary
+    capacity: 20
+  - type: Item
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance

@@ -6,3 +6,5 @@
   id: BaseMagazineRifleJahve
 - type: Tag
   id: BaseMagazineRifleL6Assault
+- type: Tag
+  id: BaseMagazineRifleRavager
