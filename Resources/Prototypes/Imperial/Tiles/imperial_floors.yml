@@ -175,3 +175,21 @@
     collection: FootstepTile
   itemDrop: SheetRPGlass1
   heatCapacity: 10000
+
+# Ice Floor Sheet
+
+- type: tile
+  id: IceFloorSheet
+  name: tiles-ice-sheet-floor
+  sprite: /Textures/Tiles/Planet/Snow/ice.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: true
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SnowballIce
+  friction: 0.05
+  mobFriction: 0.5
+  mobFrictionNoInput: 0.05
+  mobAcceleration: 2
+  heatCapacity: 10000

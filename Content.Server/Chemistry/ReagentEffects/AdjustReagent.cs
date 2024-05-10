@@ -1,4 +1,4 @@
-﻿using Content.Shared.Body.Prototypes;
+﻿﻿using Content.Shared.Body.Prototypes;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
@@ -51,7 +51,7 @@ namespace Content.Server.Chemistry.ReagentEffects
                     if (proto.Metabolisms != null && proto.Metabolisms.ContainsKey(Group))
                     {
                         if (amount < 0)
-                            args.Source.RemoveReagent(quant.Reagent, amount);
+                            args.Source.RemoveReagent(quant.Reagent, -amount); // Imperial Pyrotechnic: The wizards forgot to put a minus, so the groups didn`t work
                         if (amount > 0)
                             args.Source.AddReagent(quant.Reagent, amount);
                     }
