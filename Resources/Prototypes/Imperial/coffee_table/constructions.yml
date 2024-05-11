@@ -46,7 +46,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableFrame
 
 
@@ -54,7 +54,7 @@
 - type: construction
   name: wood coffee table
   id: CoffeeTableWood
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableWood
   category: construction-category-furniture
@@ -73,7 +73,7 @@
 - type: construction
   name: coffee table
   id: CoffeeTableSteel
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableSteel
   category: construction-category-furniture
@@ -92,7 +92,7 @@
 - type: construction
   name: reinforced coffee table
   id: CoffeeTableReinforced
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableReinforced
   category: construction-category-furniture
@@ -111,7 +111,7 @@
 - type: construction
   name: glass coffee table
   id: CoffeeTableGlass
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableGlass
   category: construction-category-furniture
@@ -130,7 +130,7 @@
 - type: construction
   name: plasma glass coffee table
   id: CoffeeTablePlasma
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTablePlasma
   category: construction-category-furniture
@@ -149,7 +149,7 @@
 - type: construction
   name: reinforced glass coffee table
   id: CoffeeTableReinforcedGlass
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableReinforcedGlass
   category: construction-category-furniture
@@ -168,7 +168,7 @@
 - type: construction
   name: uranium glass coffee table
   id: CoffeeTableUranium
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableUranium
   category: construction-category-furniture
@@ -187,7 +187,7 @@
 - type: construction
   name: reinforced uranium glass coffee table
   id: CoffeeTableReinforcedUranium
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableReinforcedUranium
   category: construction-category-furniture
@@ -206,7 +206,7 @@
 - type: construction
   name: reinforced plasma glass coffee table
   id: CoffeeTableReinforcedPlasma
-  graph: Table
+  graph: CoffeeTableGraph
   startNode: start
   targetNode: CoffeeTableReinforcedPlasma
   category: construction-category-furniture

@@ -17,10 +17,10 @@
 
 - type: construction
   name: стол из уранового бронестекла
-  id: TableRUraniumGlass
+  id: TableUraniumGlassReinforced
   graph: Table
   startNode: start
-  targetNode: TableRUraniumGlass
+  targetNode: TableUraniumGlassReinforced
   category: construction-category-furniture
   description: "Стильный квадратный лист уранового стекла, установленный на укреплённый каркас стола"
   icon:
@@ -34,10 +34,10 @@
 
 - type: construction
   name: стол из плазменного бронестекла
-  id: TableRPlasmaGlass
+  id: TablePlasmaGlassReinforced
   graph: Table
   startNode: start
-  targetNode: TableRPlasmaGlass
+  targetNode: TablePlasmaGlassReinforced
   category: construction-category-furniture
   description: Стильный квадратный лист плазменного стекла, установленный на укреплённый каркас стола
   icon:

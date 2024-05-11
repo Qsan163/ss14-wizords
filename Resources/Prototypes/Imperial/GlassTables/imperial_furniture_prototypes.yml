@@ -21,7 +21,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 250
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -70,7 +70,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 400
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -94,7 +94,7 @@
         acts: [ "Destruction" ]
   - type: Construction
     graph: Table
-    node: TableReinforcedGlass
+    node: TableUraniumGlassReinforced
 
 - type: entity
   id: TableReinforcedPlasmaGlass
@@ -119,7 +119,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 125
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -143,7 +143,7 @@
         acts: [ "Destruction" ]
   - type: Construction
     graph: Table
-    node: TableReinforcedGlass
+    node: TablePlasmaGlassReinforced
 
 - type: entity
   id: GoldToilet
@@ -155,7 +155,7 @@
       sprite: Imperial/GlassTables/goldToilet.rsi
       state: closed_toilet_seat_up
     - type: Construction
-      graph: GoldToilet
+      graph: GoldToiletGraph
       node: goldtoilet
     - type: StaticPrice
       price: 2000

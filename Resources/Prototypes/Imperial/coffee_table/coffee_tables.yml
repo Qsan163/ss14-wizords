@@ -51,7 +51,7 @@
         acts: [ "Destruction" ]
   - type: Climbable
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableSteel
 
 
@@ -74,7 +74,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -95,7 +95,7 @@
     tags:
     - Wooden
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableWood
 
 
@@ -134,7 +134,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableReinforced
   - type: Bonkable
     bonkDamage:
@@ -188,7 +188,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableGlass
 
 
@@ -217,7 +217,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 250
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -240,7 +240,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTablePlasma
 
 
@@ -269,7 +269,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -292,7 +292,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableReinforcedGlass
 
 
@@ -313,7 +313,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 250
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -336,7 +336,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableUranium
   - type: GlassTable
     climberDamage:
@@ -373,7 +373,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 400
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -396,7 +396,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableReinforcedUranium
 
 
@@ -425,7 +425,7 @@
     - trigger:
         !type:DamageTrigger
         damage: 125
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
@@ -448,5 +448,5 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Construction
-    graph: Table
+    graph: CoffeeTableGraph
     node: CoffeeTableReinforcedPlasma
