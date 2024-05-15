@@ -1,7 +1,7 @@
 #Golden Watermellon
 - type: entity
   id: GoldenWatermellon
-  parent: [BaseItem, ItemHeftyBase, FoodOpenableBase]
+  parent: [BaseItem, ItemHeftyBase]
   name: goldenmellon
   description: Well... you really have rich gold deposit?
   components:
@@ -9,7 +9,7 @@
     sprite: Imperial/TFG/GoldenLife/goldenWatermellon.rsi
     state: icon
   - type: Item
-    size: 60
+    size: Normal
     sprite: Imperial/TFG/GoldenLife/goldenWatermellon.rsi
   - type: DamageOnHighSpeedImpact
     damage:
@@ -68,6 +68,10 @@
   - type: Sprite
     sprite: Imperial/TFG/GoldenLife/goldenWatermellon.rsi
     state: icon-open
+  - type: Item
+    shape:
+    - 0,0,1,0
+    storedOffset: 0,-4
   - type: PhysicalComposition
     materialComposition:
       Gold: 100

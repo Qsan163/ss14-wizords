@@ -31,7 +31,7 @@
   description: A delicacy for representatives of the moth race!
   components:
   - type: Item
-    size: 2
+    size: Small
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

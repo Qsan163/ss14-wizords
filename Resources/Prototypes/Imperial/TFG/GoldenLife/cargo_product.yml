@@ -3,18 +3,20 @@
   id: PremiumAkKit
   parent: PresentableBox
   name: AK premium kit
-  description: A complete set of golden AK with three spare magazines. What you need for your personal guard.
+  description: A complete set of golden AK with four spare magazines. What you need for your personal guard.
   suffix: Cargo, Premium
   components:
   - type: Item
-    size: 80
   - type: Storage
-    capacity: 70
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,3,1
+    - 0,3,3,6
   - type: StorageFill
     contents:
-      - id: WeaponRifleGoldenAk
       - id: MagazineLightRifleGolden
-        amount: 3
+        amount: 4
+      - id: WeaponRifleGoldenAk
   - type: StaticPrice
     price: 50
 
@@ -61,7 +63,9 @@
     sprite: Imperial/TFG/GoldenLife/presentablePizzaBox.rsi
     heldPrefix: box
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorOpen: box-open
@@ -72,8 +76,6 @@
   - type: StorageFill
     contents:
     - id: FoodPizzaGolden
-    - id: PresentableRag
-    - id: GoldenKnife
 
 - type: cargoProduct
   id: GoldenPizzaKit
@@ -94,6 +96,10 @@
   suffix: Filled, Goldenmellon
   description: This is a box with golden watermelon. And it will be yours! Let everyone see HOW you rich.
   components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
   - type: StorageFill
     contents:
       - id: GoldenWatermellon
@@ -122,9 +128,11 @@
     - state: presentable
     - state: sign_imperial
   - type: Item
-    size: Small
+    size: Normal
   - type: Storage
-    capacity: 10
+    grid:
+    - 0,0,1,0
+    - 0,0,0,1
   - type: StorageFill
     contents:
       - id: WeaponPistolMk58GoldenEmpty

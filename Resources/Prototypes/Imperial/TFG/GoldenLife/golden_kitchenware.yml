@@ -65,6 +65,9 @@
     state: icon
   - type: Item
     sprite: Imperial/TFG/GoldenLife/goldenPlate.rsi
+    shape:
+    - 0,0,1,0
+    storedOffset: 0,-6
   - type: DamageOnLand
     damage:
       types:
