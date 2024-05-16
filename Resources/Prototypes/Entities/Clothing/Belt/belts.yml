@@ -173,6 +173,7 @@
         - Handcuff
         - RangedMagazine
         - Ammo
+        - Ensnaring # Imperial Space / Энерго-болы. @KAZAK1984
   - type: ItemMapper
     mapLayers:
       flashbang:
@@ -368,6 +369,7 @@
         - FlashOnTrigger
         - Flash
         - Handcuff
+        - Ensnaring # Imperial Space / Энерго-болы. @KAZAK1984
   - type: ItemMapper
     mapLayers:
       flashbang:

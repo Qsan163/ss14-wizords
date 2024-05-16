@@ -20,6 +20,14 @@
     Steel: 300
     Plastic: 300
 
+- type: latheRecipe # Imperial Space / Энерго-болы. @KAZAK1984
+  id: EnergyBola
+  result: EnergyBola
+  completetime: 2
+  materials:
+    Steel: 600
+    Plasma: 100
+
 - type: latheRecipe
   id: Truncheon
   result: Truncheon
@@ -89,7 +97,7 @@
   materials:
     Steel: 300
     Glass: 200
-    
+
 - type: latheRecipe
   id: ClothingEyesHudSecurity
   result: ClothingEyesHudSecurity
