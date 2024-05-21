@@ -18,6 +18,7 @@
     RiotShield: 2
     RiotLaserShield: 2
     RiotBulletShield: 2
+    EnergyBola: 2 # Imperial Space / Энерго-болы. @KAZAK1984
   # security officers need to follow a diet regimen!
   contrabandInventory:
     FoodDonutHomer: 12
