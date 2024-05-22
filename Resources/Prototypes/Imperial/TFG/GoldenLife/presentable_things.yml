@@ -92,7 +92,7 @@
     sprite: Imperial/TFG/GoldenLife/presentableBox.rsi
     size: Huge
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
     grid:
     - 0,0,3,2
   - type: ContainerContainer
