@@ -71,3 +71,5 @@ salvage-map-proto-RuinCargoBase = Разрушенный склад снабже
 salvage-map-proto-SecurityChunk = Кусок отдела охраны
 salvage-map-proto-EngineeringChunk = Кусок инженерного отсека
 salvage-map-proto-OutpostArm = Рукав захваченного аванпоста
+
+salvage-map-proto-Small-ship-1 = Маленький корабль
