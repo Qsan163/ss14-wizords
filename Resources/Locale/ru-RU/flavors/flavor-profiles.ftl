@@ -167,6 +167,8 @@ flavor-complex-light = как будто погас свет
 flavor-complex-profits = подобная прибыль
 flavor-complex-fishops = как ужасный фишопс
 flavor-complex-violets = как фиалки
+flavor-complex-gold-caviar = как нежный миндаль
+flavor-complex-gold-pizza = как металл с тестом, покрытый слоем денежного успеха
 
 # Drink-specific flavors.
 

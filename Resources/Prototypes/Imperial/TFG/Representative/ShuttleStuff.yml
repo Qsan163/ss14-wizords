@@ -17,10 +17,13 @@
   suffix: Filled, CentCom
   components:
   - type: Storage
-    capacity: 50
+    grid:
+    - 0,0,4,4
   - type: StorageFill
     contents:
-      - id: WinterBox
+      - id: ClothingOuterWinterCentcom
+      - id: ClothingNeckScarfStripedCentcom
+      - id: ClothingShoesBootsWinter
       - id: ClothingUniformJumpsuitCentcomOfficial
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingEyesGlassesSunglasses
@@ -38,11 +41,11 @@
     contents:
       - id: CuttleryBox
       - id: FoodPresentableTinMRECaviar
-      - id: DeliciousPresentableRag
+      - id: FoodDeliciousPresentableRag
       - id: DrinkWaterBottleFull
       - id: FoodPresentableTinMRECaviar
         prob: 0.5
-      - id: DeliciousPresentableRag
+      - id: FoodDeliciousPresentableRag
         prob: 0.5
       - id: FoodPizzaGolden
         prob: 0.3
@@ -61,8 +64,6 @@
     state: icon
   - type: Item
     sprite: Imperial/TFG/Containers/toolboxShuttle.rsi
-  - type: Storage
-    capacity: 80
   - type: StorageFill
     contents:
       - id: ClothingEyesGlassesMeson
@@ -101,7 +102,8 @@
   - type: Item
     size: Small
   - type: Storage
-    capacity: 15
+    grid:
+    - 0,0,2,1
   - type: StorageFill
     contents:
       - id: EncryptionKeyCentCom

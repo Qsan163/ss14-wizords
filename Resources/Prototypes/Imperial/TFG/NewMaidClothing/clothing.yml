@@ -11,8 +11,12 @@
   - type: Item
     size: Ginormous
   - type: Storage
-    capacity: 50
     sprite: Clothing/Belt/belt_overlay.rsi
+    maxItemSize: Ginormous
+    grid:
+    - 0,2,5,3
+    - 2,0,5,3
+    - 2,2,7,3
   - type: Appearance
 
 - type: entity
@@ -44,6 +48,9 @@
   name: janimaid headset
   description: A headset used by a maid.
   components:
+  - type: Item
+    shape:
+    - 0,0,1,0
   - type: ContainerFill
     containers:
       key_slots:
@@ -60,6 +67,9 @@
   name: maid choker
   description: A special choker for maid.
   components:
+  - type: Item
+    shape:
+    - 0,0,1,0
   - type: Sprite
     sprite: Imperial/TFG/NewMaidClothing/maidChoker.rsi
   - type: Clothing
@@ -80,7 +90,9 @@
     slots:
     - back
   - type: Item
-    size: Tiny
+    shape:
+    - 0,0,2,2
+    size: Normal
   - type: Appearance
 #///
 

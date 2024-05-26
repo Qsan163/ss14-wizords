@@ -25,7 +25,7 @@
 
 # Edible rag
 - type: entity
-  id: DeliciousPresentableRag
+  id: FoodDeliciousPresentableRag
   parent: PresentableRag
   name: delicious rag
   description: A delicacy for representatives of the moth race!
@@ -34,13 +34,6 @@
     size: Small
   - type: Food
     requiresSpecialDigestion: true
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 40
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 40
   - type: Tag
     tags:
     - ClothMade
@@ -59,8 +52,7 @@
     - state: goldenPizza
   - type: FlavorProfile
     flavors:
-      - metallic
-      - food
+      - gold-pizza
   - type: SliceableFood
     slice: FoodPizzaGoldenSlice
 
@@ -72,10 +64,71 @@
   components:
   - type: FlavorProfile
     flavors:
-      - metallic
-      - food
+      - gold-pizza
   - type: Sprite
     sprite: Imperial/TFG/GoldenLife/goldenPizza.rsi
     layers:
     - state: goldenPizzaSlice
 #Golden Pizza END
+
+#Golden Caviar
+- type: entity
+  id: FoodCaviarGolden
+  parent: FoodBase
+  name: golden caviar
+  description: Texture like edible balls of gold. Crumbly and aromatic. Brought directly from planet Earth, where it was obtained in an ancient ritual of fair hunting for albino sturgeon.
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/goldenCaviar.rsi
+    state: caviar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Item
+    sprite: Imperial/TFG/GoldenLife/goldenCaviar.rsi
+    size: Tiny
+  - type: Food
+    trash: CaviarBowlEmpty
+  - type: FlavorProfile
+    flavors:
+    - gold-caviar
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  id: CaviarBowlEmpty
+  parent: BaseItem
+  name: empty caviar bowl
+  description: This bowl from caviar is now empty. Sadly.
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: Imperial/TFG/GoldenLife/goldenCaviar.rsi
+    state: empty
+  - type: Item
+    sprite: Imperial/TFG/GoldenLife/goldenCaviar.rsi
+    size: Tiny
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Trash
+#Golden Caviar END

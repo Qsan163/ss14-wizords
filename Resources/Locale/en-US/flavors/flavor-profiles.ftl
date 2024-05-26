@@ -168,6 +168,8 @@ flavor-complex-light = like a light gone out
 flavor-complex-profits = like profits
 flavor-complex-fishops = like the dreaded fishops
 flavor-complex-violets = like violets
+flavor-complex-gold-caviar = like delicate almonds
+flavor-complex-gold-pizza = like metal with dough, covered with a layer of monetary success
 
 # Drink-specific flavors.
 
