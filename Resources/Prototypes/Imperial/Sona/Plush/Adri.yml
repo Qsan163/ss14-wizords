@@ -2,7 +2,7 @@
   parent: BasePlushieCharacter
   id: PlushieAdri
   name: Adriana Blake
-  suffix: S-o.N.A
+  suffix: COMMUNITY,TOY,S-o.N.A
   description: It smells of roses and wine. He loves humanoid synthetics, obras and witches.
   components:
   - type: Item

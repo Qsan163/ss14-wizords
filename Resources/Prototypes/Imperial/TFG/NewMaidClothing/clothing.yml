@@ -76,7 +76,7 @@
     sprite: Imperial/TFG/NewMaidClothing/maidChoker.rsi
 
 - type: entity
-  id: ClothingBackpackBackbow
+  id: ClothingBackpackMaidBackbow
   parent: BaseItem
   name: maid's back bow
   description: Cool bow for a cool maid.

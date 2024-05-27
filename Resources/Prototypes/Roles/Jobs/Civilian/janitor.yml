@@ -33,7 +33,7 @@
   id: JanitorMaidGear #NewMaidClothing mode
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanimaid
-    back: ClothingBackpackBackbow
+    back: ClothingBackpackMaidBackbow
     id: JanimaidPDA
     head: ClothingHeadHatCatEars
     ears: ClothingHeadsetJanimaid
@@ -42,5 +42,5 @@
     gloves: ClothingHandsGlovesColorWhite
     belt: ClothingBeltJanimaidFilled
   innerClothingSkirt: ClothingUniformJumpskirtJanimaid
-  satchel: ClothingBackpackBackbow
-  duffelbag: ClothingBackpackBackbow
+  satchel: ClothingBackpackMaidBackbow
+  duffelbag: ClothingBackpackMaidBackbow

@@ -1,4 +1,5 @@
 - type: entity
+  noSpawn: true
   parent: BasePlushie
   id: BasePlushieCharacter
   name: BasePlushieCharacter
@@ -8,12 +9,23 @@
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_IAA
-  - type: StaticPrice
-    price: 50
   - type: Item
-    size: Tiny
+    size: Normal
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,0,1
+  - type: UserInterface
+    interfaces:
+      - key: enum.StorageUiKey.Key
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
   - type: StaminaDamageOnHit
     damage: 8
+  - type: StaticPrice
+    price: 0
 
 - type: entity
   parent: BasePlushieCharacter
@@ -34,17 +46,6 @@
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_SO
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,3,3
-  - type: UserInterface
-    interfaces:
-      - key: enum.StorageUiKey.Key
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
 
 # Cadet, do you know how a flash device works?
 - type: entity
@@ -65,17 +66,6 @@
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_IAA
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,3,3
-  - type: UserInterface
-    interfaces:
-      - key: enum.StorageUiKey.Key
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
 
 # Chocovate
 - type: entity
@@ -97,17 +87,6 @@
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_chemist
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,3,3
-  - type: UserInterface
-    interfaces:
-      - key: enum.StorageUiKey.Key
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
 
 #Armenian Stuff. No Thrivenin here!
 - type: entity
@@ -128,17 +107,6 @@
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_CP
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,3,3
-  - type: UserInterface
-    interfaces:
-      - key: enum.StorageUiKey.Key
-        type: StorageBoundUserInterface
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
 
 #THE BEST MEDICAL BASE!!!!
 - type: entity
@@ -149,6 +117,7 @@
   - type: StorageFill
     contents:
       - id: PillThrivevin
+        amount: 2
 
 - type: entity
   parent: BasePlushieCharacter
@@ -211,7 +180,7 @@
     state: plushie_surgeon
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BasePlushie
   id: PlushieBartender
   name: Keturah Mur'r
   description: She will always pour you a drink, even if you are a zombie. Just follow the unbreakable rule - no brawls in her bar!
@@ -222,34 +191,22 @@
 
 #Bartender with a flask
 - type: entity
-  parent: PlushieBartender
+  parent: FlaskBase
   id: PlushieBartenderGift
   suffix: COMMUNITY,TOY,GIFT
   components:
   - type: Sprite
     sprite: Imperial/Toughguys
     state: plushie_bartender_full
-  - type: Drink
-    isOpen: True
-  - type: FitsInDispenser
-    solution: drink
-  - type: DrawableSolution
-    solution: drink
-  - type: RefillableSolution
-    solution: drink
-  - type: DrainableSolution
-    solution: drink
-  - type: UserInterface
-    interfaces:
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+  - type: Item
+    size: Normal
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 40
         reagents:
         - ReagentId: DoctorsDelight
-          Quantity: 20
+          Quantity: 30
         - ReagentId: Tea
           Quantity: 4
         - ReagentId: Cream
@@ -259,7 +216,7 @@
   - type: PhysicalComposition
     materialComposition:
       Cloth: 100
-      Steel: 50
+      Steel: 200
 
 - type: entity
   parent: BasePlushieCharacter

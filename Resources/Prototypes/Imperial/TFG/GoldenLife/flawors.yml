@@ -7,3 +7,8 @@
   id: gold-pizza
   flavorType: Complex
   description: flavor-complex-gold-pizza
+
+- type: flavor
+  id: shaslik
+  flavorType: Complex
+  description: flavor-complex-shaslik

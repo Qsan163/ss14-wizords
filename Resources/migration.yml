@@ -224,4 +224,6 @@ CrateBaseWeldable: CrateGenericSteel
 
 # 2024-05-27 Imperial Space TFG works
 DeliciousPresentableRag: PresentableRag
-WinterBox: BoxCardboard
+WinterBox: null
+ToughguysSpawner: ToughguysPlushieSpawner
+ClothingBackpackBackbow: ClothingBackpackMaidBackbow
