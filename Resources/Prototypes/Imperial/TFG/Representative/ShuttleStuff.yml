@@ -1,16 +1,4 @@
 - type: entity
-  id: WinterBox
-  parent: BoxCardboard
-  name: wintersuit box
-  description: A box with special insulated suit for big shot.
-  components:
-  - type: StorageFill
-    contents:
-      - id: ClothingOuterWinterCentcom
-      - id: ClothingNeckScarfStripedCentcom
-      - id: ClothingShoesBootsWinter
-
-- type: entity
   id: CCShuttleDresser
   parent: Dresser
   description: Contains the things of an big shot.
@@ -41,11 +29,11 @@
     contents:
       - id: CuttleryBox
       - id: FoodPresentableTinMRECaviar
-      - id: FoodDeliciousPresentableRag
+      - id: PresentableRag
       - id: DrinkWaterBottleFull
       - id: FoodPresentableTinMRECaviar
         prob: 0.5
-      - id: FoodDeliciousPresentableRag
+      - id: PresentableRag
         prob: 0.5
       - id: FoodPizzaGolden
         prob: 0.3
