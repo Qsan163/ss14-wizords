@@ -6,3 +6,5 @@ advertisement-ammo-5 = Поодержи либеральные ценности,
 advertisement-ammo-6 = Идеальный момент для покупок!
 advertisement-ammo-7 = Оружие не убивает людей, но вы можете!
 advertisement-ammo-8 = Кому нужны обязанности, когда есть оружие?
+advertisement-ammo-9 = Убивать людей — это весело!
+advertisement-ammo-10 = Иди, пристрели их!

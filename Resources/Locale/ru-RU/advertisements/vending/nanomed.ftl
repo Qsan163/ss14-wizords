@@ -5,3 +5,5 @@ advertisement-nanomed-4 = Натуральные химикаты!
 advertisement-nanomed-5 = Эти штуки спасают жизни.
 advertisement-nanomed-6 = Может сами примете?
 advertisement-nanomed-7 = Скорее собирайся, у нас труп, возможно криминал, пора лечить!
+advertisement-nanomed-8 = Не допускайте передозировки людей!
+advertisement-nanomed-9 = Передозируйте людей!
