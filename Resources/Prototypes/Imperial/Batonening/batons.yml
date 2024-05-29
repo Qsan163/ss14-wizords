@@ -18,7 +18,7 @@
     animation: WeaponArcSlash
   - type: Telebaton
   - type: StaminaDamageOnHit
-    damage: 22
+    damage: 27
     sound: /Audio/Imperial/Batonening/bonk-sound-effect.ogg
   - type: UseDelay
     delay: 1.0
