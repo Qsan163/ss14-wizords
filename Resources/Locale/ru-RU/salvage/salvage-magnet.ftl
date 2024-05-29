@@ -61,7 +61,7 @@ salvage-map-proto-TickColony = Колония космических клеще�
 salvage-map-proto-CargoDock = Грузовой док на астероиде
 salvage-map-proto-SpaceWaffleHome = Вафельный домик
 salvage-map-proto-MediumShuttleWreck = Разбившийся эвакуационный шаттл
-salvage-map-proto-MediumPetHospital = Медвежий госпиталь
+salvage-map-proto-mediumPetHospital = Медвежий госпиталь
 salvage-map-proto-MediumCrashedShuttle = Разбившийся шаттл
 salvage-map-proto-Meatball = Фрикаделька
 
