@@ -33,7 +33,7 @@
     back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesBrigmedic
     gloves: ClothingHandsGlovesLatex
-    eyes: ClothingEyesHudSecMedImperial
+    eyes: ClothingEyesHudMedSec
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic

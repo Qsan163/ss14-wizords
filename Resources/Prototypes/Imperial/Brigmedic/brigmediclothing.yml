@@ -32,17 +32,6 @@
       - id: EmergencyMedipen
 
 - type: entity
-  parent: ClothingEyesBase
-  id: ClothingEyesHudSecMedImperial
-  name: medsec visor #add components on private
-  description: Filler
-  components:
-  - type: Sprite
-    sprite: Imperial/brigmedic/Clothing/medsecvisor.rsi
-  - type: Clothing
-    sprite: Imperial/brigmedic/Clothing/medsecvisor.rsi
-
-- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHelmetBrigmedic
   name: SWAT helmet

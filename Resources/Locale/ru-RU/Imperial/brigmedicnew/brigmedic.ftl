@@ -1,7 +1,5 @@
 ent-ClothingHeadHelmetBrigmedic = Шлем бригмедика
     .desc = Шлем, пользующийся спросом в среде парамедиков.
-ent-ClothingEyesHudSecMedImperial = Медицино-охранный визор
-    .desc = Используется для сортировки людей в соответствии с их должностью во время врачевания. Вы зовёте это варварством, а мы - цивилизацией.
 ent-ClothingBeltMilitaryWebbingBrigmedFilled = РПС медицинского офицера
     .desc = РПС для полевых врачей. Изготовлено компаний "Ксинергия" для объектов Нанотрайзен.
 ent-ClothingBeltMilitaryWebbingBrigmed = РПС медицинского офицера
