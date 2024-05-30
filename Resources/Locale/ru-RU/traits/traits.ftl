@@ -2,7 +2,7 @@
 trait-blindness-desc = У вас ужасное зрение
 
 trait-narcolepsy-name = Нарколепсия
-trait-narcolepsy-decs = Вас одолевают приступы сонливости
+trait-narcolepsy-desc = Вас одолевают приступы сонливости
 
 trait-pacifist-name = Пацифист
 trait-pacifist-desc = Вы не можете атаковать или причинить вред живым существам.
