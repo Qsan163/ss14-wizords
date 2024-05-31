@@ -184,8 +184,8 @@ ghost-role-information-exterminator-name = Истребитель
 ghost-role-information-exterminator-description = Вас отправили в прошлое, чтобы уничтожить цель, имеющую большое значение для будущего.
 ghost-role-information-exterminator-rules = Вы антагонист и можете убить любого, кто попытается вас остановить, но убийство цели всегда является вашим главным приоритетом.
 
-ghost-role-information-mothroach-name = Мотаракан
-ghost-role-information-mothroach-description = Милая, но озорная моль
+ghost-role-information-mothroach-name = Таракамоль
+ghost-role-information-mothroach-description = Милая, но озорная моль.
 
 ghost-role-information-BreadDog-name = Собалеб
 ghost-role-information-BreadDog-description = Ты любимый ребенок повара. Ты живая хлебная собака.
@@ -201,3 +201,11 @@ ghost-role-information-Cak-rules = Вы живой съедобный сладк
 
 ghost-role-information-hellspawn-name = Адское отродье
 ghost-role-information-hellspawn-description = Вы антагонист, несущий смерть тем, кто не следует за великим богом Нар'Си.
+
+ghost-role-information-syndicate-reinforcement-name = Агент Синдиката
+ghost-role-information-syndicate-reinforcement-description = Кому-то нужно подкрепление. Вы, первый человек, которого синдикат сможет отправить, поможете им.
+ghost-role-information-syndicate-reinforcement-rules = Вы - антагонист. Работайте с теми, кто вас вызвал, и не причиняйте им вреда.
+
+ghost-role-information-syndicate-monkey-reinforcement-name = Обезьяний агент синдиката
+ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, натренированная обезьяна, поможете им.
+ghost-role-information-syndicate-monkey-reinforcement-rules = Вы - антагонист. Работайте с теми, кто вас вызвал, и не причиняйте им вреда.

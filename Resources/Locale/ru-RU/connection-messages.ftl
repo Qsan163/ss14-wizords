@@ -10,20 +10,22 @@ whitelist-playercount-invalid = {$min ->
 }
 whitelist-not-whitelisted-rp = Вас нет в вайтлисте. Чтобы попасть в вайтлист, посетите наш Discord (ссылку можно найти по адресу: нету).
 
-command-whitelistadd-description = Добавить игрока с указанным юзернеймом в вайтлист.
-command-whitelistadd-help = whitelistadd <username>
-command-whitelistadd-existing = {$username} уже в вайтлисте!
-command-whitelistadd-added = {$username} добавлен в вайтлист
-command-whitelistadd-not-found = Пользователь '{$username}' не найден
+cmd-whitelistadd-desc = Добавить игрока с указанным юзернеймом в вайтлист.
+cmd-whitelistadd-help = whitelistadd <username>
+cmd-whitelistadd-existing = {$username} уже в вайтлисте!
+cmd-whitelistadd-added = {$username} добавлен в вайтлист
+cmd-whitelistadd-not-found = Пользователь '{$username}' не найден
+cmd-whitelistadd-arg-player = [player]
 
-command-whitelistremove-description = Удалить игрока с указанным юзернеймом из вайтлиста.
-command-whitelistremove-help = whitelistremove <username>
-command-whitelistremove-existing = {$username} не в вайтлисте!
-command-whitelistremove-removed = Пользователь {$username} удалён из вайтлиста
-command-whitelistremove-not-found = Пользователь '{$username}' не найден
+cmd-whitelistremove-desc = Удалить игрока с указанным юзернеймом из вайтлиста.
+cmd-whitelistremove-help = whitelistremove <username>
+cmd-whitelistremove-existing = {$username} не в вайтлисте!
+cmd-whitelistremove-removed = Пользователь {$username} удалён из вайтлиста
+cmd-whitelistremove-not-found = Пользователь '{$username}' не найден
+cmd-whitelistremove-arg-player = [player]
 
-command-kicknonwhitelisted-description = Кикнуть с сервера всех пользователей не из вайтлиста.
-command-kicknonwhitelisted-help = kicknonwhitelisted
+cmd-kicknonwhitelisted-desc = Кикнуть с сервера всех пользователей не из вайтлиста.
+cmd-kicknonwhitelisted-help = kicknonwhitelisted
 
 ban-banned-permanent = Вы получили перманентный бан.
 ban-banned-permanent-appeal = Вы получили перманентный бан.
