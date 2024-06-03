@@ -1,0 +1,12 @@
+ent-BrutepackFelix = давящая повязка
+    .desc = Она давит и закрывает раны. Вроде как.
+    .suffix = 10 шт
+ent-Brutepack1Felix = { ent-BrutepackFelix }
+    .desc = { ent-BrutepackFelix }
+    .suffix = Одна
+ent-PackingBandage = тампонирующая повязка
+    .desc = { ent-BrutepackFelix.desc }
+    .suffix = 10 шт
+ent-Packing1Bandage = { ent-PackingBandage }
+    .desc = { ent-BrutepackFelix.desc }
+    .suffix = Одна

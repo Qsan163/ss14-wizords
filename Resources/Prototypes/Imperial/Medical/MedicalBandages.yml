@@ -1,0 +1,79 @@
+- type: entity
+  name: Giving bandage
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  parent: BaseHealingItem
+  id: BrutepackFelix
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: Imperial/Medical.rsi
+    state: brutepack_Felix
+  - type: Tag
+    tags:
+    - BrutepackFelix
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -10
+        Piercing: -8
+        Blunt: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Brutepack
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: Brutepack1Felix
+  parent: BrutepackFelix
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: Brutepack
+    count: 1
+
+- type: entity
+  name: packing bandage
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  parent: BaseHealingItem
+  id: PackingBandage
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: Imperial/Medical.rsi
+    state: packing_bandage
+  - type: Tag
+    tags:
+    - packing_bandage
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -5
+        Piercing: -15
+        Blunt: -15
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Brutepack
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: Packing1Bandage
+  parent: PackingBandage
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: Brutepack
+    count: 1
