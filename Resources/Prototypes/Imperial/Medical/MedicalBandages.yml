@@ -97,7 +97,7 @@
     damage:
       types:
         Slash: -15
-        Piercing: -15
+        Piercing: -10
         Blunt: -2
         Bloodloss: -19
     healingBeginSound:
@@ -113,6 +113,46 @@
 - type: entity
   id: Elastic1Bandage
   parent: ElasticBandage
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: Brutepack
+    count: 1
+
+- type: entity
+  name: Compression Pack
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  parent: BaseHealingItem
+  id: CompressionPack
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: Imperial/Medical.rsi
+    state: compressionPack
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -18
+        Piercing: -15
+        Blunt: -2
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Brutepack
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: Compression1Pack
+  parent: CompressionPack
   suffix: Single
   components:
   - type: Stack
