@@ -10,7 +10,7 @@
     state: brutepack_Felix
   - type: Tag
     tags:
-    - BrutepackFelix
+    - Brutepack
   - type: Healing
     damageContainers:
       - Biological
@@ -50,7 +50,7 @@
     state: packing_bandage
   - type: Tag
     tags:
-    - packing_bandage
+    - Brutepack
   - type: Healing
     damageContainers:
       - Biological
@@ -72,6 +72,47 @@
 - type: entity
   id: Packing1Bandage
   parent: PackingBandage
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: Brutepack
+    count: 1
+
+- type: entity
+  name: elastic bandage
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  parent: BaseHealingItem
+  id: ElasticBandage
+  suffix: Full
+  components:
+  - type: Sprite
+    sprite: Imperial/Medical.rsi
+    state: gauze
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -15
+        Piercing: -15
+        Blunt: -2
+        Bloodloss: -19
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Brutepack
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: Elastic1Bandage
+  parent: ElasticBandage
   suffix: Single
   components:
   - type: Stack

@@ -28,6 +28,9 @@
         {
             "name": "packing_bandage-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "gauze"
         }
     ]
 }
