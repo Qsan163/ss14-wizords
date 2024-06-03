@@ -975,7 +975,7 @@
     - key: enum.CargoPalletConsoleUiKey.Sale
       type: CargoPalletConsoleBoundUserInterface
   - type: Computer
-    board: CargoRequestComputerCircuitboard
+    board: CargoPalletComputerCircuitboard # Imperial Space
   - type: PointLight
     radius: 1.5
     energy: 1.6
