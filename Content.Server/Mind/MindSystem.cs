@@ -4,7 +4,7 @@ using Content.Server.GameTicking;
 using Content.Server.Ghost;
 using Content.Server.Mind.Commands;
 using Content.Shared.Database;
-using Content.Shared.Ghost;
+using Content.Shared.Ghost; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Players;
@@ -21,7 +21,7 @@ public sealed class MindSystem : SharedMindSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly GhostSystem _ghosts = default!;
+    [Dependency] private readonly GhostSystem _ghosts = default!; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly PvsOverrideSystem _pvsOverride = default!;
 
@@ -61,8 +61,8 @@ public sealed class MindSystem : SharedMindSystem
             && !Terminating(visiting))
         {
             TransferTo(mindId, visiting, mind: mind);
-            if (TryComp(visiting, out GhostComponent? ghostComp))
-                _ghosts.SetCanReturnToBody(ghostComp, false);
+            if (TryComp(visiting, out GhostComponent? ghostComp)) //Перенос ПР №27617 от Wizard заранее. Imperial Space 
+                _ghosts.SetCanReturnToBody(ghostComp, false); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             return;
         }
 
@@ -72,13 +72,13 @@ public sealed class MindSystem : SharedMindSystem
         if (!component.GhostOnShutdown || mind.Session == null || _gameTicker.RunLevel == GameRunLevel.PreRoundLobby)
             return;
 
-        var ghost = _ghosts.SpawnGhost((mindId, mind), uid);
-        if (ghost != null)
+        var ghost = _ghosts.SpawnGhost((mindId, mind), uid); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
+        if (ghost != null) //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             // Log these to make sure they're not causing the GameTicker round restart bugs...
             Log.Debug($"Entity \"{ToPrettyString(uid)}\" for {mind.CharacterName} was deleted, spawned \"{ToPrettyString(ghost)}\".");
-        else
+        else //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             // This should be an error, if it didn't cause tests to start erroring when they delete a player.
-            Log.Warning($"Entity \"{ToPrettyString(uid)}\" for {mind.CharacterName} was deleted, and no applicable spawn location is available.");
+            Log.Warning($"Entity \"{ToPrettyString(uid)}\" for {mind.CharacterName} was deleted, and no applicable spawn location is available."); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
     }
 
     public override bool TryGetMind(NetUserId user, [NotNullWhen(true)] out EntityUid? mindId, [NotNullWhen(true)] out MindComponent? mind)

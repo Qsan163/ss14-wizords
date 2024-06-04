@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+﻿using System.Numerics; //Перенос ПР №27617 от Wizard заранее. Imperial Space Start
 using Content.IntegrationTests.Pair;
 using Content.Shared.Ghost;
 using Content.Shared.Mind;
@@ -156,4 +156,4 @@ public sealed class GhostTests
         await data.Pair.CleanReturnAsync();
     }
 
-}
+} //Перенос ПР №27617 от Wizard заранее. Imperial Space End

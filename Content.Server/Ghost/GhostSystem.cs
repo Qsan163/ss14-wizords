@@ -19,7 +19,7 @@ using Content.Shared.Movement.Systems;
 using Content.Shared.Storage.Components;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
-using Robust.Shared.Map;
+using Robust.Shared.Map; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
@@ -43,8 +43,8 @@ namespace Content.Server.Ghost
         [Dependency] private readonly GameTicker _ticker = default!;
         [Dependency] private readonly TransformSystem _transformSystem = default!;
         [Dependency] private readonly VisibilitySystem _visibilitySystem = default!;
-        [Dependency] private readonly MetaDataSystem _metaData = default!;
-        [Dependency] private readonly IMapManager _mapManager = default!;
+        [Dependency] private readonly MetaDataSystem _metaData = default!; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
+        [Dependency] private readonly IMapManager _mapManager = default!; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 
         public override void Initialize()
         {
@@ -366,7 +366,7 @@ namespace Content.Server.Ghost
             return ghostBoo.Handled;
         }
 
-        public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityUid targetEntity,
+        public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityUid targetEntity, //Перенос ПР №27617 от Wizard заранее. Imperial Space  Start
             bool canReturn = false)
         {
             _transformSystem.TryGetMapOrGridCoordinates(targetEntity, out var spawnPosition);
@@ -417,7 +417,7 @@ namespace Content.Server.Ghost
             else
                 _minds.TransferTo(mind.Owner, ghost, mind: mind.Comp);
             Log.Debug($"Spawned ghost \"{ToPrettyString(ghost)}\" for {mind.Comp.CharacterName}.");
-            return ghost;
-        }
+            return ghost; 
+        } //Перенос ПР №27617 от Wizard заранее. Imperial Space End
     }
 }

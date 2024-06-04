@@ -274,9 +274,9 @@ namespace Content.Server.GameTicking
                 }
             }
 
-            var ghost = _ghost.SpawnGhost((mindId, mind), position, canReturn);
-            if (ghost == null)
-                return false;
+            var ghost = _ghost.SpawnGhost((mindId, mind), position, canReturn); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
+            if (ghost == null) //Перенос ПР №27617 от Wizard заранее. Imperial Space 
+                return false; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 
             if (playerEntity != null)
                 _adminLogger.Add(LogType.Mind, $"{EntityManager.ToPrettyString(playerEntity.Value):player} ghosted{(!canReturn ? " (non-returnable)" : "")}");

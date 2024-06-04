@@ -78,7 +78,7 @@ public sealed partial class MindTests
         await using var pair = await SetupPair(dirty: true);
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
-        var testMap2 = await pair.CreateTestMap();
+        var testMap2 = await pair.CreateTestMap(); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 
         var entMan = server.ResolveDependency<IServerEntityManager>();
         var mapManager = server.ResolveDependency<IMapManager>();
@@ -92,7 +92,7 @@ public sealed partial class MindTests
         MindComponent mind = default!;
         await server.WaitAssertion(() =>
         {
-            playerEnt = entMan.SpawnEntity(null, testMap.GridCoords);
+            playerEnt = entMan.SpawnEntity(null, testMap.GridCoords); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             mindId = player.ContentData()!.Mind!.Value;
             mind = entMan.GetComponent<MindComponent>(mindId);
             mindSystem.TransferTo(mindId, playerEnt);
@@ -101,20 +101,20 @@ public sealed partial class MindTests
         });
 
         await pair.RunTicksSync(5);
-        await server.WaitAssertion(() => mapManager.DeleteMap(testMap.MapId));
+        await server.WaitAssertion(() => mapManager.DeleteMap(testMap.MapId)); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
         await pair.RunTicksSync(5);
 
         await server.WaitAssertion(() =>
         {
 #pragma warning disable NUnit2045 // Interdependent assertions.
-            // Spawn ghost on the second map
+            // Spawn ghost on the second map //Перенос ПР №27617 от Wizard заранее. Imperial Space Start
             var attachedEntity = player.AttachedEntity;
             Assert.That(entMan.EntityExists(attachedEntity), Is.True);
             Assert.That(attachedEntity, Is.Not.EqualTo(playerEnt));
             Assert.That(entMan.HasComponent<GhostComponent>(attachedEntity));
             var transform = entMan.GetComponent<TransformComponent>(attachedEntity.Value);
             Assert.That(transform.MapID, Is.Not.EqualTo(MapId.Nullspace));
-            Assert.That(transform.MapID, Is.Not.EqualTo(testMap.MapId));
+            Assert.That(transform.MapID, Is.Not.EqualTo(testMap.MapId)); //Перенос ПР №27617 от Wizard заранее. Imperial Space End
 #pragma warning restore NUnit2045
         });
 
