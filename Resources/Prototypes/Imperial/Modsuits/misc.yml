@@ -43,20 +43,20 @@
       tags:
       - NukeOpsUplink
 
-- type: listing
-  id: ModsuitNukeOperativeCMDSealed
-  name: uplink-modsuitoperativecmd-name
-  description: uplink-modsuitoperativecmd-desc
-  productEntity: ClothingControlModsuitPMCSealed
-  cost:
-    Telecrystal: 70
-  categories:
-    - UplinkArmor
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+# - type: listing
+#   id: ModsuitNukeOperativeCMDSealed
+#   name: uplink-modsuitoperativecmd-name
+#   description: uplink-modsuitoperativecmd-desc
+#   productEntity: ClothingControlModsuitPMCSealed
+#   cost:
+#     Telecrystal: 70
+#   categories:
+#     - UplinkArmor
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - NukeOpsUplink
 
 - type: entity
   id: RandomModsuitCrate
