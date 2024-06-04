@@ -95,7 +95,7 @@ public sealed partial class AnomalySynchronizerSystem : EntitySystem
             {
                 TryAttachNearbyAnomaly(ent, user);
             },
-            Message = Loc.GetString("anomaly-sync-connect-verb-message", ("machine", ent)),
+            Message = Loc.GetString("anomaly-sync-connect-verb-message", ("machine", args.Target)), // a bit fix from Imperial Space
             Text = Loc.GetString("anomaly-sync-connect-verb-text"),
         });
     }
