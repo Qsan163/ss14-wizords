@@ -1,5 +1,6 @@
 ﻿#nullable enable
 using System.Linq;
+using Content.IntegrationTests.Pair; //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 using Content.Server.Ghost.Roles;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Players;
@@ -26,7 +27,7 @@ public sealed class GhostRoleTests
 ";
 
     /// <summary>
-    /// This is a simple test that just checks if a player can take a ghost roll and then regain control of their
+    /// This is a simple test that just checks if a player can take a ghost role and then regain control of their
     /// original entity without encountering errors.
     /// </summary>
     [Test]
@@ -34,11 +35,14 @@ public sealed class GhostRoleTests
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
         {
+            Dirty = true, //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             DummyTicker = false,
             Connected = true
         });
         var server = pair.Server;
         var client = pair.Client;
+
+        var mapData = await pair.CreateTestMap(); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 
         var entMan = server.ResolveDependency<IEntityManager>();
         var sPlayerMan = server.ResolveDependency<Robust.Server.Player.IPlayerManager>();
@@ -51,7 +55,7 @@ public sealed class GhostRoleTests
         EntityUid originalMob = default;
         await server.WaitPost(() =>
         {
-            originalMob = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
+            originalMob = entMan.SpawnEntity(null, mapData.GridCoords); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
             mindSystem.TransferTo(originalMindId, originalMob, true);
         });
 
@@ -59,7 +63,7 @@ public sealed class GhostRoleTests
         await pair.RunTicksSync(10);
         Assert.That(session.AttachedEntity, Is.EqualTo(originalMob));
         var originalMind = entMan.GetComponent<MindComponent>(originalMindId);
-        Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob));
+        Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob)); 
         Assert.That(originalMind.VisitingEntity, Is.Null);
 
         // Use the ghost command
@@ -69,12 +73,12 @@ public sealed class GhostRoleTests
         Assert.That(entMan.HasComponent<GhostComponent>(ghost));
         Assert.That(ghost, Is.Not.EqualTo(originalMob));
         Assert.That(session.ContentData()?.Mind, Is.EqualTo(originalMindId));
-        Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob));
+        Assert.That(originalMind.OwnedEntity, Is.EqualTo(originalMob), $"Original mob: {originalMob}, Ghost: {ghost}"); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
         Assert.That(originalMind.VisitingEntity, Is.EqualTo(ghost));
 
         // Spawn ghost takeover entity.
         EntityUid ghostRole = default;
-        await server.WaitPost(() => ghostRole = entMan.SpawnEntity("GhostRoleTestEntity", MapCoordinates.Nullspace));
+        await server.WaitPost(() => ghostRole = entMan.SpawnEntity("GhostRoleTestEntity", mapData.GridCoords)); //Перенос ПР №27617 от Wizard заранее. Imperial Space 
 
         // Take the ghost role
         await server.WaitPost(() =>

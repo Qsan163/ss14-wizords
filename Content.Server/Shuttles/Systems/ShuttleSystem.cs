@@ -1,3 +1,4 @@
+using Content.Server.Administration.Logs; //Moved on PR #27114 Wizard Заранее Imperial Space 
 using Content.Server.Body.Systems;
 using Content.Server.Doors.Systems;
 using Content.Server.Parallax;
@@ -47,6 +48,7 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly ThrusterSystem _thruster = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private readonly IAdminLogManager _logger = default!; //Moved on PR #27114 Wizard Заранее Imperial Space 
 
     public const float TileMassMultiplier = 0.5f;
 
