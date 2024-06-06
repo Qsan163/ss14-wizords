@@ -6,6 +6,8 @@ using Content.Server.Shuttles.Events;
 using Content.Server.Station.Events;
 using Content.Shared.Body.Components;
 using Content.Shared.Buckle.Components;
+using Content.Shared.Doors.Components; // Скорее всего будет убрано в будущих ПР'ах. На актуальной версии данной системы нет
+using Content.Shared.Database; //Moved on PR #27114 Wizard Заранее Imperial Space
 using Content.Shared.Ghost;
 using Content.Shared.Maps;
 using Content.Shared.Parallax;
@@ -859,6 +861,8 @@ public sealed partial class ShuttleSystem
 
                 if (_bodyQuery.TryGetComponent(ent, out var mob))
                 {
+                    _logger.Add(LogType.Gib, LogImpact.Extreme, $"{ToPrettyString(ent):player} got gibbed by the shuttle" + //Moved on PR #27114 Wizard Заранее Imperial Space
+                                                                $" {ToPrettyString(uid)} arriving from FTL at {xform.Coordinates:coordinates}"); //Moved on PR #27114 Wizard Заранее Imperial Space
                     var gibs = _bobby.GibBody(ent, body: mob);
                     _immuneEnts.UnionWith(gibs);
                     continue;

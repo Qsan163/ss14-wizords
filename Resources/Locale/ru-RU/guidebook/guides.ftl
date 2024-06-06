@@ -32,6 +32,7 @@ guide-entry-medicaldoctor = Врач
 guide-entry-chemist = Химик
 guide-entry-medicine = Медицина
 guide-entry-botanicals = Ботаника
+guide-entry-brute = Продвинутые химикаты
 guide-entry-cloning = Клонирование
 guide-entry-cryogenics = Криогеника
 guide-entry-science = Наука
