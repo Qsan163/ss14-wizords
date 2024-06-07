@@ -143,6 +143,8 @@
         amount: 4
       - id: MagazineLightRifleBox
         amount: 2
+      - id: MagazineLightRifle #Imperial balance
+        amount: 4 #Imperial Balance
 
 - type: entity
   parent: ClothingBackpackDuffel
