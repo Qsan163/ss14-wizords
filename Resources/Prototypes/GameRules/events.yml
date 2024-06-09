@@ -219,6 +219,8 @@
     specialEntries:
     - id: SpawnPointGhostRatKing
       prob: 0.005
+    - id: SpawnPointGhostSpaceQueen
+      prob: 0.005      
 
 - type: entity
   id: CockroachMigration
