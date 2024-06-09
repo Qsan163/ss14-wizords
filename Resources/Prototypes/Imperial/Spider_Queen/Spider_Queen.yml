@@ -1,4 +1,23 @@
 ﻿- type: entity
+  id: SpiderMigration
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/aliens.ogg
+    startDelay: 10
+    earliestStart: 30
+    minimumPlayers: 35
+    weight: 5
+    duration: 50
+  - type: VentCrittersRule
+    entries:
+    - id: SpawnPointGhostSpaceQueen 
+      prob: 0.005      
+
+- type: entity
   id: SpawnPointGhostSpaceQueen 
   name: спавнер роли королевы-пауков 
   suffix: паук-королева
@@ -1377,14 +1396,3 @@
   - type: Construction
     graph: WebStructures
     node: wall
-
-
-
-
-
-
-
-
-
-
-
