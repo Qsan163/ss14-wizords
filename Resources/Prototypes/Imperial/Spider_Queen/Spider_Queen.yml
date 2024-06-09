@@ -4,9 +4,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/aliens.ogg
     startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
@@ -102,7 +99,7 @@
       types:
         Piercing: 25 #Damage
         Poison: 5
-        Structural: 80
+        Structural: 15
   - type: SolutionContainerManager
     solutions:
       melee:
@@ -284,7 +281,7 @@
     damage:
       types:
         Piercing: 5 #Damage
-        Structural: 15
+        Structural: 10
   - type: SolutionContainerManager #Iad
     solutions:
       melee:
@@ -350,7 +347,7 @@
     damage:
       types:
         Piercing: 15 
-        Structural: 20
+        Structural: 15
   - type: SolutionContainerManager 
     solutions:
       melee:
@@ -415,7 +412,7 @@
       types:
         Piercing: 3 
         Poison: 4
-        Structural: 15
+        Structural: 10
   - type: SolutionContainerManager 
     solutions:
       melee:
@@ -495,7 +492,7 @@
       types:
         Poison: 5
         Piercing: 2
-        Structural: 10 
+        Structural: 5 
   - type: SolutionContainerManager 
     solutions:
       melee:

@@ -218,8 +218,8 @@
       prob: 0.02
     specialEntries:
     - id: SpawnPointGhostRatKing
-      prob: 0.005
- 
+      prob: 0.005      
+
 - type: entity
   id: CockroachMigration
   parent: BaseGameRule
