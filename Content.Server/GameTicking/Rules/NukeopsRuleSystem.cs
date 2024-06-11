@@ -217,7 +217,9 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         //         : Loc.GetString("nukeops-list-name", ("name", Name(nukeopsUid))));
         // }
 
-        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) => // Imperial Space Start
+        // Imperial Space nukeops-manifest-fix Start
+
+        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) =>
         {
             if (!_mind.TryGetMind(uid, out _, out var mind, container)) return;
 
@@ -237,7 +239,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         }
 
         do displayNukeopsToManifest(nukeopsUid, mindContainer);
-        while (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer)); // Imperial Space End
+        while (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer));
+        // Imperial Space nukeops-manifest-fix End
     }
 
     private void OnNukeExploded(NukeExplodedEvent ev)
