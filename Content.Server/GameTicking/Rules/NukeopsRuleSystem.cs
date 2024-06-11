@@ -217,8 +217,8 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         //         : Loc.GetString("nukeops-list-name", ("name", Name(nukeopsUid))));
         // }
 
-        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) =>
-        { // Imperial Space Start
+        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) => // Imperial Space Start
+        {
             if (!_mind.TryGetMind(uid, out _, out var mind, container)) return;
 
             ev.AddLine(mind.Session != null
