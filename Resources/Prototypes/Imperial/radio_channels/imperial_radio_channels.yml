@@ -379,3 +379,178 @@
   - type: Sprite
     sprite: Objects/Devices/imperial_encryption_keys.rsi
     netsync: false
+
+- type: radioChannel
+  id: Cadet
+  name: Cadets
+  keycode: 'w'
+  frequency: 1084
+  color: "#CDC7BD"
+  longRange: true
+
+- type: radioChannel
+  id: SGT
+  name: Sergaunts
+  keycode: 'e'
+  frequency: 1085
+  color: "#85AA5E"
+  longRange: true
+
+- type: radioChannel
+  id: OFC
+  name: Officers
+  keycode: 'r'
+  frequency: 1086
+  color: "#B8CDE8"
+  longRange: true
+
+- type: radioChannel
+  id: CMD
+  name: Command
+  keycode: 't'
+  frequency: 1087
+  color: "#FF4343"
+  longRange: true
+
+- type: radioChannel
+  id: Piloting
+  name: Piloting
+  keycode: 'y'
+  frequency: 1088
+  color: "#6F727B"
+  longRange: true
+
+- type: radioChannel
+  id: ENG
+  name: Engineer
+  keycode: 'u'
+  frequency: 1089
+  color: "#F69400"
+  longRange: true
+
+- type: radioChannel
+  id: SEC
+  name: SEC
+  keycode: 'i'
+  frequency: 1071
+  color: "#611701"
+  longRange: true
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioCadet
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - Cadet
+    defaultChannel: Cadet
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.Cadet-radio
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.Cadet-radio
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioSGT
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - SGT
+    defaultChannel: SGT
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.SGT-radio
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.SGT-Radio
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioOFC
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - OFC
+    defaultChannel: OFC
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.OFC-radio
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.OFC-Radio
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioCMD
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - CMD
+    defaultChannel: CMD
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.CMD-Radio
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.CMD-Radio
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioPiloting
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - Piloting
+    defaultChannel: Piloting
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.piloting
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.piloting
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioENG
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - ENG
+    defaultChannel: ENG
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.engineer
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.engineer
+
+- type: entity
+  parent: EncryptionKeyCustomBase
+  id: EncryptionKeyRadioSEC
+  name: encryption key
+  description: An encryption key
+  components:
+  - type: EncryptionKey
+    channels:
+    - SEC
+    defaultChannel: SEC
+  - type: Item
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.security
+  - type: Sprite
+    sprite: Imperial/Imperial_encryption_keys.rsi
+    state: card.security
