@@ -37,6 +37,7 @@ using Content.Shared.Roles;
 using Content.Shared.Store;
 using Content.Shared.Tag;
 using Content.Shared.Zombies;
+using FastAccessors;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Map;
@@ -203,18 +204,26 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             }
         }
 
-        ev.AddLine(Loc.GetString("nukeops-list-start"));
-
-        var nukiesQuery = EntityQueryEnumerator<NukeopsRoleComponent, MindContainerComponent>();
-        while (nukiesQuery.MoveNext(out var nukeopsUid, out _, out var mindContainer))
-        {
-            if (!_mind.TryGetMind(nukeopsUid, out _, out var mind, mindContainer))
-                continue;
+        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) => {
+            if (!_mind.TryGetMind(uid, out _, out var mind, container)) return;
 
             ev.AddLine(mind.Session != null
-                ? Loc.GetString("nukeops-list-name-user", ("name", Name(nukeopsUid)), ("user", mind.Session.Name))
-                : Loc.GetString("nukeops-list-name", ("name", Name(nukeopsUid))));
+                ? Loc.GetString("nukeops-list-name-user", ("name", Name(uid)), ("user", mind.Session.Name))
+                : Loc.GetString("nukeops-list-name", ("name", Name(uid))));
+        };
+
+        var nukiesQuery = EntityQueryEnumerator<NukeopsRoleComponent, MindContainerComponent>();
+        EntityUid nukeopsUid;
+        MindContainerComponent? mindContainer;
+
+        if (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer))
+        {
+            ev.AddLine(Loc.GetString("nukeops-list-start"));
+            displayNukeopsToManifest(nukeopsUid, mindContainer);
         }
+
+        do displayNukeopsToManifest(nukeopsUid, mindContainer);
+        while (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer));
     }
 
     private void OnNukeExploded(NukeExplodedEvent ev)
