@@ -24,6 +24,7 @@
   access:
   - Security
   - Brig
+  - Detective
   - Maintenance
   - Service
   - External
