@@ -204,7 +204,21 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             }
         }
 
-        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) => {
+        // ev.AddLine(Loc.GetString("nukeops-list-start"));
+
+        // var nukiesQuery = EntityQueryEnumerator<NukeopsRoleComponent, MindContainerComponent>();
+        // while (nukiesQuery.MoveNext(out var nukeopsUid, out _, out var mindContainer))
+        // {
+        //     if (!_mind.TryGetMind(nukeopsUid, out _, out var mind, mindContainer))
+        //         continue;
+
+        //     ev.AddLine(mind.Session != null
+        //         ? Loc.GetString("nukeops-list-name-user", ("name", Name(nukeopsUid)), ("user", mind.Session.Name))
+        //         : Loc.GetString("nukeops-list-name", ("name", Name(nukeopsUid))));
+        // }
+
+        Action<EntityUid, MindContainerComponent?> displayNukeopsToManifest = (uid, container) =>
+        { // Imperial Space Start
             if (!_mind.TryGetMind(uid, out _, out var mind, container)) return;
 
             ev.AddLine(mind.Session != null
@@ -223,7 +237,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         }
 
         do displayNukeopsToManifest(nukeopsUid, mindContainer);
-        while (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer));
+        while (nukiesQuery.MoveNext(out nukeopsUid, out _, out mindContainer)); // Imperial Space End
     }
 
     private void OnNukeExploded(NukeExplodedEvent ev)
