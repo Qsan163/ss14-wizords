@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBrigmedic
+  name: brigmedic satchel
+  description: A sterile satchel for medical related needs.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/brigmedic.rsi
