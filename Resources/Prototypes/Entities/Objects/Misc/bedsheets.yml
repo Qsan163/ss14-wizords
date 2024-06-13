@@ -281,17 +281,6 @@
     stealGroup: HeadBedsheet
 
 - type: entity
-  id: BedsheetBrigmedic
-  parent: BedsheetBase
-  name: brigmedic's bedsheet
-  description: Not worse than cotton.
-  components:
-  - type: Sprite
-    state: sheetbrigmedic
-  - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/brigmedic.rsi
-
-- type: entity
   id: BedsheetRed
   parent: BedsheetBase
   name: red bedsheet

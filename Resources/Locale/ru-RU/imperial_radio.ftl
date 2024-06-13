@@ -62,3 +62,39 @@ chat-radio-7 = 7
 chat-radio-8 = 8
 chat-radio-9 = 9
 chat-radio-10 = 10
+
+ent-EncryptionKeyRadioCadet = Ключ шифрования Рядовые
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioSGT = Ключ шифрования Сержанты
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioOFC = Ключ шифрования Офицеры
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioCMD = Ключ шифрования Командование
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioPilots = Ключ шифрования Пилоты
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioENG = Ключ шифрования Инженеры
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+ent-EncryptionKeyRadioSEC = Ключ шифрования Гарнизон
+    .desc = Отдельный канал связи.
+    .suffix = Кастомный ключ, Felix
+
+Cadets = Кадеты
+Sergaunts = Сержанты
+Officers = Офицеры
+Command = Командование
+Piloting = Пилоты
+Engineer = Инженеры
+SEC = Гарнизон

@@ -3,10 +3,10 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateAKMS
   name: AKMS bundle
-  description: "Old faithful: The classic AKMS, bundled with four magazines." 
+  description: "Old faithful: The classic AKMS, bundled with four magazines."
   components:
   - type: StorageFill
     contents:
       - id: WeaponRifleAk
       - id: MagazineLightRifle
-        amount: 3
+        amount: 2

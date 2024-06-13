@@ -1,0 +1,9 @@
+- type: entity
+  id: SpawnPointBrigmedic
+  parent: SpawnPointJobBase
+  name: brigmedic
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: brigmedic

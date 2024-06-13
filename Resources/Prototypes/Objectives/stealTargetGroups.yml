@@ -387,32 +387,11 @@
     state: fox
 
 - type: stealTargetGroup
-  id: AnimalHamlet
-  name: Гамлет (Удачи)
-  sprite:
-    sprite: Mobs/Pets/hamlet.rsi
-    state: hamster-0
-
-- type: stealTargetGroup
   id: AnimalShiva
   name: Шива
   sprite:
     sprite: Mobs/Pets/shiva.rsi
     state: shiva
-
-- type: stealTargetGroup
-  id: AnimalSmile
-  name: Смайл
-  sprite:
-    sprite: Mobs/Aliens/slimes.rsi
-    state: rainbow_baby_slime
-
-- type: stealTargetGroup
-  id: AnimalPunPun
-  name: Пун Пун
-  sprite:
-    sprite: Mobs/Animals/monkey.rsi
-    state: monkey
 
 - type: stealTargetGroup
   id: AnimalTropico
