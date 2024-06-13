@@ -104,6 +104,9 @@ spider-spawn-wall2 = Создать стену
 
 spider-spawn-wall3 = Создать прочную стену
 
+ent-ActionSpiderWeb = Пустить паутину
+    .desc = Создаёт паутину, которая замедляет вашу добычу. 
+
 
 spider-spawn-smallspider = Выпустить паучат
 spider-spawn-smallspider-desc = Выпускает трёх маленьких пауков, которые атакуют вашу добычу. Пауки исчезают через 20 секунд.
@@ -114,4 +117,5 @@ spider-spawn-web-hunt = Пустить паутину охотника
 spider-spawn-web-queen = Пустить королевскую паутину
 spider-spawn-web-clown = Пустить клоунскую паутину
 spider-spawn-web-desc = Создаёт паутину, которая замедляет вашу добычу.
+
 action-speech-spell-spider = Кссс...!?? 
