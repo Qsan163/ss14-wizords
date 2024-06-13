@@ -114,3 +114,4 @@ spider-spawn-web-hunt = Пустить паутину охотника
 spider-spawn-web-queen = Пустить королевскую паутину
 spider-spawn-web-clown = Пустить клоунскую паутину
 spider-spawn-web-desc = Создаёт паутину, которая замедляет вашу добычу.
+action-speech-spell-spider = Кссс...!?? 

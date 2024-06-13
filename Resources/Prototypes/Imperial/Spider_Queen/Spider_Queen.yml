@@ -109,8 +109,6 @@
   - type: MeleeChemicalInjector
     solution: melee
     transferAmount: 3
-  - type: ReplacementAccent
-    accent: xeno
   - type: InteractionPopup
     successChance: 0.20
     interactSuccessString: petting-success-tarantula
@@ -232,6 +230,7 @@
   - type: MovementSpeedModifier 
     baseWalkSpeed : 4
     baseSprintSpeed : 4
+  - type: LizardAccent    
 
 - type: entity
   name: spider guard
@@ -298,6 +297,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.9
     baseSprintSpeed : 3.9
+  - type: ReplacementAccent
+    accent: xeno   
 
 - type: entity
   name: spider hunt
@@ -362,7 +363,9 @@
   - type: AutoImplant
     implants:
     - LightImplantSpiderSpiderHunter
-
+  - type: ReplacementAccent
+    accent: xeno
+    
 - type: entity
   name: spider ghost
   id: MobSpiderSpaceGhost
@@ -442,7 +445,9 @@
   - type: AutoImplant
     implants:
     - LightImplantSpiderSpiderHunter
-
+  - type: ReplacementAccent
+    accent: xeno
+    
 - type: entity
   name: spider shooter
   id: MobSpiderSpaceShooter
@@ -518,7 +523,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.7
     baseSprintSpeed : 3.7
-
+  - type: ReplacementAccent
+    accent: xeno
 
 - type: entity
   id: PoisonousAcid 
@@ -595,7 +601,9 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 4
     baseSprintSpeed : 4
-
+  - type: ReplacementAccent
+    accent: xeno
+    
 #Implants
 - type: entity
   parent: BaseSubdermalImplant 
@@ -741,7 +749,7 @@
       - id: SpiderEggDrone
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderHunter 
@@ -760,7 +768,7 @@
       - id: SpiderEggHunter
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderGhost
@@ -779,7 +787,7 @@
       - id: SpiderEggGhost
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderShooter 
@@ -798,7 +806,7 @@
       - id: SpiderEggShooter
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderCrystal 
@@ -818,7 +826,7 @@
       - id: CrystalBlue
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderLittle 
@@ -838,7 +846,7 @@
       - id: MobSpiderSpaceLittle
         amount: 3
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderWallWeb 
@@ -863,7 +871,7 @@
         useDelay: 25
       offset: 0, 1
       doAfter: 5
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderWallWeb2 
@@ -888,7 +896,7 @@
         useDelay: 25
       offset: 0, 1
       doAfter: 5
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderSpiderWeb 
@@ -908,7 +916,7 @@
       - id: SpiderWebUsual
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderSpiderWebHunter 
@@ -928,7 +936,7 @@
       - id: SpiderWeb
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderSpiderWebQueen 
@@ -948,7 +956,7 @@
       - id: SpiderWebQueen
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 - type: entity
   id: ActionSpawnMagicarpSpellSpiderSpiderWebClown 
@@ -968,7 +976,7 @@
       - id: SpiderWebClown
         amount: 1
       offset: 0, 1
-      speech: Shhh...!??
+      speech: action-speech-spell-spider
 
 #Egg
 - type: entity
