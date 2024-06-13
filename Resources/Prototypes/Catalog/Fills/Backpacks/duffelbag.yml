@@ -143,6 +143,8 @@
         amount: 4
       - id: MagazineLightRifleBox
         amount: 2
+      - id: MagazineLightRifle #Imperial balance
+        amount: 4 #Imperial Balance
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -247,6 +249,7 @@
         - id: ClothingEyesChameleon
         - id: ClothingHeadsetChameleon
         - id: ClothingShoesChameleon
+        - id: BarberScissors
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

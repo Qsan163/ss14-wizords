@@ -98,7 +98,7 @@
 - type: reaction
   id: Ketopiride
   impact: High
-  minTemp: 754
+  minTemp: 510
   reactants:
     Plasma:
       amount: 3

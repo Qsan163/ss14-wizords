@@ -104,6 +104,18 @@
   name: "Crashed Shuttle"
   mapPath: /Maps/Salvage/medium-crashed-shuttle.yml
 
+- type: salvageMap
+  id: Meatball
+  mapPath: /Maps/Salvage/meatball.yml
+
+- type: salvageMap
+  id: VeganMeatball
+  mapPath: /Maps/Salvage/vegan-meatball.yml
+
+- type: salvageMap
+  id: MediumHaulingShuttleWreck
+  mapPath: /Maps/Salvage/hauling-shuttle.yml
+
 # """Large""" maps
 
 - type: salvageMap

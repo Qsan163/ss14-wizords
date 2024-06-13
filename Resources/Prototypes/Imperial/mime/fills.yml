@@ -13,6 +13,11 @@
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE
+  #Imperial emergency box size
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
 
 - type: entity
   name: Mime box

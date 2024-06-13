@@ -14,11 +14,12 @@
     - /Audio/Lobby/pwmur.ogg
     - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
     - /Audio/Lobby/every_light_is_blinking_at_once.ogg
-    - /Audio/Lobby/atomicamnesiammx.ogg 
-    - /Audio/Lobby/gneiss_bluespace.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_codebrain.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_downtown.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_exploring.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_metropolis.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_phoron_industry.ogg ## Imperial Space
-    - /Audio/Lobby/gneiss_quantums_escape_plan.ogg ## Imperial Space
+    - /Audio/Lobby/atomicamnesiammx.ogg
+    - /Audio/Imperial/LobbyMusic/gneiss_bluespace.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_codebrain.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_downtown.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_exploring.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_metropolis.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_phoron_industry.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_phoron_leak.ogg #Imperial music
+    - /Audio/Imperial/LobbyMusic/gneiss_quantums_escape_plan.ogg #Imperial music
