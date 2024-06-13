@@ -421,7 +421,7 @@
       melee:
         reagents:
         - ReagentId: ChloralHydrate
-          Quantity: 35
+          Quantity: 20
   - type: Stealth 
   - type: StealthOnMove
     passiveVisibilityRate: -0.37
