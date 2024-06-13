@@ -42,7 +42,6 @@ public sealed class RCDSystem : EntitySystem
 
     // Imperial Space RCD-fix Dependency Start
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
-    [Dependency] private readonly IEntityManager _entities = default!;
     // Imperial Space RCD-fix Dependency End
 
     private readonly int RcdModeCount = Enum.GetValues(typeof(RcdMode)).Length;
@@ -144,7 +143,7 @@ public sealed class RCDSystem : EntitySystem
 
         ImperialSpaceRCDFix(uid, args, tile); // Imperial Space RCD-fix
 
-        if (!IsRCDStillValid(uid, comp, args.Event.User, args.Event.Target, mapGrid, tile, args.Event.StartingMode, location)) // Imperial Space RCD-fix
+        if (!IsRCDStillValid(uid, comp, args.Event.User, args.Event.Target, mapGrid, tile, args.Event.StartingMode))
             args.Cancel();
     }
 
@@ -229,7 +228,7 @@ public sealed class RCDSystem : EntitySystem
         args.Handled = true;
     }
 
-    private bool IsRCDStillValid(EntityUid uid, RCDComponent comp, EntityUid user, EntityUid? target, MapGridComponent mapGrid, TileRef tile, RcdMode startingMode, EntityCoordinates location) // Imperial Space RCD-fix
+    private bool IsRCDStillValid(EntityUid uid, RCDComponent comp, EntityUid user, EntityUid? target, MapGridComponent mapGrid, TileRef tile, RcdMode startingMode)
     {
         //Less expensive checks first. Failing those ones, we need to check that the tile isn't obstructed.
         if (comp.Mode != startingMode)
