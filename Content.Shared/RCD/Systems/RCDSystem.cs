@@ -1,6 +1,7 @@
 using Content.Shared.Administration.Logs;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
+using Content.Shared.Coordinates;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
@@ -38,6 +39,11 @@ public sealed class RCDSystem : EntitySystem
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
+
+    // Imperial Space RCD-fix Dependency Start
+    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly IEntityManager _entities = default!;
+    // Imperial Space RCD-fix Dependency End
 
     private readonly int RcdModeCount = Enum.GetValues(typeof(RcdMode)).Length;
 
@@ -136,7 +142,9 @@ public sealed class RCDSystem : EntitySystem
         var mapGrid = _mapMan.GetGrid(gridId.Value);
         var tile = mapGrid.GetTileRef(location);
 
-        if (!IsRCDStillValid(uid, comp, args.Event.User, args.Event.Target, mapGrid, tile, args.Event.StartingMode))
+        ImperialSpaceRCDFix(uid, args, tile); // Imperial Space RCD-fix
+
+        if (!IsRCDStillValid(uid, comp, args.Event.User, args.Event.Target, mapGrid, tile, args.Event.StartingMode, location)) // Imperial Space RCD-fix
             args.Cancel();
     }
 
@@ -221,7 +229,7 @@ public sealed class RCDSystem : EntitySystem
         args.Handled = true;
     }
 
-    private bool IsRCDStillValid(EntityUid uid, RCDComponent comp, EntityUid user, EntityUid? target, MapGridComponent mapGrid, TileRef tile, RcdMode startingMode)
+    private bool IsRCDStillValid(EntityUid uid, RCDComponent comp, EntityUid user, EntityUid? target, MapGridComponent mapGrid, TileRef tile, RcdMode startingMode, EntityCoordinates location) // Imperial Space RCD-fix
     {
         //Less expensive checks first. Failing those ones, we need to check that the tile isn't obstructed.
         if (comp.Mode != startingMode)
@@ -259,6 +267,7 @@ public sealed class RCDSystem : EntitySystem
                         _popup.PopupClient(Loc.GetString("rcd-component-tile-obstructed-message"), uid, user);
                         return false;
                     }
+
                     // the turf can't be destroyed (planet probably)
                     var tileDef = (ContentTileDefinition) _tileDefMan[tile.Tile.TypeId];
                     if (tileDef.Indestructible)
@@ -323,6 +332,21 @@ public sealed class RCDSystem : EntitySystem
     {
         return _turf.IsTileBlocked(tile, CollisionGroup.MobMask);
     }
+
+
+    // Imperial Space RCD-fix Start
+    private void ImperialSpaceRCDFix(EntityUid uid, DoAfterAttemptEvent<RCDDoAfterEvent> args, TileRef tile)
+    {
+        var userLocation = _transformSystem.GetGridOrMapTilePosition(args.Event.User);
+        if (
+            Math.Abs(tile.X - userLocation.X) < 2 &&
+            Math.Abs(tile.Y - userLocation.Y) < 2
+        ) return;
+
+        _popup.PopupClient(Loc.GetString("crayon-interact-invalid-location"), uid, args.Event.User);
+        args.Cancel();
+    }
+    // Imperial Space RCD-fix End
 }
 
 [Serializable, NetSerializable]
