@@ -527,18 +527,18 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5 #Imperial Balance
-        Slash: 0.5 #Imperial Balance
+        Blunt: 0.6 #Imperial Balance
+        Slash: 0.6 #Imperial Balance
         Piercing: 0.4 #Imperial Balance
-        Heat: 0.2
-        Radiation: 0.2 #Imperial Balance
+        Heat: 0.3 #Imperial Balance
+        Radiation: 0.3 #Imperial Balance
         Caustic: 0.5
         Stamina: 0.5 ## Stamina resistance
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+    walkModifier: 0.9 #Imperial Balance
+    sprintModifier: 0.9 #Imperial Balance
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
