@@ -568,7 +568,7 @@
       Alive:
         Base: viper
       Dead:
-        Base: viper
+        Base: viper_dead 
   - type: PassiveDamage 
     allowedStates:
     - Alive
@@ -980,34 +980,64 @@
 
 #Egg
 - type: entity
-  parent: BaseItem
+  parent: BaseItemSpider
   id: SpiderEggHunter 
-  noSpawn: true
   name: the-egg-of-the-spider-guard
   description: Is it a gemstone? Is it an egg? It looks expensive.
   components:
   - type: Sprite
     sprite: Objects/Misc/eggspider.rsi
     state: icon
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 6
-        Structural: 2
-    animation: WeaponArcPunch
-  - type: Item
-    size: 5
   - type: PointLight
     radius: 1.5
     energy: 3
     color: "#4faffb"
   - type: StaticPrice
-    price: 500
-  - type: TimedDespawn 
-    lifetime: 80
+    price: 500 
+  - type: Barotrauma #Урон от разгермы
+    damage:
+      types:
+        Blunt: 0.1
+        Heat: 0.1 
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Damageable
+    damageContainer: Biological        
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Eggshells:
+            min: 1
+            max: 1
+          # Wow double-yolk you're so lucky!
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: PoisonWine
+          Quantity: 6         
+  - type: TimedDespawn #Система цикла
+    lifetime: 80        
   - type: SpawnOnDespawn
-    prototype: MobSpiderSpaceHunter  
-
+    prototype: MobSpiderSpaceHunter   #Система цикла  
+    
+      
 - type: entity 
   parent: SpiderEggHunter
   id: SpiderEggDrone
@@ -1031,7 +1061,6 @@
     lifetime: 80
   - type: SpawnOnDespawn
     prototype: MobSpiderSpaceGhost   
-
 
 - type: entity 
   parent: SpiderEggDrone
@@ -1168,7 +1197,7 @@
   description: Very smooth and surprisingly durable.
   parent: FloorTileItemBaseSpiders
   id: FloorTileItemWebSpiders
-  noSpawn: true
+  noSpawn: true  
   components:
   - type: Sprite
     sprite: Objects/Tiles/web.rsi
@@ -1176,8 +1205,6 @@
   - type: FloorTile
     outputs:
       - FloorWebTile
-  - type: Stack
-    stackType: FloorTileWeb
   - type: Construction
     graph: WebObjects
     node: tile
@@ -1195,7 +1222,7 @@
     prototype: TableWebSpiders 
 
 - type: entity
-  parent: BaseItem
+  parent: BaseItemSpider
   id: FloorTileItemBaseSpiders
   description: These could work as a pretty decent throwing weapon.
   abstract: true
@@ -1211,7 +1238,7 @@
   - type: Destructible
     thresholds:
     - trigger:
-        !type:DamageTrigger
+        !type:DamageTrigger 
         damage: 30
       behaviors:
         - !type:DoActsBehavior
@@ -1234,7 +1261,7 @@
 
 - type: entity
   name: "item"
-  id: BaseItemSpider
+  id: BaseItemSpider 
   abstract: true
   components:
   - type: Clickable

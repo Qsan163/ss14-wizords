@@ -1,4 +1,4 @@
-spider-roy-name = Паук улья.
+﻿spider-roy-name = Паук улья.
 spider-roy-desc = Ваша задача — построить максимально большой улей. НЕ НАПАДАЙТЕ ПЕРВЫМИ, только защищайтесь. Нельзя нападать на существ в крите, а умерших нужно относить подальше от логова, чтобы можно было их спасти.
 
 ent-MobSpiderSpaceQueen = королева пауков
@@ -21,7 +21,7 @@ ent-MobSpiderSpaceShooter = паук стрелок
     .desc = Он так светится, что выглядит опасным.
     .suffix = Улей пауков
 
-ent-MobSpiderSpaceLittle = паученок
+ent-MobSpiderSpaceLittle = паучок
     .desc = Он так светится, что выглядит опасным.
     .suffix = Улей пауков
 
@@ -57,8 +57,8 @@ ent-SpiderWebAbility = Паутина
 
 ent-TableWebSpiders = каркас стены из паутины
     .desc = Очень гладкий и удивительно прочный.
-    .suffix = Улей пауков
-	
+    .suffix = Улей пауков	
+
 ent-FloorTileItemWebSpiders = конструкция из паутины
     .desc = Очень гладкий и удивительно прочный.
     .suffix = Улей пауков	
