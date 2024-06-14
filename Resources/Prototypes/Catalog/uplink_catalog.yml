@@ -1257,7 +1257,7 @@
   icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   cost:
-    Telecrystal: 12 #Imperial Balance
+    Telecrystal: 14 #Imperial Balance
   categories:
   - UplinkWearables
 
