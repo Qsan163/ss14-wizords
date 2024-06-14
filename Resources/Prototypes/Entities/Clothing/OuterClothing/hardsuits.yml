@@ -527,11 +527,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
+        Blunt: 0.5 #Imperial Balance
+        Slash: 0.5 #Imperial Balance
+        Piercing: 0.4 #Imperial Balance
         Heat: 0.2
-        Radiation: 0.01
+        Radiation: 0.2 #Imperial Balance
         Caustic: 0.5
         Stamina: 0.5 ## Stamina resistance
   - type: Item
