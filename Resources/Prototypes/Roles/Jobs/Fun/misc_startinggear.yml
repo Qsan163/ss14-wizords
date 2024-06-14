@@ -147,7 +147,7 @@
     eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltSyndicate
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitSyndieEliteFactionExplosion #Imperial explosiong nukeops hardsuits
+    outerClothing: ClothingOuterHardsuitSyndieMedicFactionExlposion #Imperial explosiong nukeops hardsuits
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiAgentPDA
     pocket1: DoubleEmergencyOxygenTankFilled
