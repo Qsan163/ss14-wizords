@@ -27,8 +27,12 @@
       - id: BoxSterileMask
       - id: ClothingHeadHatBeretBrigmedic
       - id: ClothingOuterCoatAMG
-      - id: ClothingUniformJumpsuitBrigmedic
-      - id: ClothingUniformJumpskirtBrigmedic
+      - id: ClothingHeadHelmetBrigmedic #Imperia start
+      - id: ClothingUniformJumpsuitBrigmedicNew
+      - id: ControlModsuitRescue
+      - id: ClothingUniformJumpskirtBrigmedicNew #Imperia end
+      # - id: ClothingUniformJumpsuitBrigmedic //Удалено для внесения наших вещей Imperial
+      # - id: ClothingUniformJumpskirtBrigmedic //Удалено для внесения наших вещей Imperial
       - id: ClothingUniformJumpskirtOfLife
         prob: 0.1
       - id: MedkitFilled
