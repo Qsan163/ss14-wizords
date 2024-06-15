@@ -31,3 +31,13 @@
     - type: ClothingFactionExplosion
       maxRandomTime: 10
       minRandomTime: 20
+
+- type: entity
+  parent: ClothingOuterHardsuitSyndieMedic
+  id: ClothingOuterHardsuitSyndieMedicFactionExlposion
+  components:
+    - type: Speech
+      speechSounds: Pai
+    - type: ClothingFactionExplosion
+      maxRandomTime: 10
+      minRandomTime: 20

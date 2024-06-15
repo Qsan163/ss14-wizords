@@ -7,3 +7,5 @@
     layers:
       - state: green
       - state: brigmedic
+  - type: SpawnPoint
+    job_id: Brigmedic
