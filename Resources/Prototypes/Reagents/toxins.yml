@@ -475,7 +475,6 @@
   physicalDesc: reagent-physical-desc-necrotic
   flavor: bitter
   color: "#7e916e"
-  worksOnTheDead: true
   metabolisms:
     Medicine:
       effects:

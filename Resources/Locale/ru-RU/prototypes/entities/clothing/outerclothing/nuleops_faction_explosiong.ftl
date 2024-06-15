@@ -10,6 +10,3 @@ ent-ClothingOuterHardsuitSyndieEliteFactionExplosion = { ent-ClothingOuterHardsu
 ent-ClothingOuterHardsuitJuggernautFactionExplosion = { ent-ClothingOuterHardsuitJuggernaut }
     .desc = { ent-ClothingOuterHardsuitJuggernaut.desc }
     .suffix = Взрывное
-ent-ClothingOuterHardsuitSyndieMedicFactionExlposion = { ent-ClothingOuterHardsuitSyndieMedic }
-    .desc = { ent-ClothingOuterHardsuitSyndieMedic.desc }
-    .suffix = Взрывное

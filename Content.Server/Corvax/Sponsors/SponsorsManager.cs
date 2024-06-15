@@ -30,7 +30,7 @@ public sealed class SponsorsManager
 
         _netMgr.RegisterNetMessage<MsgSponsorInfo>();
 
-        //_netMgr.Connecting += OnConnecting; move call of this in ConnectionManager
+        _netMgr.Connecting += OnConnecting;
         _netMgr.Connected += OnConnected;
         _netMgr.Disconnect += OnDisconnect;
     }
@@ -40,7 +40,7 @@ public sealed class SponsorsManager
         return _cachedSponsors.TryGetValue(userId, out sponsor);
     }
 
-    public async Task OnConnecting(NetConnectingArgs e) //Imperial We need call this before cheking new player on pass info
+    private async Task OnConnecting(NetConnectingArgs e)
     {
         var info = await LoadSponsorInfo(e.UserId);
         //if (info?.Tier == null)

@@ -19,13 +19,13 @@ public abstract class SharedWeatherSystem : EntitySystem
     [Dependency] private   readonly MetaDataSystem _metadata = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private EntityQuery<BlockWeatherComponent> _blockQuery;
+    private EntityQuery<IgnoreWeatherComponent> _ignoreQuery;
     private EntityQuery<PhysicsComponent> _physicsQuery;
 
     public override void Initialize()
     {
         base.Initialize();
-        _blockQuery = GetEntityQuery<BlockWeatherComponent>();
+        _ignoreQuery = GetEntityQuery<IgnoreWeatherComponent>();
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
         SubscribeLocalEvent<WeatherComponent, EntityUnpausedEvent>(OnWeatherUnpaused);
     }
@@ -57,8 +57,13 @@ public abstract class SharedWeatherSystem : EntitySystem
 
         while (anchoredEnts.MoveNext(out var ent))
         {
-            if (_blockQuery.HasComponent(ent.Value))
+            if (!_ignoreQuery.HasComponent(ent.Value) &&
+                _physicsQuery.TryGetComponent(ent, out var body) &&
+                body.Hard &&
+                body.CanCollide)
+            {
                 return false;
+            }
         }
 
         return true;

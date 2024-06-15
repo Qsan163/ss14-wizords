@@ -15,7 +15,7 @@
   - type: Stack
     stackType: FloorCarpetRed
   - type: Tag
-    tags:
+    tags: 
     - CarpetRed
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: Carpet
@@ -34,7 +34,7 @@
   - type: Stack
     stackType: FloorCarpetBlack
   - type: Tag
-    tags:
+    tags: 
     - CarpetBlack
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetBlack
@@ -53,7 +53,7 @@
   - type: Stack
     stackType: FloorCarpetBlue
   - type: Tag
-    tags:
+    tags: 
     - CarpetBlue
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetBlue
@@ -72,7 +72,7 @@
   - type: Stack
     stackType: FloorCarpetGreen
   - type: Tag
-    tags:
+    tags: 
     - CarpetGreen
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetGreen
@@ -91,7 +91,7 @@
   - type: Stack
     stackType: FloorCarpetOrange
   - type: Tag
-    tags:
+    tags: 
     - CarpetOrange
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetOrange
@@ -109,9 +109,6 @@
     heldPrefix: carpet-skyblue
   - type: Stack
     stackType: FloorCarpetSkyBlue
-  - type: Tag
-    tags:
-    - CarpetSBlue
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetSBlue
     doAfter: 0.5
@@ -129,7 +126,7 @@
   - type: Stack
     stackType: FloorCarpetPurple
   - type: Tag
-    tags:
+    tags: 
     - CarpetPurple
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetPurple
@@ -148,7 +145,7 @@
   - type: Stack
     stackType: FloorCarpetPink
   - type: Tag
-    tags:
+    tags: 
     - CarpetPink
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetPink
@@ -167,7 +164,7 @@
   - type: Stack
     stackType: FloorCarpetCyan
   - type: Tag
-    tags:
+    tags: 
     - CarpetCyan
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetCyan
@@ -186,7 +183,7 @@
   - type: Stack
     stackType: FloorCarpetWhite
   - type: Tag
-    tags:
+    tags: 
     - CarpetWhite
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetWhite

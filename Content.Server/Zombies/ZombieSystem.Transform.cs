@@ -25,8 +25,6 @@ using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Systems;
-using Content.Shared.NPC.Components;
-using Content.Shared.NPC.Systems;
 using Content.Shared.Nutrition.AnimalHusbandry;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
@@ -127,10 +125,7 @@ namespace Content.Server.Zombies
             var melee = EnsureComp<MeleeWeaponComponent>(target);
             melee.Animation = zombiecomp.AttackAnimation;
             melee.WideAnimation = zombiecomp.AttackAnimation;
-            melee.AltDisarm = false;
             melee.Range = 1.2f;
-            melee.Angle = 0.0f;
-            melee.HitSound = zombiecomp.BiteSound;
 
             if (mobState.CurrentState == MobState.Alive)
             {
@@ -217,7 +212,11 @@ namespace Content.Server.Zombies
                 _damageable.SetAllDamage(target, damageablecomp, 0);
             _mobState.ChangeMobState(target, MobState.Alive);
 
-            _faction.ClearFactions(target, dirty: false);
+            var factionComp = EnsureComp<NpcFactionMemberComponent>(target);
+            foreach (var id in new List<string>(factionComp.Factions))
+            {
+                _faction.RemoveFaction(target, id);
+            }
             _faction.AddFaction(target, "Zombie");
 
             //gives it the funny "Zombie ___" name.
