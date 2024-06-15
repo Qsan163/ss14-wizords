@@ -86,6 +86,3 @@ ent-ClothingBackpackAtmosphericsFilled = { ent-ClothingBackpackAtmospherics }
     .desc = { ent-ClothingBackpackAtmospherics.desc }
 ent-ClothingBackpackCargoFilled = { ent-ClothingBackpackCargo }
     .desc = { ent-ClothingBackpackCargo.desc }
-ent-ClothingBackpackSyndicate = { ent-ClothingBackpack }
-    .desc = { ent-ClothingBackpack.desc }
-    .suffix = Рюкзак синдиката

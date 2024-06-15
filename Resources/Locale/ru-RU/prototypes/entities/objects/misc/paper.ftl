@@ -131,6 +131,3 @@ ent-PaperScrap = бумажные отходы
 ent-RubberStampDetective = печать детектива
     .desc = { ent-RubberStampMime.desc }
     .suffix = НЕ МАППИТЬ
-ent-RubberStampLawyer = печать юриста
-    .desc = { ent-RubberStampMime.desc }
-    .suffix = НЕ МАППИТЬ

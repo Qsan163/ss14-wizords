@@ -25,4 +25,7 @@ public sealed partial class SolutionInjectOnCollideComponent : Component
     /// </summary>
     [DataField("blockSlots"), ViewVariables(VVAccess.ReadWrite)]
     public SlotFlags BlockSlots = SlotFlags.MASK;
+
+    [DataField]
+    public string FixtureId = SharedProjectileSystem.ProjectileFixture;
 }

@@ -83,7 +83,6 @@
   - type: StationEvent
     weight: 10
     duration: 1
-    minimumPlayers: 10
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
@@ -482,6 +481,7 @@
   components:
   - type: StationEvent
     weight: 10
+    earliestStart: 20
     reoccurrenceDelay: 20
     duration: 1
   - type: IonStormRule

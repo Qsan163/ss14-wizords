@@ -50,7 +50,6 @@ flavor-base-horrible = ужас
 
 # lmao
 flavor-base-terrible = ужасно
-flavor-base-mindful = внимательный
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.

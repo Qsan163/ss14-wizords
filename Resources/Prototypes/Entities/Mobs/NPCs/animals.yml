@@ -1349,13 +1349,12 @@
     baseSprintSpeed: 5
   - type: MeleeWeapon
     soundHit:
-      collection: AlienClaw
+      path: /Audio/Weapons/pierce.ogg
     angle: 30
-    animation: WeaponArcClaw
+    animation: WeaponArcPunch
     damage:
       types:
-        Slash: 5
-        Piercing: 4
+        Piercing: 9
   - type: Temperature
     heatDamageThreshold: 360
     coldDamageThreshold: 285
@@ -2425,22 +2424,6 @@
       gender: epicene
   - type: Bloodstream
     bloodMaxVolume: 100
-  - type: MeleeWeapon
-    angle: 0
-    animation: WeaponArcBite
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    damage:
-      types:
-        Piercing: 8
-  - type: NpcFactionMember
-    factions:
-    - Passive
-  - type: NPCRetaliation
-    attackMemoryLength: 10
-  - type: HTN
-    rootTask:
-      task: RuminantHostileCompound
   - type: Tag
     tags:
     - VimPilot
@@ -3209,3 +3192,4 @@
   components:
   - type: ReplacementAccent
     accent: nymph
+    

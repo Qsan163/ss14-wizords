@@ -37,6 +37,7 @@
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
+    mask: ClothingMaskRebreatherBrigmedic
     belt: ClothingBeltMilitaryWebbingBrigmedFilled
   innerclothingskirt: ClothingUniformJumpskirtBrigmedicNew
   satchel: ClothingBackpackSatchelBrigmedicFilled
@@ -59,6 +60,3 @@
   innerClothingSkirt: ClothingUniformJumpskirtBrigmedic
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled
-
-- type: playTimeTracker
-  id: JobBrigmedic

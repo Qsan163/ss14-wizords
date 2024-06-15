@@ -8,9 +8,6 @@
   - type: Sprite
   - type: StaticPrice
     price: 20
-  - type: Tag
-    tags:
-    - SurgeryTool
 
 # Cautery
 

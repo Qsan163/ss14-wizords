@@ -25,7 +25,6 @@ materials-meat = мясо
 materials-web = шелк
 materials-bones = кость
 materials-coal = уголь
-materials-gunpowder = порох
 
 # Ores
 materials-raw-iron = необработанное железо

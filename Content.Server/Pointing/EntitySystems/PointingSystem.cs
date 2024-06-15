@@ -37,7 +37,6 @@ namespace Content.Server.Pointing.EntitySystems
         [Dependency] private readonly VisibilitySystem _visibilitySystem = default!;
         [Dependency] private readonly SharedMindSystem _minds = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-        [Dependency] private readonly ExamineSystemShared _examine = default!;
 
         private static readonly TimeSpan PointDelay = TimeSpan.FromSeconds(0.5f);
 
@@ -101,7 +100,7 @@ namespace Content.Server.Pointing.EntitySystems
             }
             else
             {
-                return _examine.InRangeUnOccluded(pointer, coordinates, 15, predicate: e => e == pointer);
+                return ExamineSystemShared.InRangeUnOccluded(pointer, coordinates, 15, predicate: e => e == pointer);
             }
         }
 
