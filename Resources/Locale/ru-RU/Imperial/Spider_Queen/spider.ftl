@@ -74,7 +74,7 @@ ent-TableWebSpiders2 = каркас стены из паутины
 ent-WallWebDurable = прочная паутинная стена
     .desc = Удерживает паучат внутри, а ассистентов снаружи.
     .suffix = Улей пауков
-	
+
 ent-EggshellsSpider = скорлупа
     .desc = Ты ходишь по ней, приятель.	
     .suffix = Улей пауков
