@@ -67,7 +67,7 @@
       Alive:
         Base: midwife
       Dead:
-        Base: midwife
+        Base: midwife_dead
   - type: Butcherable
     spawned:
     - id: FoodMeatSpider
@@ -258,7 +258,7 @@
       Alive:
         Base: guard
       Dead:
-        Base: guard
+        Base: guard_dead
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute. Самолечение
     allowedStates:
     - Alive
@@ -326,7 +326,7 @@
       Alive:
         Base: hunter
       Dead:
-        Base: hunter
+        Base: hunter_dead
   - type: PassiveDamage 
     allowedStates:
     - Alive
@@ -392,7 +392,7 @@
       Alive:
         Base: nurse
       Dead:
-        Base: nurse
+        Base: nurse_dead
   - type: PassiveDamage 
     allowedStates:
     - Alive
@@ -474,7 +474,7 @@
       Alive:
         Base: viper
       Dead:
-        Base: viper
+        Base: viper_dead
   - type: PassiveDamage 
     allowedStates:
     - Alive
@@ -925,7 +925,7 @@
   noSpawn: true
   components:
   - type: WorldTargetAction
-    useDelay: 10 #КД
+    useDelay: 20
     range: 1.5
     itemIconStyle: BigAction
     icon:
@@ -982,6 +982,7 @@
 - type: entity
   parent: BaseItemSpider
   id: SpiderEggHunter 
+  noSpawn: true
   name: the-egg-of-the-spider-guard
   description: Is it a gemstone? Is it an egg? It looks expensive.
   components:
@@ -1019,7 +1020,7 @@
         solution: food
       - !type:SpawnEntitiesBehavior
         spawn:
-          Eggshells:
+          EggshellsSpider:
             min: 1
             max: 1
           # Wow double-yolk you're so lucky!
@@ -1031,13 +1032,12 @@
         maxVol: 25
         reagents:
         - ReagentId: PoisonWine
-          Quantity: 6         
+          Quantity: 10      
   - type: TimedDespawn #Система цикла
     lifetime: 80        
   - type: SpawnOnDespawn
     prototype: MobSpiderSpaceHunter   #Система цикла  
-    
-      
+         
 - type: entity 
   parent: SpiderEggHunter
   id: SpiderEggDrone
@@ -1073,7 +1073,32 @@
     lifetime: 80
   - type: SpawnOnDespawn
     prototype: MobSpiderSpaceShooter   
-
+    
+- type: entity
+  name: eggshells
+  parent: Eggshells
+  id: EggshellsSpider
+  noSpawn: true
+  description: You're walkin' on 'em bud.
+  suffix: FraG 
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/egg.rsi
+    state: eggshells
+    shader: unshaded
+    color: gray     
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 2
+        reagents:
+        - ReagentId: PoisonWine
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Egg
+    - Trash
+  
 #Web
 - type: entity
   id: SpiderWebUsual 
