@@ -888,7 +888,7 @@
       state: full
       useDelay: 30
     event: !type:WorldSpawnSpellEvent
-      useDelay: 25
+      useDelay: 26
       prototypes:
       - id: FloorTileItemWebSpiders2
         doAfter: 5
