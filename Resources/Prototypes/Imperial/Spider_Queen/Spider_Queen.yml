@@ -97,8 +97,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 25 #Damage
-        Poison: 5
+        Piercing: 12 #Damage
+        Poison: 4
         Structural: 15
   - type: SolutionContainerManager
     solutions:
