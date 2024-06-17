@@ -1,0 +1,71 @@
+- type: tile
+  id: FloorTechDarkCatwalk
+  name: tiles-dark-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/dark_catwalk.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechWhiteCatwalk
+  name: tiles-white-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/white_catwalk.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelCatwalk
+  name: tiles-steel-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/steel_catwalk.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechDarkKostilCatwalk
+  name: tiles-dark-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/dark_catwalk_kostilniy.png
+  baseTurf: Plating
+  isSubfloor: true
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechWhiteKostilCatwalk
+  name: tiles-white-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/white_catwalk_kostilniy.png
+  baseTurf: Plating
+  isSubfloor: true
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelKostilCatwalk
+  name: tiles-steel-catwalk
+  sprite: /Textures/Imperial/Aesthetics/Tiles/Catwalk/steel_catwalk_kostilniy.png
+  baseTurf: Plating
+  isSubfloor: true
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
