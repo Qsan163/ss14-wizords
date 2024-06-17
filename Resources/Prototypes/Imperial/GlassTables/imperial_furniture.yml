@@ -52,7 +52,7 @@
 - type: construction
   name: золотой туалет
   id: GoldToilet
-  graph: GoldToilet
+  graph: GoldToiletGraph
   startNode: start
   targetNode: goldtoilet
   category: construction-category-furniture

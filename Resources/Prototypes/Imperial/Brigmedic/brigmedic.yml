@@ -17,12 +17,20 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingMaskBreathMedicalSecurity
+      - id: ClothingMaskRebreatherBrigmedic
       - id: EmergencyOxygenTankFilled
+      - id: SpaceMedipen #Imperial spaceMedipen add to surv boxes
       - id: EmergencyMedipen
+      - id: Flare
+      - id: FoodSnackNutribrick
+      - id: DrinkWaterBottleFull
       - id: EmergencyMedipen
-      - id: FoodTinMRE
   - type: Sprite
     layers:
       - state: internals
       - state: emergencytank
+  #Imperial emergency box size
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2

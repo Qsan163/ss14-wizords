@@ -3,8 +3,12 @@ using Content.Server.Body.Systems;
 using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Shared.Inventory;
-using JetBrains.Annotations;
-using Robust.Shared.Physics.Events;
+using Content.Shared.Projectiles;
+
+// Imperial Space arrow-fix Dependency Start
+using Content.Shared.Armor;
+using Content.Shared.Clothing.Components;
+// Imperial Space arrow-fix Dependency End
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -17,17 +21,15 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<SolutionInjectOnCollideComponent, StartCollideEvent>(HandleInjection);
+        SubscribeLocalEvent<SolutionInjectOnCollideComponent, ProjectileHitEvent>(HandleInjection);
     }
 
-    private void HandleInjection(Entity<SolutionInjectOnCollideComponent> ent, ref StartCollideEvent args)
+    private void HandleInjection(Entity<SolutionInjectOnCollideComponent> ent, ref ProjectileHitEvent args)
     {
         var component = ent.Comp;
-        var target = args.OtherEntity;
+        var target = args.Target;
 
-        if (!args.OtherBody.Hard ||
-            args.OurFixtureId != ent.Comp.FixtureId ||
-            !EntityManager.TryGetComponent<BloodstreamComponent>(target, out var bloodstream) ||
+        if (!TryComp<BloodstreamComponent>(target, out var bloodstream) ||
             !_solutionContainersSystem.TryGetInjectableSolution(ent.Owner, out var solution, out _))
         {
             return;
@@ -42,6 +44,8 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
                 return;
         }
 
+        if (ImperialCheckHardsuit(target)) return; // Imperial Space arrow-fix
+
         var solRemoved = _solutionContainersSystem.SplitSolution(solution.Value, component.TransferAmount);
         var solRemovedVol = solRemoved.Volume;
 
@@ -49,4 +53,23 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
 
         _bloodstreamSystem.TryAddToChemicals(target, solToInject, bloodstream);
     }
+
+    // Imperial Space arrow-fix Start
+    private bool ImperialCheckHardsuit(EntityUid target)
+    {
+        // Okay... Maybe I'll need refactoring this someday...
+
+        if (!EntityManager.TryGetComponent<InventoryComponent>(target, out var inventory)) return false;
+
+        if (!_inventorySystem.TryGetSlotContainer(target, "outerClothing", out var outerClothingContainer, out var _, inventory)) return false;
+        if (!_inventorySystem.TryGetSlotContainer(target, "head", out var headContainer, out var _, inventory)) return false;
+
+        if (!TryComp(outerClothingContainer.ContainedEntity, out InjectComponent? injectComponent)) return false;
+        if (!TryComp(headContainer.ContainedEntity, out ArmorComponent? armorHeadComponent)) return false;
+
+        if (injectComponent.Locked && armorHeadComponent.AntiHypo) return true;
+
+        return false;
+    }
+    // Imperial Space arrow-fix End
 }
