@@ -42,3 +42,4 @@ ent-SpawnMobOreCrabQuartz = Спавнер кварцевого краба
 ent-SpawnMobOreCrabUranium = Спавнер Уранового Краба
 ent-SpawnMobOreCrabIron = Спавнер железного краба
 ent-TimedSpawnerRockCrabs = Периодический спавнер каменных крабов
+tiles-dark-imperial-maint = Тёмный пол технического помещения
