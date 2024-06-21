@@ -97,3 +97,39 @@
         configPath: "/Prototypes/Parallaxes/parallax_config_red_stars-2.toml"
       slowness: 0.95
 
+- type: parallax
+  id: ArcaneStation
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Parallaxes/Imperial/arcane/ArcaneParallax.png"
+      slowness: 0.998046875
+      scale: "1, 1"
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Parallaxes/Imperial/arcane/NebulaArcanever.png"
+      slowness: 0.993
+      scale: "1,1"
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Parallaxes/Imperial/arcane/StarsArcane.png"
+      slowness: 0.997
+      scale: "1,1"
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: "hq_wizard_stars"
+        configPath: "/Prototypes/Parallaxes/parallax_config_stars.toml"
+      slowness: 0.996625
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Parallaxes/Imperial/arcane/PlanetArcane.png"
+      slowness: 0.998046875
+      scale: "1, 1"
+      tiled: false
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+        slowness: 0.875
+  layersLQUseHQ: false
