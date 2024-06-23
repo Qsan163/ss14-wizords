@@ -68,8 +68,8 @@
 - type: startingGear
   id: TGear
   equipment:
-   # jumpsuit: MedievalClothingUniformJumpsuitFlannel
-   # mask: ClothingMaskGasBalaclava
+    jumpsuit: MedievalClothingUniformJumpsuitFlannel
+    mask: ClothingMaskGasBalaclava
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSyndicate
@@ -83,8 +83,8 @@
 - type: startingGear
   id: TGear800
   equipment:
-   # jumpsuit: MedievalClothingUniformJumpsuitFlannel
-   # mask: ClothingMaskGasBalaclava
+    jumpsuit: MedievalClothingUniformJumpsuitFlannel
+    mask: ClothingMaskGasBalaclava
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSyndicate
@@ -98,8 +98,8 @@
 - type: startingGear
   id: TGear4000
   equipment:
-   # jumpsuit: MedievalClothingUniformJumpsuitFlannel
-   # mask: ClothingMaskGasBalaclava
+    jumpsuit: MedievalClothingUniformJumpsuitFlannel
+    mask: ClothingMaskGasBalaclava
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSyndicate
@@ -113,8 +113,8 @@
 - type: startingGear
   id: TGear6500
   equipment:
-   # jumpsuit: MedievalClothingUniformJumpsuitFlannel
-   # mask: ClothingMaskGasBalaclava
+    jumpsuit: MedievalClothingUniformJumpsuitFlannel
+    mask: ClothingMaskGasBalaclava
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSyndicate
@@ -407,12 +407,12 @@
 - type: dataset
   id: CT_name
   values:
-  - Контр-террорист # Вставить нормальные имена, если хочется добавить уникальности бедолагам
+  - Контр-террорист
 
 - type: dataset
   id: T_name
   values:
-  - Террорист #  Вставить нормальные имена, если хочется добавить уникальности бедолагам
+  - Террорист
 
 - type: dataset
   id: Group_name
