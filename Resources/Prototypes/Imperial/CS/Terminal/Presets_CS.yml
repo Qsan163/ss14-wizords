@@ -1,0 +1,55 @@
+- type: storePreset
+  id: StorePreset_CT
+  storeName: Counter-terrorist terminal
+  categories:
+  - CT_Pistols
+  - CT_Rifles
+  - CT_Submachine_gun
+  - CT_Heavy
+  - CT_Protection
+  - CS_Grenades
+  - CS_Ammo_Pistols
+  - CS_Ammo_Rifles
+  - CS_Ammo_Submachine_Gun
+  - CS_Ammo_Heavy
+  currencyWhitelist:
+  - WarCredit
+
+- type: storePreset
+  id: StorePreset_T
+  storeName: Terrorist terminal
+  categories:
+  - T_Pistols
+  - T_Rifles
+  - T_Submachine_gun
+  - T_Heavy
+  - T_Protection
+  - CS_Grenades
+  - CS_Ammo_Pistols
+  - CS_Ammo_Rifles
+  - CS_Ammo_Submachine_Gun
+  - CS_Ammo_Heavy
+  currencyWhitelist:
+  - WarCredit
+
+- type: storePreset
+  id: StorePreset_DEBAG
+  storeName: TERPINAL
+  categories:
+  - CT_Pistols
+  - CT_Rifles
+  - CT_Submachine_gun
+  - CT_Heavy
+  - CT_Protection
+  - T_Pistols
+  - T_Rifles
+  - T_Submachine_gun
+  - T_Heavy
+  - T_Protection
+  - CS_Grenades
+  - CS_Ammo_Pistols
+  - CS_Ammo_Rifles
+  - CS_Ammo_Submachine_Gun
+  - CS_Ammo_Heavy
+  currencyWhitelist:
+  - WarCredit
