@@ -89,7 +89,7 @@ ent-ClothingMaskGasSona = Тяжёлый противогаз S-o.N.A
     .desc = Тяжёлый противогаз S-o.N.A, эффективно фильтрующий газы и немного стимулируя своего владельца благодаря внедрению различных стимуляторов.
 
 ent-PlushieAdri = Адриана Блейк
-    .desc = Пахнет розами и вином. Любит человекоподобных синтетов, ОБР и ведьм.
+    .desc = Пахнет розами и вином. Любит Виолетту, человекоподобных синтетов, ОБР, и ведьм.
 
 ent-ClothingShoesBootsMagSona = Ярко-голубые магнитные ботинки
     .desc = Ярко-голубые магнитные ботинки корпорации S-o.N.A. AI Dynamics, со встроенным джетпаком.
@@ -136,3 +136,17 @@ ent-EngSuitOne = Скафандр био-инженера S-o.N.A
 
 ent-ClothingEyesLinsesSona = Линзы S-o.N.A
    .desc = Технологичные линзы корпорации S-o.N.A. AI Dynamics.
+
+ent-PersonalSona = Персональная S-o.N.A
+   .desc = Ваша лучшая синтетическая подружка! ВНИМАНИЕ, КОРПОРАЦИЯ S-o.N.A. AI Dynamics НЕ НЕСЁТ ОТВЕТСТВЕННОСТИ ЗА КАЧЕСТВО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ!
+
+sona-system-sona-installed = Сона проснулась!
+sona-system-still-searching = Сона всё ещё просыпается...
+sona-system-off = Сона выключена
+sona-system-searching = Сона начала просыпаться...
+sona-system-role-name = Персональная S-o.N.A
+sona-system-role-description = Персональная синтетическая подружка
+sona-system-wipe-device-verb-text = Выключить Сону.
+sona-system-wiped-device = Сона была выключена.
+sona-system-stop-searching-verb-text = Уложить Сону обратно спать.
+sona-system-stopped-searching = Сона продолжила спать.

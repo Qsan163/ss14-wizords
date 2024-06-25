@@ -136,7 +136,7 @@
           completed:
             - !type:SpawnPrototype
               prototype: ShardGlass
-              amount: 2
+              amount: 1 ## Изменено Imperial Space. По стандарту стоит 2 стеклянных шарда. Для избежания дюпов
           steps:
             - tool: Prying
               doAfter: 2

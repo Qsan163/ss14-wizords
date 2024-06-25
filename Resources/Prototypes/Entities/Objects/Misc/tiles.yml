@@ -199,6 +199,10 @@
       - FloorReinforced
   - type: Stack
     stackType: FloorTileReinforced
+  #Imperial craft tiles
+  - type: Construction
+    graph: TileReinforced
+    node: reinforcedtile
 
 # TODO add a catwalk tile item once tile smoothing is supported
 

@@ -95,7 +95,7 @@
 
 - type: stealTargetGroup
   id: HeadCloak
-  name: головной убор (любой)
+  name: плащ главы (любой)
   sprite:
     sprite: Clothing/Neck/Cloaks/cap.rsi
     state: icon

@@ -38,7 +38,7 @@ public sealed partial class ShuttleSystem
     public const float DefaultTravelTime = 20f;
     public const float DefaultArrivalTime = 5f;
     private const float FTLCooldown = 10f;
-    public const float FTLMassLimit = 300f;
+    public const float FTLMassLimit = 600f; // Изменено Imperial Space. По стандарту значение 300
 
     // I'm too lazy to make CVars.
 
