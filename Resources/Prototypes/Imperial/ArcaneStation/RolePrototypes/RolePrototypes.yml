@@ -17,6 +17,17 @@
       prototypes: [ ArcaneTraderGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
+    - type: CrewSkills
+      skills:
+        - skillBotany
+        - skillBaseMed
+        - skillBaseConstraction
+        - skillCooking
+        - skillBartending
+        - skillMedicalEquipment
+        - skillPiloting
+        - skillShooting
+        - skillMaintenance
 
 - type: entity
   noSpawn: false
@@ -40,6 +51,15 @@
       prototypes: [ ArcaneSmugglerGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
+    - type: CrewSkills
+      skills:
+        - skillBotany
+        - skillBaseMed
+        - skillBaseConstraction
+        - skillHacking
+        - skillPiloting
+        - skillShooting
+        - skillMaintenance
 
 - type: entity
   noSpawn: false
@@ -60,6 +80,19 @@
       prototypes: [ ArcaneMercGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
+    - type: CrewSkills
+      skills:
+        - skillBotany #base
+        - skillBaseMed
+        - skillBaseConstraction
+        - skillHacking
+        - skillInstrumentation
+        - skillMaintenance
+        - skillMedicalEquipment
+        - skillPharmacology
+        - skillPiloting
+        - skillShooting
+        - skillSurgery
 
 - type: entity
   noSpawn: false
@@ -80,6 +113,19 @@
       prototypes: [ ArcaneHeadMercGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
+    - type: CrewSkills
+      skills:
+        - skillBotany #base
+        - skillBaseMed
+        - skillBaseConstraction
+        - skillHacking
+        - skillInstrumentation
+        - skillMaintenance
+        - skillMedicalEquipment
+        - skillPharmacology
+        - skillPiloting
+        - skillShooting
+        - skillSurgery
 
 - type: entity
   noSpawn: false
@@ -100,3 +146,14 @@
       prototypes: [ ArcaneBomjGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
+    - type: CrewSkills
+      skills:
+        - skillBotany
+        - skillBaseMed
+        - skillBaseConstraction
+        - skillHacking
+        - skillInstrumentation
+        - skillMaintenance
+        - skillPiloting
+        - skillMediumConstruction
+        - skillBasicAtmos
