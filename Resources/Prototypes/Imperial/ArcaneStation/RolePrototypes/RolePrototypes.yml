@@ -82,7 +82,7 @@
       randomizeName: false
     - type: CrewSkills
       skills:
-        - skillBotany #base
+        - skillBotany
         - skillBaseMed
         - skillBaseConstraction
         - skillHacking
@@ -115,7 +115,7 @@
       randomizeName: false
     - type: CrewSkills
       skills:
-        - skillBotany #base
+        - skillBotany
         - skillBaseMed
         - skillBaseConstraction
         - skillHacking
