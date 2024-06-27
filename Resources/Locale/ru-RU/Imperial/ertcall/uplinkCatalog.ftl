@@ -220,3 +220,6 @@ ert-uplink-weaponcombat-L6Saw-desc = {ent-WeaponLightMachineGunL6.desc}
 ert-uplink-ammo-MagazineLightRifleBox-name = {ent-MagazineLightRifleBox}
 ert-uplink-utilities-energyshield-name = {ent-EnergyShield}
 ert-uplink-utilities-energyshield-desc = {ent-EnergyShield.desc}
+
+ert-uplink-Explosives-X4 = { ent-X4 }
+ert-uplink-Explosives-X4-desc = { ent-X4.desc }

@@ -1189,11 +1189,26 @@
   id: ErtCallUplinkEnergyShield
   name: ert-uplink-utilities-energyshield-name
   description: ert-uplink-utilities-energyshield-desc
-  productEntity: EnergyShield 
+  productEntity: EnergyShield
   cost:
     BlueSpaceCube: 5
   categories:
   - ERTUplinkUtilities
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - ErtUplinkDeadSquad
+
+- type: listing
+  id: ErtCallUplinkExplosivesX4
+  name: ert-uplink-Explosives-X4
+  description: ert-uplink-Explosives-X4-desc
+  productEntity: X4
+  cost:
+    BlueSpaceCube: 5
+  categories:
+  - ERTUplinkExplosives
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:

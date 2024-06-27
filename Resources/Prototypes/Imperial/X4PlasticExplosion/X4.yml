@@ -28,7 +28,3 @@
     maxIntensity: 100
     canCreateVacuum: false
   - type: ExplodeOnTrigger
-  - type: HolidayVisuals
-    holidays:
-      festive:
-      - FestiveSeason
