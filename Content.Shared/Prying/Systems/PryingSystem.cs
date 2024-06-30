@@ -39,6 +39,13 @@ public sealed class PryingSystem : EntitySystem
         if (args.Handled)
             return;
 
+        // Imperial Space zombie-fix Start
+        var ev = new PryingEvent(args.User);
+
+        RaiseLocalEvent(uid, ev);
+
+        if (ev.Cancelled) return;
+        // Imperial Space  zombie-fix End
         args.Handled = TryPry(uid, args.User, out _, args.Used);
     }
 
@@ -54,7 +61,17 @@ public sealed class PryingSystem : EntitySystem
         {
             Text = Loc.GetString("door-pry"),
             Impact = LogImpact.Low,
-            Act = () => TryPry(uid, args.User, out _, args.User),
+            Act = () =>
+            {
+                // Imperial Space zombie-fix Start
+                var ev = new PryingEvent(args.User);
+
+                RaiseLocalEvent(uid, ev);
+
+                if (ev.Cancelled) return;
+                // Imperial Space  zombie-fix End
+                TryPry(uid, args.User, out _, args.User);
+            }
         });
     }
 
