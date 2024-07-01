@@ -181,10 +181,10 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
     {
         if (!electrified.OnBump) return;
 
-        args.Cancel();
         TryDoElectrifiedAct(uid, args.User, 1, electrified);
     }
     // Imperial Space zombie-fix Imports End
+
     private void OnElectrifiedAttacked(EntityUid uid, ElectrifiedComponent electrified, AttackedEvent args)
     {
         if (!electrified.OnAttacked)

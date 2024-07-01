@@ -44,7 +44,6 @@ public sealed class PryingSystem : EntitySystem
 
         RaiseLocalEvent(uid, ev);
 
-        if (ev.Cancelled) return;
         // Imperial Space  zombie-fix End
         args.Handled = TryPry(uid, args.User, out _, args.Used);
     }
@@ -68,7 +67,6 @@ public sealed class PryingSystem : EntitySystem
 
                 RaiseLocalEvent(uid, ev);
 
-                if (ev.Cancelled) return;
                 // Imperial Space  zombie-fix End
                 TryPry(uid, args.User, out _, args.User);
             }
