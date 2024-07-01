@@ -279,11 +279,11 @@ public sealed partial class RevenantSystem
         //TODO: feels like this might be a sin and a half
         foreach (var ent in lookup)
         {
-            if (!mobState.HasComponent(ent) || !_mobState.IsAlive(ent))
-                continue;
+            if (!HasComp<MobStateComponent>(ent)) continue; // Imperial Space overload-lights-fix
+            if (!_mobState.IsAlive(ent)) continue; // Imperial Space overload-lights-fix
 
-            var nearbyLights = _lookup.GetEntitiesInRange(ent, component.OverloadZapRadius)
-                .Where(e => poweredLights.HasComponent(e) && !HasComp<RevenantOverloadedLightsComponent>(e) &&
+            var nearbyLights = _lookup.GetEntitiesInRange(ent, component.OverloadZapRadius) // Imperial Space overload-lights-fix
+                .Where(e => !HasComp<RevenantOverloadedLightsComponent>(e) &&
                             _interact.InRangeUnobstructed(e, uid, -1)).ToArray();
 
             if (!nearbyLights.Any())
