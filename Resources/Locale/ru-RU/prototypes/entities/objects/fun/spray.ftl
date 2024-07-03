@@ -34,3 +34,6 @@ ent-SprayPaintPurple = Баллончик с краской
 ent-SprayPaintWhite = Баллончик с краской
     .suffix = { "Белый" }
     .desc = Разукрась тут всё!
+
+ent-CrateFunSprayPaints = Ящик с баллончиками с краской
+    .desc = Ящик, наполненный баллончиками с краской
