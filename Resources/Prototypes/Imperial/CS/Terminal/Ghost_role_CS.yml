@@ -142,10 +142,10 @@
       prototypes: [ CTGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -162,10 +162,10 @@
       prototypes: [ CTGear800 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -182,10 +182,10 @@
       prototypes: [ CTGear4000 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -202,10 +202,10 @@
       prototypes: [ CTGear6500 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 # T side
 - type: entity
@@ -223,10 +223,10 @@
       prototypes: [ TGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -243,10 +243,10 @@
       prototypes: [ TGear800 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -263,10 +263,10 @@
       prototypes: [ TGear4000 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 - type: entity
   noSpawn: false
@@ -283,10 +283,10 @@
       prototypes: [ TGear6500 ]
     - type: RandomHumanoidAppearance
       randomizeName: false
- # - type: CrewSkills
- #     skills:
- #       - skillBaseMed
- #       - skillShooting
+    - type: CrewSkills
+      skills:
+       - skillBaseMed
+       - skillShooting
 
 # Spawn
 # CT side
