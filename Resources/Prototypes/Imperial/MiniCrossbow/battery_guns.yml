@@ -11,10 +11,10 @@
     - Sidearm
   - type: Sprite
     sprite: Imperial/MiniCrossbow.rsi
-    state: foamcrossbow
+    state: crossbow
   - type: Item
     sprite: Imperial/MiniCrossbow.rsi
-    heldPrefix: foamcrossbow
+    heldPrefix: crossbow
   - type: Clothing
     quickEquip: false
     slots:

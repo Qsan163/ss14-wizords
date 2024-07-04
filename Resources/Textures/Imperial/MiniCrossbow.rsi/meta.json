@@ -11,20 +11,17 @@
       "name": "icon"
     },
     {
-      "name": "foamcrossbow"
+      "name": "crossbow"
     },
     {
-      "name": "crossbow-bolt"
+      "name": "cbbolt"
     },
     {
-      "name": "mag-unshaded-0"
-    },
-    {
-      "name": "foamcrossbow-inhand-left",
+      "name": "crossbow-inhand-left",
       "directions": 4
     },
     {
-      "name": "foamcrossbow-inhand-right",
+      "name": "crossbow-inhand-right",
       "directions": 4
     }
   ]
