@@ -388,6 +388,7 @@
 
 - type: reaction
   id: Saline
+  minTemp: 335 # если это убрать, то будет невозможно сделать солеглюкозовый раствор
   reactants:
     Water:
       amount: 4
