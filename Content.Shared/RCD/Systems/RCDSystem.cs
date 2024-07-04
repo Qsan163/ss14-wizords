@@ -137,7 +137,7 @@ public sealed class RCDSystem : EntitySystem
                 return;
         }
 
-        var mapGrid = _mapMan.GetGrid(gridId.Value);
+        var mapGrid = Comp<MapGridComponent>(gridId.Value);
         var tile = mapGrid.GetTileRef(location);
 
         ImperialSpaceRCDFix(uid, args, tile); // Imperial Space RCD-fix
@@ -164,7 +164,7 @@ public sealed class RCDSystem : EntitySystem
                 return;
         }
 
-        var mapGrid = _mapMan.GetGrid(gridId.Value);
+        var mapGrid = Comp<MapGridComponent>(gridId.Value);
         var tile = mapGrid.GetTileRef(location);
         var snapPos = mapGrid.TileIndicesFor(location);
 
