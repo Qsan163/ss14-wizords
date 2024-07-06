@@ -7,10 +7,14 @@ namespace Content.Shared.Paper;
 public sealed partial class EverythingStampComponent : Component
 {
     /// <summary>
-    ///     The loc string name that will be stamped to the piece of paper on examine.
+    ///    Список с собранными печатами
     /// </summary>
     [DataField("collectedStamps")]
     public List<StampDisplayInfo> CollectedStamps = [];
+    
+    /// <summary>
+    /// Текущая выбранная печать  
+    /// </summary>
     [DataField("currentStamp")]
     public string CurrentStampName = "stamp-component-stamped-name-default";
 }
