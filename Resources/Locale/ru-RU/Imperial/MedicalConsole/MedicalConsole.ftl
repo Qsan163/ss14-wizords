@@ -1,0 +1,27 @@
+medical-records-console-window-title = Консоль медицинских записей
+medical-records-name-filter = Поиск
+medical-records-dna-filter = ДНК
+medical-records-filter-placeholder = Фильтр
+medical-records-console-records-list-title = Члены экипажа
+medical-records-console-status = Статус
+medical-records-console-dead-reason = [color=gray]Причина смерти[/color]
+medical-records-console-disease-history = История заболеваний
+medical-records-console-history = История заболеваний
+medical-records-add-history = Добавить
+medical-records-delete-history = Удалить
+medical-records-no-history = История болезней этого пациента чиста.
+medical-records-console-reason = Подробности
+medical-records-history-placeholder = Впишите сюда подробности
+medical-records-status-none = Жив
+medical-records-status-dead = Мёртв
+medical-records-console-select-record-info = Здесь будет информация о пациенте
+medical-records-console-auto-history = МЁРТВ: { $reason }
+medical-records-console-unspecified-reason = Причина не указана.
+medical-records-status-deadwithoutsoul = Мёртв без возможности восстановления
+medical-records-status-deadnonclone = Мёртв с запретом на восстановление
+medical-records-console-reason-placeholder = Например, {$placeholder}
+medical-records-console-dead = {$name} был указан как мёртвый. Подробности: {$reason}. Ответственный врач: {$officer}
+medical-records-console-dead-without-soul = {$name} был указан как мёртвый без возможности восстановления. Подробности: {$reason}. Ответственный врач: {$officer}.
+medical-records-console-dead-non-clone = {$name} был указан как мёртвый с запретом на восстановление. Подробности: {$reason}. Ответственный врач: {$officer}.
+medical-records-console-no-records = Записи не найдены
+medical-records-console-none = {$name} теперь здоров.
