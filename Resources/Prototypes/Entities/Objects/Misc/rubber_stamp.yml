@@ -271,3 +271,16 @@
     stampState: "paper_stamp-detective"
   - type: Sprite
     state: stamp-detective
+
+- type: entity
+  name: everything stamp
+  parent: BaseItem
+  id: everythingStamp
+  components:
+  - type: Stamp
+  - type: EverythingStamp
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-mime
+  - type: Item
+    size: Tiny
