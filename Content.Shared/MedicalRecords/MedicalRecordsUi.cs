@@ -72,6 +72,15 @@ public sealed class MedicalRecordChangeStatus : BoundUserInterfaceMessage
         Reason = reason;
     }
 }
+[Serializable, NetSerializable]
+public sealed class PrintMedicalCard : BoundUserInterfaceMessage
+{
+    public readonly uint? SelectedKey;
+    public PrintMedicalCard(uint? selectedKey)
+    {
+        SelectedKey = selectedKey;
+    }
+}
 
 /// <summary>
 /// Used to add a single line to the record's crime history.

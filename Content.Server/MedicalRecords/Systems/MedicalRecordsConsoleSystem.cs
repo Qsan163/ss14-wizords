@@ -14,8 +14,11 @@ using Robust.Shared.Player;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Medical.Components;
+using Content.Server.Paper;
+using Robust.Shared.Utility;
 
 namespace Content.Server.MedicalRecords.Systems;
+
 
 /// <summary>
 /// Handles all UI for criminal records console
@@ -30,7 +33,8 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
-
+    [Dependency] private readonly PaperSystem _paper = default!;
+    [Dependency] private readonly MetaDataSystem _metaSystem = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<MedicalRecordsConsoleComponent, RecordModifiedEvent>(UpdateUserInterface);
@@ -44,6 +48,7 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
             subs.Event<MedicalRecordChangeStatus>(OnChangeStatus);
             subs.Event<MedicalRecordAddHistory>(OnAddHistory);
             subs.Event<MedicalRecordDeleteHistory>(OnDeleteHistory);
+            subs.Event<PrintMedicalCard>(OnPrint);
         });
     }
 
@@ -231,6 +236,31 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
         return record.Name;
     }
 
+    private GeneralStationRecord GetGeneralRecord(StationRecordKey key)
+    {
+        if (!_stationRecords.TryGetRecord<GeneralStationRecord>(key, out var record))
+            return new GeneralStationRecord();
+        return record;
+    }
+    private MedicalRecord GetMedicalRecord(Entity<MedicalRecordsConsoleComponent> ent)
+    {
+        var (uid, console) = ent;
+        var owningStation = _station.GetOwningStation(uid);
+        if (!TryComp<StationRecordsComponent>(owningStation, out var stationRecords))
+            return new MedicalRecord();
+        if (console.ActiveKey is { } id)
+        {
+            // get records to display when a crewmember is selected
+            var key = new StationRecordKey(id, owningStation.Value);
+            _stationRecords.TryGetRecord<MedicalRecord>(key, out var medicalRecord, stationRecords);
+            if (medicalRecord == null) {
+                return new MedicalRecord();
+            }
+            return medicalRecord;
+        }
+        return new MedicalRecord();
+    }
+
     /// <summary>
     /// Checks if the new identity's name has a criminal record attached to it, and gives the entity the icon that
     /// belongs to the status if it does.
@@ -254,5 +284,110 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
             }
         }
         RemComp<MedicalRecordComponent>(uid);
+    }
+    private FormattedMessage GetMedicalReportText(GeneralStationRecord generalRecord, MedicalRecord medicalRecord, string medic, string medicJob)
+    {
+        var msg = new FormattedMessage();
+        for (var i = 0; i < 7; i++)
+        {
+            msg.AddMarkup(Loc.GetString($"medical-report-header{i}"));
+            msg.PushNewline();
+        }
+        for (var i = 0; i < 8; i++)
+        {
+            if (i == 4)
+                msg.AddMarkup(Loc.GetString($"medical-report-requisites{i}", ("date", DateTime.Now.AddYears(1000).ToString("MM/dd/yyyy"))));
+            else if (i == 5)
+                msg.AddMarkup(Loc.GetString($"medical-report-requisites{i}", ("medicName", medic)));
+            else if (i == 6)
+                msg.AddMarkup(Loc.GetString($"medical-report-requisites{i}", ("medicJob", medicJob)));
+            else
+                msg.AddMarkup(Loc.GetString($"medical-report-requisites{i}"));
+            msg.PushNewline();
+        }
+        for (var i = 0; i < 7; i++)
+        {
+            if (i == 2)
+                msg.AddMarkup(Loc.GetString($"medical-report-data{i}", ("patientName", generalRecord.Name)));
+            else if (i == 3)
+                msg.AddMarkup(Loc.GetString($"medical-report-data{i}", ("patientJob", generalRecord.JobTitle)));
+            else if (i == 4)
+                msg.AddMarkup(Loc.GetString($"medical-report-data{i}", ("patientAge", generalRecord.Age)));
+            else if (i == 5)
+                msg.AddMarkup(Loc.GetString($"medical-report-data{i}", ("patientStatus", Loc.GetString(medicalRecord.Status.ToString()))));
+            else
+                msg.AddMarkup(Loc.GetString($"medical-report-data{i}"));
+            msg.PushNewline();
+        }
+        for (var i = 0; i < medicalRecord.History.Count; i++) {
+            msg.AddMarkup(Loc.GetString("medical-report-data-history-newline", ("i", i + 1)));
+            msg.PushNewline();
+            msg.AddMarkup(Loc.GetString("medical-report-data-history-time", ("time", medicalRecord.History[i].AddTime.ToString().Substring(0,5))));
+            msg.PushNewline();
+            msg.AddMarkup(Loc.GetString("medical-report-data-history-text", ("text", medicalRecord.History[i].Medical)));
+            msg.PushNewline();
+        }
+        msg.AddMarkup(Loc.GetString($"medical-report-data7"));
+        
+        // msg.AddMarkup(Loc.GetString("medical-report-header"));
+        // msg.PushNewline();
+        // msg.AddMarkup(Loc.GetString("analysis-console-info-depth", ("depth", n.Depth)));
+        // msg.PushNewline();
+
+        // var activated = n.Triggered
+        //     ? "analysis-console-info-triggered-true"
+        //     : "analysis-console-info-triggered-false";
+        // msg.AddMarkup(Loc.GetString(activated));
+        // msg.PushNewline();
+
+        // msg.PushNewline();
+        // var needSecondNewline = false;
+
+        // var triggerProto = _prototype.Index<ArtifactTriggerPrototype>(n.Trigger);
+        // if (triggerProto.TriggerHint != null)
+        // {
+        //     msg.AddMarkup(Loc.GetString("analysis-console-info-trigger",
+        //         ("trigger", Loc.GetString(triggerProto.TriggerHint))) + "\n");
+        //     needSecondNewline = true;
+        // }
+
+        // var effectproto = _prototype.Index<ArtifactEffectPrototype>(n.Effect);
+        // if (effectproto.EffectHint != null)
+        // {
+        //     msg.AddMarkup(Loc.GetString("analysis-console-info-effect",
+        //         ("effect", Loc.GetString(effectproto.EffectHint))) + "\n");
+        //     needSecondNewline = true;
+        // }
+
+        // if (needSecondNewline)
+        //     msg.PushNewline();
+
+        // msg.AddMarkup(Loc.GetString("analysis-console-info-edges", ("edges", n.Edges.Count)));
+        // msg.PushNewline();
+
+        // if (component.LastAnalyzerPointValue != null)
+        //     msg.AddMarkup(Loc.GetString("analysis-console-info-value", ("value", component.LastAnalyzerPointValue)));
+        return msg;
+    }
+    private void OnPrint(Entity<MedicalRecordsConsoleComponent> ent, ref PrintMedicalCard msg)
+    {
+        if (!CheckSelected(ent, msg.Session, out var mob, out var key))
+            return;
+        var generalRecord = GetGeneralRecord(key.Value);
+        var medicalRecord = GetMedicalRecord(ent);
+        string medic = "medical-report-unknown-medic";
+        string medicJob = "medical-report-unknown-medic-job";
+
+        if (_idCard.TryFindIdCard(mob.Value, out var id) && id.Comp.FullName is { } fullName && id.Comp.JobTitle is { } JobTitle)
+        {
+            medic = fullName;
+            medicJob = id.Comp.JobTitle;
+        }
+        // checking the console's station since the user might be off-grid using on-grid console
+        var stationUid = _station.GetOwningStation(ent);
+        var report = Spawn(ent.Comp.ReportEntityId, Transform(ent.Owner).Coordinates);
+        _metaSystem.SetEntityName(report, Loc.GetString("medical-report-name", ("name", generalRecord.Name)));
+        var content = GetMedicalReportText(generalRecord, medicalRecord, medic, medicJob);
+        _paper.SetContent(report, content.ToMarkup());
     }
 }

@@ -33,12 +33,14 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
     public Action<MedicalStatus>? OnStatusSelected;
     public Action<MedicalRecord, bool, bool>? OnHistoryUpdated;
     public Action? OnHistoryClosed;
+    public Action<uint?>? OnPrintButtonPressed;
     public Action<MedicalStatus, string>? OnDialogConfirmed;
 
     private uint _maxLength;
     private bool _isPopulating;
     private bool _access;
     private uint? _selectedKey;
+
     private MedicalRecord? _selectedRecord;
 
     private DialogWindow? _reasonDialog;
@@ -98,6 +100,14 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         {
             if (_selectedRecord is {} record)
                 OnHistoryUpdated?.Invoke(record, _access, true);
+        };
+
+        PrintHistoryButton.OnPressed += args =>
+        {
+            if (_isPopulating || _selectedKey is not uint cast)
+                return;
+
+            OnPrintButtonPressed?.Invoke(cast); // это исполняется
         };
     }
 

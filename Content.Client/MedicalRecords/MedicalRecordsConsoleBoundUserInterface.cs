@@ -6,6 +6,8 @@ using Content.Shared.StationRecords;
 using Robust.Client.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Console;
+
 
 namespace Content.Client.MedicalRecords;
 
@@ -41,6 +43,8 @@ public sealed class MedicalRecordsConsoleBoundUserInterface : BoundUserInterface
             SendMessage(new MedicalRecordChangeStatus(status, reason));
         _window.OnHistoryUpdated += UpdateHistory;
         _window.OnHistoryClosed += () => _historyWindow?.Close();
+        _window.OnPrintButtonPressed += key =>
+            SendMessage(new PrintMedicalCard(key));
         _window.OnClose += Close;
 
         _historyWindow = new(comp.MaxStringLength);

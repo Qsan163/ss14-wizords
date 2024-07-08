@@ -2,7 +2,7 @@ using Content.Shared.MedicalRecords.Systems;
 using Content.Shared.Radio;
 using Content.Shared.StationRecords;
 using Robust.Shared.Prototypes;
-
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 namespace Content.Shared.MedicalRecords.Components;
 
 /// <summary>
@@ -42,4 +42,6 @@ public sealed partial class MedicalRecordsConsoleComponent : Component
     /// </summary>
     [DataField]
     public uint MaxStringLength = 256;
+    [DataField("reportEntityId", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string ReportEntityId = "Paper";
 }

@@ -29,6 +29,7 @@
                 </BoxContainer>
                 <RichTextLabel Name="DeadReason" Visible="False"/>
                 <Button Name="HistoryButton" Text="{Loc 'medical-records-console-disease-history'}"/>
+                <Button Name="PrintHistoryButton" Text="{Loc 'medical-records-console-print-history'}"/>
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>
