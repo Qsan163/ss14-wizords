@@ -38,10 +38,16 @@ public sealed partial class MedicalRecordsConsoleComponent : Component
     public ProtoId<RadioChannelPrototype> MedicalChannel = "Medical";
 
     /// <summary>
-    /// Max length of arrest and crime history strings.
+    /// Max length ofmedical history strings.
     /// </summary>
     [DataField]
     public uint MaxStringLength = 256;
+
+
+
+    /// <summary>
+    /// Specifies the subject on which the document will be printed
+    /// </summary>
     [DataField("reportEntityId", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string ReportEntityId = "Paper";
 }

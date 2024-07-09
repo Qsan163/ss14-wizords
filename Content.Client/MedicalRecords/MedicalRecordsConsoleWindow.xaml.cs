@@ -55,11 +55,11 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         _player = playerManager;
         _proto = prototypeManager;
         _random = robustRandom;
-        _accessReader = accessReader;
-
+        _accessReader = accessReader; 
         _maxLength = maxLength;
         _currentFilterType = StationRecordFilterType.Name;
 
+        bool documentPrinted = false;
         OpenCentered();
 
         // FilterType.Text = StationRecordFilterType.Name;
@@ -69,13 +69,18 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
             AddStatusSelect(status);
         }
 
-        OnClose += () => _reasonDialog?.Close();
+        OnClose += () => {
+            _reasonDialog?.Close();
+            documentPrinted = false;
+            PrintHistoryButton.Disabled = false;
+        };
 
         RecordListing.OnItemSelected += args =>
         {
             if (_isPopulating || RecordListing[args.ItemIndex].Metadata is not uint cast)
                 return;
-
+            documentPrinted = false;
+            PrintHistoryButton.Disabled = false;
             OnKeySelected?.Invoke(cast);
         };
 
@@ -106,7 +111,10 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         {
             if (_isPopulating || _selectedKey is not uint cast)
                 return;
-
+            if (documentPrinted == true)
+                return;
+            documentPrinted = true;
+            PrintHistoryButton.Disabled = true;
             OnPrintButtonPressed?.Invoke(cast); // это исполняется
         };
     }

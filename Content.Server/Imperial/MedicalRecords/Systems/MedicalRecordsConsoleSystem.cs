@@ -21,7 +21,7 @@ namespace Content.Server.MedicalRecords.Systems;
 
 
 /// <summary>
-/// Handles all UI for criminal records console
+/// Handles all UI for medical records console
 /// </summary>
 public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSystem
 {
@@ -54,13 +54,13 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
 
     private void UpdateUserInterface<T>(Entity<MedicalRecordsConsoleComponent> ent, ref T args)
     {
-        // TODO: this is probably wasteful, maybe better to send a message to modify the exact state?
+        // wizden: TODO: this is probably wasteful, maybe better to send a message to modify the exact state?
         UpdateUserInterface(ent);
     }
 
     private void OnKeySelected(Entity<MedicalRecordsConsoleComponent> ent, ref SelectStationRecord msg)
     {
-        // no concern of sus client since record retrieval will fail if invalid id is given
+        // wizden: no concern of sus client since record retrieval will fail if invalid id is given
         ent.Comp.ActiveKey = msg.SelectedKey;
         UpdateUserInterface(ent);
     }
@@ -77,9 +77,7 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
 
     private void OnChangeStatus(Entity<MedicalRecordsConsoleComponent> ent, ref MedicalRecordChangeStatus msg)
     {
-        Console.WriteLine(msg);
-        Console.WriteLine(msg.Reason);
-        // prevent malf client violating wanted/reason nullability
+        // wizden: prevent malf client violating wanted/reason nullability
         if ((msg.Status == MedicalStatus.Dead || msg.Status == MedicalStatus.DeadNonClone || msg.Status == MedicalStatus.DeadWithoutSoul) && msg.Reason == null)
             return;
 
@@ -88,7 +86,6 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
 
         if (!_stationRecords.TryGetRecord<MedicalRecord>(key.Value, out var record) || record.Status == msg.Status)
             return;
-        Console.WriteLine(msg.Reason);
         // validate the reason
         string? reason = null;
         if (msg.Reason != null)
@@ -98,7 +95,7 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
                 return;
         }
 
-        // when arresting someone add it to history automatically
+        // when setting someone add it to history automatically
         // fallback exists if the player was not set to wanted beforehand
         if (msg.Status == MedicalStatus.Dead || msg.Status == MedicalStatus.DeadNonClone || msg.Status == MedicalStatus.DeadWithoutSoul)
         {
@@ -262,7 +259,7 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
     }
 
     /// <summary>
-    /// Checks if the new identity's name has a criminal record attached to it, and gives the entity the icon that
+    /// Checks if the new identity's name has a medical record attached to it, and gives the entity the icon that
     /// belongs to the status if it does.
     /// </summary>
     public void CheckNewIdentity(EntityUid uid)
@@ -278,6 +275,7 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
             {
                 if (record.Status != MedicalStatus.None)
                 {
+                    // Может быть, стоит сделать иконки для некоторых статусов. Но пока не вижу нужды   
                     // SetMedicalIcon(name, record.Status, uid);
                     return;
                 }
@@ -328,45 +326,6 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
             msg.PushNewline();
         }
         msg.AddMarkup(Loc.GetString($"medical-report-data7"));
-        
-        // msg.AddMarkup(Loc.GetString("medical-report-header"));
-        // msg.PushNewline();
-        // msg.AddMarkup(Loc.GetString("analysis-console-info-depth", ("depth", n.Depth)));
-        // msg.PushNewline();
-
-        // var activated = n.Triggered
-        //     ? "analysis-console-info-triggered-true"
-        //     : "analysis-console-info-triggered-false";
-        // msg.AddMarkup(Loc.GetString(activated));
-        // msg.PushNewline();
-
-        // msg.PushNewline();
-        // var needSecondNewline = false;
-
-        // var triggerProto = _prototype.Index<ArtifactTriggerPrototype>(n.Trigger);
-        // if (triggerProto.TriggerHint != null)
-        // {
-        //     msg.AddMarkup(Loc.GetString("analysis-console-info-trigger",
-        //         ("trigger", Loc.GetString(triggerProto.TriggerHint))) + "\n");
-        //     needSecondNewline = true;
-        // }
-
-        // var effectproto = _prototype.Index<ArtifactEffectPrototype>(n.Effect);
-        // if (effectproto.EffectHint != null)
-        // {
-        //     msg.AddMarkup(Loc.GetString("analysis-console-info-effect",
-        //         ("effect", Loc.GetString(effectproto.EffectHint))) + "\n");
-        //     needSecondNewline = true;
-        // }
-
-        // if (needSecondNewline)
-        //     msg.PushNewline();
-
-        // msg.AddMarkup(Loc.GetString("analysis-console-info-edges", ("edges", n.Edges.Count)));
-        // msg.PushNewline();
-
-        // if (component.LastAnalyzerPointValue != null)
-        //     msg.AddMarkup(Loc.GetString("analysis-console-info-value", ("value", component.LastAnalyzerPointValue)));
         return msg;
     }
     private void OnPrint(Entity<MedicalRecordsConsoleComponent> ent, ref PrintMedicalCard msg)
@@ -375,16 +334,14 @@ public sealed class MedicalRecordsConsoleSystem : SharedMedicalRecordsConsoleSys
             return;
         var generalRecord = GetGeneralRecord(key.Value);
         var medicalRecord = GetMedicalRecord(ent);
-        string medic = "medical-report-unknown-medic";
-        string medicJob = "medical-report-unknown-medic-job";
+        string medic = Loc.GetString("medical-report-unknown-medic");
+        string medicJob = Loc.GetString("medical-report-unknown-medic-job");
 
-        if (_idCard.TryFindIdCard(mob.Value, out var id) && id.Comp.FullName is { } fullName && id.Comp.JobTitle is { } JobTitle)
+        if (_idCard.TryFindIdCard(mob.Value, out var id) && id.Comp.FullName is { } fullName && id.Comp.JobTitle is { })
         {
             medic = fullName;
             medicJob = id.Comp.JobTitle;
         }
-        // checking the console's station since the user might be off-grid using on-grid console
-        var stationUid = _station.GetOwningStation(ent);
         var report = Spawn(ent.Comp.ReportEntityId, Transform(ent.Owner).Coordinates);
         _metaSystem.SetEntityName(report, Loc.GetString("medical-report-name", ("name", generalRecord.Name)));
         var content = GetMedicalReportText(generalRecord, medicalRecord, medic, medicJob);

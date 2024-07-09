@@ -10,24 +10,6 @@ public enum MedicalRecordsConsoleKey : byte
     Key
 }
 
-/// <summary>
-///     Criminal records console state. There are a few states:
-///     - SelectedKey null, Record null, RecordListing null
-///         - The station record database could not be accessed.
-///     - SelectedKey null, Record null, RecordListing non-null
-///         - Records are populated in the database, or at least the station has
-///           the correct component.
-///     - SelectedKey non-null, Record null, RecordListing non-null
-///         - The selected key does not have a record tied to it.
-///     - SelectedKey non-null, Record non-null, RecordListing non-null
-///         - The selected key has a record tied to it, and the record has been sent.
-///
-///     - there is added new filters and so added new states
-///         -SelectedKey null, Record null, RecordListing null, filters non-null
-///            the station may have data, but they all did not pass through the filters
-///
-///     Other states are erroneous.
-/// </summary>
 [Serializable, NetSerializable]
 public sealed class MedicalRecordsConsoleState : BoundUserInterfaceState
 {
@@ -58,7 +40,7 @@ public sealed class MedicalRecordsConsoleState : BoundUserInterfaceState
 }
 
 /// <summary>
-/// Used to change status, respecting the wanted/reason nullability rules in <see cref="CriminalRecord"/>.
+/// Used to change status
 /// </summary>
 [Serializable, NetSerializable]
 public sealed class MedicalRecordChangeStatus : BoundUserInterfaceMessage
@@ -83,7 +65,7 @@ public sealed class PrintMedicalCard : BoundUserInterfaceMessage
 }
 
 /// <summary>
-/// Used to add a single line to the record's crime history.
+/// Used to add a single line to the record's medical history.
 /// </summary>
 [Serializable, NetSerializable]
 public sealed class MedicalRecordAddHistory : BoundUserInterfaceMessage
@@ -97,7 +79,7 @@ public sealed class MedicalRecordAddHistory : BoundUserInterfaceMessage
 }
 
 /// <summary>
-/// Used to delete a single line from the crime history, by index.
+/// Used to delete a single line from the medical history, by index.
 /// </summary>
 [Serializable, NetSerializable]
 public sealed class MedicalRecordDeleteHistory : BoundUserInterfaceMessage

@@ -4,27 +4,27 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.MedicalRecords;
 
 /// <summary>
-/// Criminal record for a crewmember.
-/// Can be viewed and edited in a criminal records console by security.
+/// Medical record for a crewmember.
+/// Can be viewed and edited in a medical records console.
 /// </summary>
 [Serializable, NetSerializable, DataRecord]
 public sealed record MedicalRecord
 {
     /// <summary>
-    /// Status of the person (None, Wanted, Detained).
+    /// Status of the person.
     /// </summary>
     [DataField]
     public MedicalStatus Status = MedicalStatus.None;
 
     /// <summary>
-    /// When Status is Wanted, the reason for it.
+    /// When Status is one of dead, the reason for it.
     /// Should never be set otherwise.
     /// </summary>
     [DataField]
     public string? Reason;
 
     /// <summary>
-    /// Criminal history of the person.
+    /// Medical history of the person.
     /// This should have charges and time served added after someone is detained.
     /// </summary>
     [DataField]
@@ -32,7 +32,7 @@ public sealed record MedicalRecord
 }
 
 /// <summary>
-/// A line of criminal activity and the time it was added at.
+/// A line of medical activity and the time it was added at.
 /// </summary>
 [Serializable, NetSerializable]
 public record struct MedicalHistory(TimeSpan AddTime, string Medical);

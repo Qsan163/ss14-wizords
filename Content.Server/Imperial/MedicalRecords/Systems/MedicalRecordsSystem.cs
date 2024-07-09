@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.MedicalRecords;
 using Content.Shared.Medical;
@@ -8,12 +7,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.MedicalRecords.Systems;
 
 /// <summary>
-///     Criminal records
-///
-///     Criminal Records inherit Station Records' core and add role-playing tools for Security:
-///         - Ability to track a person's status (Detained/Wanted/None)
-///         - See security officers' actions in Criminal Records in the radio
-///         - See reasons for any action with no need to ask the officer personally
+///     Medical records
 /// </summary>
 public sealed class MedicalRecordsSystem : EntitySystem
 {
@@ -54,7 +48,7 @@ public sealed class MedicalRecordsSystem : EntitySystem
     }
 
     /// <summary>
-    /// Tries to add a history entry to a criminal record.
+    /// Tries to add a history entry to a medical record.
     /// </summary>
     /// <returns>True if adding succeeded, false if not</returns>
     public bool TryAddHistory(StationRecordKey key, MedicalHistory entry)
@@ -76,7 +70,7 @@ public sealed class MedicalRecordsSystem : EntitySystem
     }
 
     /// <summary>
-    /// Tries to delete a sepcific line of history from a criminal record, by index.
+    /// Tries to delete a sepcific line of history from a medical record, by index.
     /// </summary>
     /// <returns>True if the line was removed, false if not</returns>
     public bool TryDeleteHistory(StationRecordKey key, uint index)
