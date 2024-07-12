@@ -1,10 +1,19 @@
 using Content.Server.StationRecords.Systems;
+<<<<<<< HEAD
 using Content.Shared.MedicalRecords;
 using Content.Shared.Medical;
 using Content.Shared.StationRecords;
 using Robust.Shared.Timing;
 
 namespace Content.Server.MedicalRecords.Systems;
+=======
+using Content.Shared.Imperial.MedicalRecords;
+using Content.Shared.Imperial.Medical;
+using Content.Shared.StationRecords;
+using Robust.Shared.Timing;
+
+namespace Content.Server.Imperial.MedicalRecords.Systems;
+>>>>>>> medi-console
 
 /// <summary>
 ///     Medical records

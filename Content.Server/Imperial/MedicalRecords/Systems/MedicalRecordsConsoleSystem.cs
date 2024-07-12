@@ -4,20 +4,20 @@ using Content.Server.Station.Systems;
 using Content.Server.StationRecords;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.Access.Systems;
-using Content.Shared.MedicalRecords;
-using Content.Shared.MedicalRecords.Components;
-using Content.Shared.MedicalRecords.Systems;
-using Content.Shared.Medical;
+using Content.Shared.Imperial.MedicalRecords;
+using Content.Shared.Imperial.MedicalRecords.Components;
+using Content.Shared.Imperial.MedicalRecords.Systems;
+using Content.Shared.Imperial.Medical;
 using Content.Shared.StationRecords;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.IdentityManagement;
-using Content.Shared.Medical.Components;
+using Content.Shared.Imperial.Medical.Components;
 using Content.Server.Paper;
 using Robust.Shared.Utility;
 
-namespace Content.Server.MedicalRecords.Systems;
+namespace Content.Server.Imperial.MedicalRecords.Systems;
 
 
 /// <summary>

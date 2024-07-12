@@ -260,6 +260,7 @@
 
 - type: entity
   parent: BaseComputer
+<<<<<<< HEAD
   id: ComputerMedicalRecords
   name: medical records computer
   description: This can be used to check medical records.
@@ -290,6 +291,8 @@
 
 - type: entity
   parent: BaseComputer
+=======
+>>>>>>> medi-console
   id: ComputerCriminalRecords
   name: criminal records computer
   description: This can be used to check criminal records. Only security can modify them.
