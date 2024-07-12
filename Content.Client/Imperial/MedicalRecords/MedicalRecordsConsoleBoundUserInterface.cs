@@ -1,7 +1,7 @@
 using Content.Shared.Access.Systems;
-using Content.Shared.MedicalRecords;
-using Content.Shared.MedicalRecords.Components;
-using Content.Shared.Medical;
+using Content.Shared.Imperial.MedicalRecords;
+using Content.Shared.Imperial.MedicalRecords.Components;
+using Content.Shared.Imperial.Medical;
 using Content.Shared.StationRecords;
 using Robust.Client.Player;
 using Robust.Shared.Prototypes;
@@ -9,7 +9,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Console;
 
 
-namespace Content.Client.MedicalRecords;
+namespace Content.Client.Imperial.MedicalRecords;
 
 public sealed class MedicalRecordsConsoleBoundUserInterface : BoundUserInterface
 {

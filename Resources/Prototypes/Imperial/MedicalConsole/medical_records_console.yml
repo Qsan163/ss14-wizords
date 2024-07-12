@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseComputer
+  id: ComputerMedicalRecords
+  name: medical records computer
+  description: This can be used to check medical records.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: medcomp
+    - map: ["computerLayerKeys"]
+      state: med_key
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#1f8c28"
+  - type: Computer
+    board: MedicalRecordsComputerCircuitboard
+  - type: MedicalRecordsConsole
+  - type: UserInterface
+    interfaces:
+    - key: enum.MedicalRecordsConsoleKey.Key
+      type: MedicalRecordsConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.MedicalRecordsConsoleKey.Key

@@ -1,9 +1,10 @@
-using Content.Shared.MedicalRecords.Systems;
+using Content.Shared.Imperial.MedicalRecords.Systems;
 using Content.Shared.Radio;
 using Content.Shared.StationRecords;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
-namespace Content.Shared.MedicalRecords.Components;
+
+namespace Content.Shared.Imperial.MedicalRecords.Components;
 
 /// <summary>
 /// A component for Medical Record Console storing an active station record key and a currently applied filter
@@ -38,7 +39,7 @@ public sealed partial class MedicalRecordsConsoleComponent : Component
     public ProtoId<RadioChannelPrototype> MedicalChannel = "Medical";
 
     /// <summary>
-    /// Max length ofmedical history strings.
+    /// Max length of medical history strings.
     /// </summary>
     [DataField]
     public uint MaxStringLength = 256;
