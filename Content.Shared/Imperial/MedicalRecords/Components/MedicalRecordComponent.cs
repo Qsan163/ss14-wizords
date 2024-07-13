@@ -2,12 +2,7 @@ using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
-<<<<<<< HEAD
-namespace Content.Shared.Medical.Components;
-=======
 namespace Content.Shared.Imperial.Medical.Components;
->>>>>>> medi-console
-
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class MedicalRecordComponent : Component
 {

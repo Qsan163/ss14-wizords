@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-using Content.Shared.Medical;
-using Content.Shared.Security;
-using Content.Shared.StationRecords;
-using Robust.Shared.Serialization;
-namespace Content.Shared.MedicalRecords;
-=======
 using Content.Shared.Imperial.Medical;
 using Content.Shared.StationRecords;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Imperial.MedicalRecords;
->>>>>>> medi-console
 
 [Serializable, NetSerializable]
 public enum MedicalRecordsConsoleKey : byte

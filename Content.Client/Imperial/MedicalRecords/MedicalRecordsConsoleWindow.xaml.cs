@@ -54,7 +54,7 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         _player = playerManager;
         _proto = prototypeManager;
         _random = robustRandom;
-        _accessReader = accessReader; 
+        _accessReader = accessReader;
         _maxLength = maxLength;
         _currentFilterType = StationRecordFilterType.Name;
 
@@ -68,7 +68,8 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
             AddStatusSelect(status);
         }
 
-        OnClose += () => {
+        OnClose += () =>
+        {
             _reasonDialog?.Close();
             documentPrinted = false;
             PrintHistoryButton.Disabled = false;
@@ -102,7 +103,7 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
 
         HistoryButton.OnPressed += _ =>
         {
-            if (_selectedRecord is {} record)
+            if (_selectedRecord is { } record)
                 OnHistoryUpdated?.Invoke(record, _access, true);
         };
 
@@ -151,7 +152,7 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         PersonContainer.Visible = selected;
         RecordUnselected.Visible = !selected;
 
-        _access = _player.LocalSession?.AttachedEntity is {} player
+        _access = _player.LocalSession?.AttachedEntity is { } player
             && _accessReader.IsAllowed(player, Console);
 
         // hide access-required editing parts when no access
@@ -192,7 +193,7 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
         PersonName.Text = stationRecord.Name;
 
         StatusOptionButton.SelectId((int) medicalRecord.Status);
-        if (medicalRecord.Reason is {} reason)
+        if (medicalRecord.Reason is { } reason)
         {
             var message = FormattedMessage.FromMarkup(Loc.GetString("medical-records-console-dead-reason"));
             message.AddText($": {reason}");
@@ -208,7 +209,7 @@ public sealed partial class MedicalRecordsConsoleWindow : FancyWindow
     private void AddStatusSelect(MedicalStatus status)
     {
         var name = Loc.GetString($"medical-records-status-{status.ToString().ToLower()}");
-        StatusOptionButton.AddItem(name, (int)status);
+        StatusOptionButton.AddItem(name, (int) status);
     }
 
     private void FilterListingOfRecords(string text = "")

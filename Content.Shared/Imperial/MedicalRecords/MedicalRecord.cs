@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-using Content.Shared.Medical;
-using Robust.Shared.Serialization;
-
-namespace Content.Shared.MedicalRecords;
-=======
 using Content.Shared.Imperial.Medical;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Imperial.MedicalRecords;
->>>>>>> medi-console
 
 /// <summary>
 /// Medical record for a crewmember.
