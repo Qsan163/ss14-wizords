@@ -1,0 +1,257 @@
+- type: entity
+  name: BaseWeaponHristov
+  parent: BaseItem
+  id: BaseWeaponSniperHristov
+  description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo.
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: Imperial/Hristov/Hristov.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniper
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniper
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeSniper
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeSniper
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: Hristov
+  parent: BaseWeaponSniperHristov
+  id: WeaponSniperHristovImperial
+  description: An iconic weapon of war. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Imperial/Hristov/Hristov.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniper
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniper
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeSniper
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeSniper
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Wieldable
+  - type: GunRequiresWield
+
+- type: entity
+  parent: BaseBullet
+  id: BulletSniper
+  noSpawn: true
+  name: bullet (.50 sniper)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 70
+        Structural: 20
+  - type: StaminaDamageOnCollide
+    damage: 55
+
+- type: entity
+  parent: BaseBulletAP
+  id: BulletSniperAP
+  noSpawn: true
+  name: bullet (.50 sniper armor-piercing)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Structural: 60
+  - type: StaminaDamageOnCollide
+    damage: 30
+    ignoreResistances: true
+
+- type: entity
+  id: BaseMagazineSniper
+  name: "magazine (.50 sniper)"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniper
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeSniper
+    proto: CartridgeSniper
+    capacity: 6
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Imperial/Hristov/50mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineSniper
+  name: "magazine (.50 sniper)"
+  parent: BaseMagazineSniper
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeSniper
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineSniperAP
+  name: "magazine (.50 sniper armor-piercing)"
+  parent: BaseMagazineSniper
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeSniperAP
+  - type: Sprite
+    sprite: Imperial/Hristov/50mag-armor-piercing.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: BaseCartridgeSniper
+  name: cartridge (.50 sniper)
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeSniper
+  - type: CartridgeAmmo
+    proto: BulletSniper
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeSniper
+  name: cartridge (.50 sniper)
+  parent: BaseCartridgeSniper
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSniper
+
+- type: entity
+  id: CartridgeSniperAP
+  name: cartridge (.50 sniper armor-piercing)
+  parent: BaseCartridgeSniper
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSniperAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#0a0a0a"
+
+- type: entity
+  id: BriefcaseSyndieHristovBundleFilled
+  name: brown briefcase
+  parent: BriefcaseSyndie
+  suffix: SniperBundle
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperHristovImperial
+      - id: MagazineSniper
+        amount: 2
+      - id: ClothingHandsGlovesLatex
+      - id: ClothingUniformJumpsuitLawyerBlack
+      - id: BarberScissors

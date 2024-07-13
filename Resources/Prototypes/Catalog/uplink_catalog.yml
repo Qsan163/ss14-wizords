@@ -117,16 +117,16 @@
       tags:
       - NukeOpsUplink
 
-- type: listing
-  id: UplinkSniperBundle
-  name: uplink-sniper-bundle-name
-  description: uplink-sniper-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
-  productEntity: BriefcaseSyndieSniperBundleFilled
-  cost:
-    Telecrystal: 12
-  categories:
-  - UplinkWeaponry
+# - type: listing Удалено, так как теперь используется другой Христов. //Imperial Space
+#   id: UplinkSniperBundle
+#   name: uplink-sniper-bundle-name
+#   description: uplink-sniper-bundle-desc
+#   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
+#   productEntity: BriefcaseSyndieSniperBundleFilled
+#   cost:
+#     Telecrystal: 12
+#   categories:
+#   - UplinkWeaponry
 
 - type: listing
   id: UplinkC20RBundle
@@ -437,15 +437,15 @@
   - UplinkAmmo
 
 # for the hristov
-- type: listing
-  id: UplinkHristovAmmo
-  name: uplink-sniper-ammo-name
-  description: uplink-sniper-ammo-desc
-  productEntity: MagazineBoxAntiMateriel
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkAmmo
+# - type: listing Удалено, так как теперь используется другой Христов. //Imperial Space
+#   id: UplinkHristovAmmo
+#   name: uplink-sniper-ammo-name
+#   description: uplink-sniper-ammo-desc
+#   productEntity: MagazineBoxAntiMateriel
+#   cost:
+#     Telecrystal: 2
+#   categories:
+#   - UplinkAmmo
 
 - type: listing
   id: UplinkAmmoBundle

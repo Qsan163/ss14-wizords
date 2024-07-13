@@ -1,0 +1,51 @@
+- type: listing
+  id: UplinkHristovBundle
+  name: uplink-hristov-name
+  description: uplink-hristov-desc
+  icon: { sprite: /Textures/Imperial/Hristov/Hristov.rsi, state: icon }
+  productEntity: BriefcaseSyndieHristovBundleFilled
+  cost:
+    Telecrystal: 16
+  categories:
+    - UplinkWeaponry
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+
+- type: listing
+  id: UplinkNukeHristovBundle
+  name: uplink-hristov-name
+  description: uplink-hristov-desc
+  icon: { sprite: /Textures/Imperial/Hristov/Hristov.rsi, state: icon }
+  productEntity: BriefcaseSyndieHristovBundleFilled
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: UplinkMagazineHristov
+  name: uplink-magazine-hristov-name
+  description: uplink-magazine-hristov-desc
+  productEntity: MagazineSniper
+  cost:
+    Telecrystal: 4
+  categories:
+    - UplinkAmmo
+
+- type: listing
+  id: UplinkMagazineHristovAP
+  name: uplink-magazine-hristov-name
+  description: uplink-magazine-hristov-desc
+  productEntity: MagazineSniperAP
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkAmmo
