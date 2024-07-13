@@ -1,5 +1,6 @@
 using Content.Shared.IdentityManagement;
 using Content.Shared.IdentityManagement.Components;
+<<<<<<< HEAD
 using Content.Shared.Medical;
 ﻿using Robust.Shared.Serialization;
 namespace Content.Shared.MedicalRecords.Systems;
@@ -49,4 +50,17 @@ public abstract class SharedMedicalRecordsConsoleSystem : EntitySystem
     //     if(previousIcon != record.StatusIcon)
     //         Dirty(characterUid, record);
     // }
+=======
+using Content.Shared.Imperial.Medical;
+﻿using Robust.Shared.Serialization;
+
+namespace Content.Shared.Imperial.MedicalRecords.Systems;
+
+public abstract class SharedMedicalRecordsConsoleSystem : EntitySystem
+{
+    public void UpdateMedicalIdentity(string name, MedicalStatus status)
+    {
+        var query = EntityQueryEnumerator<IdentityComponent>();
+    }
+>>>>>>> medi-console
 }
