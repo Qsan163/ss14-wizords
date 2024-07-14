@@ -42,8 +42,8 @@
 
 - type: listing
   id: UplinkMagazineHristovAP
-  name: uplink-magazine-hristov-name
-  description: uplink-magazine-hristov-desc
+  name: uplink-magazine-hristov-ap-name
+  description: uplink-magazine-hristov-ap-desc
   productEntity: MagazineSniperAP
   cost:
     Telecrystal: 6
