@@ -19,7 +19,13 @@ reagent-desc-randove = Лёгкое , пенистое пшеничное пив
 reagent-name-gnomificatorPerm = Стабильный гномгибитор+ 
 reagent-desc-gnomificatorPerm = Стабилизированный гномизатор , превращает в гнома НАВЕЧНО!!!
 
+ent-LeafTank = Канистра Листолюба
+    .desc = Бочка самого гадкого напитка на свете!
+    .suffix = пусто
 
+ent-LeafTankFull = Канистра Листолюба
+    .desc = Бочка самого гадкого напитка на свете!
+    .suffix = полно
 #ГНОМЫ НИЖЕ
 
 ent-MobGnomeWizord = ГноМаг
