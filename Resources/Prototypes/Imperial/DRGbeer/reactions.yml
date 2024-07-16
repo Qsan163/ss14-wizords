@@ -109,7 +109,7 @@
   id: GnomificatorPermanent
   reactants:
     Gnomificator:
-      amount: 1
+      amount: 2
     StrangeReagent:
       amount: 1
   products:
