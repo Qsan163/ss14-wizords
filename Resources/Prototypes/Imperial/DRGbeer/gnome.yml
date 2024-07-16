@@ -1,6 +1,6 @@
-- type: entity #WHY MUST YOU THROW ERRORS HOW DARE YOU
-  name: Gnome #this thing is covered in comments, its for my sanity, ignore them please.
-  parent:     #without them id forget what everything does
+- type: entity 
+  name: Gnome 
+  parent:     
   - BaseSimpleMob
   - MobCombat
   - MobAtmosExposed
@@ -19,11 +19,11 @@
     fixtures:
       fix1:
         shape:
-          !type:PhysShapeCircle #displays error, works anyways so i wont touch it, whatever it does
+          !type:PhysShapeCircle 
           radius: 0.2
         density: 80
         mask:
-        - SmallMobMask #lets em go under doors for escapes from sec/greytide/hunting mice
+        - SmallMobMask 
         layer:
         - SmallMobLayer
   - type: Stripping
@@ -53,7 +53,7 @@
     - CannotSuicide
     - VimPilot
   - type: MobThresholds
-    thresholds: #VERY easy to kill, if it was harder to kill them the sneaky fuckers would rule the world
+    thresholds: #Балланс
       0: Alive
       10: Dead
   - type: DamageStateVisuals
@@ -72,7 +72,7 @@
       state: Gnome-0
   - type: Item
     size: Small
-  - type: Clothing #TO VALLHALLA
+  - type: Clothing #Зачем? По приколу
     quickEquip: false
     sprite: Imperial/DRGbeer/gnome.rsi
     equippedPrefix: 1
@@ -92,18 +92,18 @@
       types:
         Blunt: 1
         Piercing: 1
-  - type: Puller #dont need hands because they are at a disadvantage anyway, this way they can hold a light and drag a box for a backpack
+  - type: Puller 
     needsHands: false
-  - type: CanHostGuardian #touch this stuff to make the fuckers hold still when not possesed (NOT THE GAURDIAN)
+  - type: CanHostGuardian #Это сделано чтобы они стояли на месте пока в них не вселится гост (никаких БЛЯТЬ ГНОМОВ СТЕНДЬЮЗЕРОВ , ОНИ НЕ СМОГУТ ДОСТАТЬ ИМПЛАНТЕР)
   - type: FactionException
   - type: NpcFactionMember
     factions:
       - Passive
-  - type: Hands #gives em hands, the item sprites for holding things look all strange but its FINE, I DONT WANNA FIX IT ITS FINE ILL DO IT LATER
-  - type: Body #gives em a body, is needed for organs and hands
+  - type: Hands
+  - type: Body 
     prototype: gnomebody
     requiredLegs: 0
-  - type: Clumsy #no guns for youuuu if they shoot a gun they die >:3
+  - type: Clumsy #НИКАКИХ ГНОМОВ С АВТОМАТАМИ , РП - обьяснение : Гномов разносит отдачей пушки
     clumsyDamage:
       types:
         Blunt: 2
@@ -112,10 +112,10 @@
         Burn: 2
     clumsySound:
       path: /Audio/Imperial/gnom/fall.ogg
-  - type: Barotrauma #gnomes instantly explode in space, gnomes shouldnt go in space
+  - type: Barotrauma #Запрещаю находится в космосе
     damage:
       types:
-        Blunt: 60 #per second, scales with pressure and other constants. 
+        Blunt: 60  
   - type: ZombieImmune   
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -123,7 +123,7 @@
   - type: Destructible
     thresholds:
     - trigger:
-        !type:DamageTypeTrigger #gnomes gib once they are in enough bits that they cant be glued back together
+        !type:DamageTypeTrigger
         damageType: Blunt
         damage: 60
       behaviors:
@@ -140,7 +140,7 @@
             max: 3
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: DamageOnHighSpeedImpact #gnomes break when thrown, another anti gnometide device
+  - type: DamageOnHighSpeedImpact #Гномы разбиваются когда их кидают об стенку
     minimumSpeed: 10
     damage:
       types:
