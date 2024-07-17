@@ -1,1 +1,1 @@
-rule-secret-selected-preset = Выбрвн режим {$preset} для секрета.
+rule-secret-selected-preset = Выбран режим {$preset} для секрета.
