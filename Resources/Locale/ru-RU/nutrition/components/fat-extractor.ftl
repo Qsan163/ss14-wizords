@@ -1,8 +1,6 @@
-fat-extractor-component-rate = скорость извлечения
-
-fat-extractor-fact-1 = Жиры представляют собой триглицериды, состоящие из комбинации различных строительных блоков; глицерин и жирные кислоты.
-fat-extractor-fact-2 = Взрослые должны получать рекомендуемые 20-35% потребляемой энергии из жиров.
-fat-extractor-fact-3 = Избыточный вес или ожирение подвергают вас повышенному риску хронических заболеваний, таких как сердечно-сосудистые заболевания, метаболический синдром, диабет 2 типа и некоторые виды рака.
-fat-extractor-fact-4 = Не все жиры вредны. Определенное количество жиров является неотъемлемой частью здорового сбалансированного питания.
-fat-extractor-fact-5 = Насыщенные жиры должны составлять не более 11% ваших ежедневных калорий.
-fat-extractor-fact-6 = Ненасыщенные жиры, то есть мононенасыщенные жиры, полиненасыщенные жиры и омега-3 жирные кислоты, содержатся в растениях и рыбе.
+fat-extractor-fact-1 = Fats are triglycerides made up of a combination of different building blocks; glycerol and fatty acids.
+fat-extractor-fact-2 = Adults should get a recommended 20-35% of their energy intake from fat.
+fat-extractor-fact-3 = Being overweight or obese puts you at an increased risk of chronic diseases, such as cardiovascular diseases, metabolic syndrome, type 2 diabetes, and some types of cancers.
+fat-extractor-fact-4 = Not all fats are bad. A certain amount of fat is an essential part of a healthy balanced diet.
+fat-extractor-fact-5 = Saturated fat should form no more than 11% of your daily calories.
+fat-extractor-fact-6 = Unsaturated fat, that is monounsaturated fats, polyunsaturated fats, and omega-3 fatty acids, is found in plants and fish.

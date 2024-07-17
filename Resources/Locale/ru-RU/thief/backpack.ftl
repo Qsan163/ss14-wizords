@@ -1,63 +1,63 @@
-thief-backpack-window-title = Ящик воровских инструментов
+thief-backpack-window-title = thief toolbox
 
 thief-backpack-window-description =
-    Этот ящик для инструментов наполнен неопределённым содержимым.
-    Теперь вам необходимо вспомнить, что вы в него положили.
-    Выберите 2 разных наборов из списка.
+    This toolbox is filled with unspecified contents.
+    Now you need to remember what you put in it.
+    Choose 2 different sets from the list.
 
-thief-backpack-window-selected = Выбрано наборов: ({ $selectedCount }/{ $maxCount })
+thief-backpack-window-selected = Kits selected: ({$selectedCount}/{$maxCount})
 
-thief-backpack-window-approve-button = Принять
-thief-backpack-button-select = Выбрано [ ]
-thief-backpack-button-deselect = Выбрано [X]
+thief-backpack-window-approve-button = Approve
+thief-backpack-button-select = Select [  ]
+thief-backpack-button-deselect = Select [X]
 
 # Sets
 
-thief-backpack-category-chameleon-name = Набор хамелеона
+thief-backpack-category-chameleon-name = chameleon's kit
 thief-backpack-category-chameleon-description =
-    В комплект входит полный набор одежды, оснащённой
-    технологией хамелеона, позволяющую вам маскироваться
-    под практически что угодно на станции.
+    Includes a full set of clothing that contain
+    chameleon technology, allowing you to disguise
+    as pretty much anything on the station.
 
-thief-backpack-category-tools-name = Набор медвежатника
+thief-backpack-category-tools-name = bearcatcher's kit
 thief-backpack-category-tools-description =
-    Набор инструментов для сноса дверей, стен, окон,
-    и всего остального, что по каким-то причинам
-    не хочет пускать вас туда, куда вам нужно.
-    Включает два C4, мультитул, челюсти жизни,
-    пару инженерных очков сварщика и несколько изолированных перчаток.
+    A set of tools for roughing up doors, walls, windows,
+    and anything else that for whatever reason doesn't
+    want to let you in where you need to go.
+    Includes two C4s, a multitool, jaws of life,
+    a pair of advanced welder meson glasses and some insulated gloves.
 
-thief-backpack-category-chemistry-name = Набор химика
+thief-backpack-category-chemistry-name = chemistry kit
 thief-backpack-category-chemistry-description =
-    Набор для тех, кто любит совершенствовать своё тело.
-    В него входят имплант Хранилище,
-    имплант Миксер ДНК,
-    набор химикатов на чёрный день,
-    и омега мыло.
+    A set for those who love to improve their body.
+    It includes a storage implanter,
+    a DNA scrambler implanter,
+    a set of chemicals for a rainy day,
+    and omega soap.
 
-thief-backpack-category-syndie-name = Набор Синдиката
+thief-backpack-category-syndie-name = syndie kit
 thief-backpack-category-syndie-description =
-    Набор снаряжения агента Синдиката, которого вы
-    ограбили в прошлом. Включает в себя ID карту агента, Емаг,
-    пИИ Синдиката, и несколько странных красных кристаллов.
+    A set of items from a syndicate agent you've robbed
+    in the past. Includes an Agent ID card, Emag, a syndicate pAI,
+    and some strange red crystals.
 
-thief-backpack-category-sleeper-name = Набор лунатика
+thief-backpack-category-sleeper-name = sleepwalker's kit
 thief-backpack-category-sleeper-description =
-    Комплект для тех, кто любит поспать,
-    или чтобы уснули все вокруг вас.
-    В комплект входит набор пробирок ноктюрина,
-    гипоручка, и баллон снотворного газа.
+    A set for those who like to sleep in,
+    or for everyone around you to sleep.
+    Includes a set of nocturine vials, a hypopen and
+    a tank of sleeping gas.
 
-thief-backpack-category-communicator-name = Набор связиста
+thief-backpack-category-communicator-name = communicator's kit
 thief-backpack-category-communicator-description =
-    Набор для радиолюбителей. Включает мастер-ключ шифрования
-    для всех радиоканалов станции, ручку Cybersun, портативный монитор экипажа,
-    голосовую маску-хамелеон, и много денег для ведения бизнеса.
+    A communication enthusiast's kit. Includes a master key
+    for all station channels, a cybersun pen, a portable
+    crew monitor, a voice chameleon mask and lots of money for business deals.
 
-thief-backpack-category-smuggler-name = Набор контрабандиста
+thief-backpack-category-smuggler-name = smuggler's kit
 thief-backpack-category-smuggler-description =
-    Набор для тех, кто любит иметь большие карманы.
-    Включает маяк фултона, десять фултонов, 3 слезоточивые гранаты
-    и невидимый ящик. Вы не можете передвигаться в нём,
-    но вы можете быстро спрятать или унести ценную добычу.
-    К этому набору также прилагается крутой плащ пустоты.
+    A kit for those who like to have big pockets.
+    Includes a fulton beacon, ten fultons, 3 smoke grenades
+    and an invisible crate. You can't move in them,
+    but you can quickly hide or carry valuable loot.
+    This kit also has a cool void cloak to go along with it.

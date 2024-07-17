@@ -1,9 +1,5 @@
-spider-web-action-name = Паутина
-spider-web-action-description = Создает паутину, которая замедляет жертв.
-spider-web-action-nogrid = Под тобой нет пола!
-spider-web-action-success = Вы размещаете паутину вокруг себя.
-spider-web-action-fail = Здесь нельзя размещать паутину! Вокруг тебя уже есть паутина!!
+spider-web-action-nogrid = There is no floor under you!
+spider-web-action-success = You place webs around you.
+spider-web-action-fail = You can't place webs here! All cardinal directions already have webs!
 
-sericulture-action-name = Плетение шелка
-sericulture-action-description = Сплетите кусок шелка для использования в декоративно-прикладном искусстве.
-sericulture-failure-hunger = Ваш желудок слишком пуст, чтобы плести паутину!
+sericulture-failure-hunger = Your stomach is too empty to make any more webs!

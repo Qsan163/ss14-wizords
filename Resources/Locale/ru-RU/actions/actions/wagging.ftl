@@ -1,2 +1,2 @@
-action-name-toggle-wagging = Виляние хвостом
-action-description-toggle-wagging = Начать или прекратить вилять хвостом.
+action-name-toggle-wagging = Wagging Tail
+action-description-toggle-wagging = Start or stop wagging tail.

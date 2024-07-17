@@ -1,68 +1,77 @@
-reagent-name-toxin = токсин
-reagent-desc-toxin = Токсичный химикат.
+reagent-name-toxin = toxin
+reagent-desc-toxin = An unsurprisingly toxic chemical. Available at an emagged chem dispenser.
 
-reagent-name-carpotoxin = карпотоксин
-reagent-desc-carpotoxin = Токсичные выделения космического карпа. Вызывает болезненное чувство жжения.
+reagent-name-carpotoxin = carpotoxin
+reagent-desc-carpotoxin = A highly toxic reagent found in space carps. Causes a painful burning sensation.
 
-reagent-name-mold = плесень
-reagent-desc-mold = Часто можно встретить в темных, влажных местах или на старом хлебе.
+reagent-name-mold = mold
+reagent-desc-mold = A fungal growth, often found in dark, humid places or on expired bread. Will cause you to develop a disease if ingested.
 
-reagent-name-polytrinic-acid = политриновая кислота
-reagent-desc-polytrinic-acid = Чрезвычайно едкое химическое вещество. Малейшее касание этого вещества расплавит большинство масок и головных уборов, и оно наносит сильнейшие повреждения всем, кто вступает с ним в непосредственный контакт.
+reagent-name-polytrinic-acid = polytrinic acid
+reagent-desc-polytrinic-acid = An extremely corrosive chemical substance. Severely burns anyone who comes directly into contact with it.
 
-reagent-name-chloral-hydrate = хлоральгидрат
-reagent-desc-chloral-hydrate = В малых дозах вызывает сонливость. В больших дозах усыпляет. Передозировка вызывает отравление.
+reagent-name-chloral-hydrate = chloral hydrate
+reagent-desc-chloral-hydrate = A sedative and hypnotic chemical. Commonly used to put other people to sleep, whether they want to or not.
 
-reagent-name-ferrochromic-acid = феррохромовая кислота
-reagent-desc-ferrochromic-acid = Слабо едкий раствор, не способный вызвать серьезную опасность, если его не проглотить.
+reagent-name-gastrotoxin = gastrotoxin
+reagent-desc-gastrotoxin = A moderately toxic byproduct of decomposition. Most commonly found in spoiled food.
 
-reagent-name-fluorosulfuric-acid = фторсерная кислота
-reagent-desc-fluorosulfuric-acid = Чрезвычайно коррозийное химическое вещество.
+reagent-name-ferrochromic-acid = ferrochromic acid
+reagent-desc-ferrochromic-acid = A mildy corrosive solution, unable of causing severe danger unless ingested.
 
-reagent-name-sulfuric-acid = серная кислота
-reagent-desc-sulfuric-acid = Сильно коррозийная, маслянистая, бесцветная жидкость.
+reagent-name-fluorosulfuric-acid = fluorosulfuric acid
+reagent-desc-fluorosulfuric-acid = A highly corrosive chemical, capable of leaving quite a mark on your skin.
 
-reagent-name-unstable-mutagen = нестабильный мутаген
-reagent-desc-unstable-mutagen = Вызывает мутации при введении в живых людей или растения. Высокие дозы могут быть смертельными, особенно для людей.
+reagent-name-sulfuric-acid = sulfuric acid
+reagent-desc-sulfuric-acid = A corrosive chemical. Keep away from your face.
 
-reagent-name-heartbreaker-toxin = токсин хартбрейкер
-reagent-desc-heartbreaker-toxin = Галлюциногенное соединение, запрещенное космическим законом. Синтетический наркотик, получаемый из токсина майндбрейкер, блокирует некоторые нервные сигналы дыхательной системы, что вызывает удушье.
+reagent-name-unstable-mutagen = unstable mutagen
+reagent-desc-unstable-mutagen = Causes mutations when injected into living people or plants. High doses may be lethal, especially in humans.
 
-reagent-name-lexorin = лексорин
-reagent-desc-lexorin = Временно останавливает дыхание и вызывает повреждение тканей. Большие дозы смертельны и приводят к быстрой потере сознания. Дексалин и Дексалин Плюс способны вывести его из организма.
+reagent-name-heartbreaker-toxin = heartbreaker toxin
+reagent-desc-heartbreaker-toxin = A hallucinogenic compound derived from mindbreaker toxin. it blocks neurological signals to the respiratory system, causing asphyxiation. Dexalin plus and epinephrine will filter it out, however.
 
-reagent-name-mindbreaker-toxin = токсин майндбрейкер
-reagent-desc-mindbreaker-toxin = Ранее было известно как ЛСД. Сильнодействующее галлюциногенное вещество, запрещенное космическим законом.
+reagent-name-lexorin = lexorin
+reagent-desc-lexorin = A fast-acting chemical used to asphyxiate people rapidly.
 
-reagent-name-histamine = гистамин
-reagent-desc-histamine = Эффект гистамина варьируется в зависимости от дозы. От слегка раздражающего до невероятно смертельного.
+reagent-name-mindbreaker-toxin = mindbreaker toxin
+reagent-desc-mindbreaker-toxin = A potent hallucinogenic compound that is formerly known as LSD.
 
-reagent-name-theobromine = теобромин
-reagent-desc-theobromine = Теобромин - это горький алкалоид, выделяемый из семян какао, который можно встретить в шоколаде и некоторых других продуктах.
+reagent-name-histamine = histamine
+reagent-desc-histamine = A chemical caused by allergenics reacting with antibodies. Lethal at large quantities.
 
-reagent-name-amatoxin = аматоксин
-reagent-desc-amatoxin = Сильный токсин, содержащийся в некоторых грибах.
+reagent-name-theobromine = theobromine
+reagent-desc-theobromine = A bitter alkaloid of the cacao plant, commonly found in chocolate. Do not feed to animals.
 
-reagent-name-vent-crud = вентиляционная грязь
-reagent-desc-vent-crud = Черное вещество, которое можно встретить в плохо обслуживаемых вентиляционных системах.
+reagent-name-amatoxin = amatoxin
+reagent-desc-amatoxin = A deadly toxin found in some mushrooms, primarily fly amanita. Small dosages can be lethal.
 
-reagent-name-corpium = корпиум
-reagent-desc-corpium = Коктейль Синдиката, тщательно собранный из различных источников. Вы не захотите, чтобы это оказалось внутри вас.
+reagent-name-vent-crud = vent crud
+reagent-desc-vent-crud = A jet black substance found in poorly maintained ventilation systems. Can cause vent cough.
 
-reagent-name-uncooked-animal-proteins = непрожаренные животные протеины
-reagent-desc-uncooked-animal-proteins = Крайне опасны для желудков более слабых форм жизни.
+reagent-name-romerol = romerol
+reagent-desc-romerol = An otherworldly concoction able to bring the undead to life. If untreated, the effects are irreversible and will bring certain doom upon the station. Handle with care.
 
-reagent-name-allicin = аллицин
-reagent-desc-allicin = Сероорганическое соединение, содержащееся в растениях-аллиумах, таких, как чеснок, лук и других.
+reagent-name-uncooked-animal-proteins = uncooked animal proteins
+reagent-desc-uncooked-animal-proteins = This is very risky for the stomachs of softer lifeforms to digest.
 
-reagent-name-pax = пакс
-reagent-desc-pax = Психиатрический препарат, который не позволяет употребившему причинять вред кому-либо напрямую.
+reagent-name-allicin = allicin
+reagent-desc-allicin = An organosulfur compound found in alliums like garlic, onions, and related plants.
 
-reagent-name-honk = хонк
-reagent-desc-honk = Токсин, обнаруженный в бананиуме. Вызывает сильное гудение и внутреннее кровотечение, также может вызвать мутацию у пациента.
+reagent-name-pax = pax
+reagent-desc-pax = A psychiatric chemical which prevents the patient from directly harming anyone.
 
-reagent-name-lead = свинец
-reagent-desc-lead = Медленно действующий, но невероятно смертоносный токсин, обнаруженный в стали, хотя и в следовых количествах. Безвкусно.
+reagent-name-honk = honk
+reagent-desc-honk = A toxin found in bananium. Causes severe honking and internal bleeding, may also cause the patient to mutate.
 
-reagent-name-bungotoxin = бунготоксин
-reagent-desc-bungotoxin = Яд умеренно медленного действия, обнаруженный в косточке плода бунго.
+reagent-name-lead = lead
+reagent-desc-lead = A slow-acting but incredibly lethal toxin found in steel, albiet in trace amounts. Tasteless.
+
+reagent-name-bungotoxin = bungotoxin
+reagent-desc-bungotoxin = A moderately slow-acting poison found within the pit of the bungo fruit.
+
+reagent-name-vestine = vestine
+reagent-desc-vestine = Has an adverse reaction within the body causing major jittering. While not particularly useful on it's own, it can be used to produce a small variety of chemicals.
+
+reagent-name-tazinide = tazinide
+reagent-desc-tazinide = A highly dangerous metallic mixture which can interfere with most movement through an electrifying current.

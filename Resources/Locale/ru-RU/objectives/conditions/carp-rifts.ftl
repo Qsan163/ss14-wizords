@@ -1,2 +1,2 @@
-objective-carp-rifts-title = Открыть {$count} карповых разлома
-objective-carp-rifts-description = Используйте действие «Разлом», чтобы открыть разломы {$count} и убедитесь, что они не будут уничтожены. Если вы не откроете разлом через 5 минут, вы умрете.
+objective-carp-rifts-title = Open {$count} carp rifts
+objective-carp-rifts-description = Use the rift action to open {$count} rifts and ensure they do not get destroyed. If you don't open a rift after 5 minutes, you get killed.

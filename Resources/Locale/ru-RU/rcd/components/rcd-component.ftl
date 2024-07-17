@@ -1,66 +1,18 @@
 
 ### UI
 
-rcd-component-examine-mode-details = Выбран режим: '{$mode}'.
-rcd-component-examine-build-details = Выбран режим строительства: {$name}.
-
+# Shown when an RCD is examined in details range
+rcd-component-examine-detail = It's currently on {$mode} mode.
 
 ### Interaction Messages
 
-# Mode change
-rcd-component-change-mode = РСУ переключён в режим '{$mode}'.
-rcd-component-change-build-mode = РСУ переключён в режим строительства. Строится {$name}.
+# Shown when changing RCD Mode
+rcd-component-change-mode = The RCD is now set to {$mode} mode.
 
-# Ammo count
-rcd-component-no-ammo-message = В РСУ закончились заряды!
-rcd-component-insufficient-ammo-message = В РСУ не хватает зарядов!
-
-# Deconstruction
-rcd-component-tile-indestructible-message = Эта клетка не может быть демонтирова!
-rcd-component-deconstruct-target-not-on-whitelist-message = Вы не можете демонтировать это!
-rcd-component-nothing-to-deconstruct-message = Здесь нечего демонтировать!
-rcd-component-tile-obstructed-message = Вы не можете демонтировать клетку, на которой что-то находится!
-
-# Construction
-rcd-component-no-valid-grid = Вы слишком далеко в космосе, чтобы строить здесь!
-rcd-component-must-build-on-empty-tile-message = Здесь уже имеется фундамент!
-rcd-component-cannot-build-on-empty-tile-message = Это не может быть построено без фундамента.
-rcd-component-must-build-on-subfloor-message = Это может быть построено только на покрытии!
-rcd-component-cannot-build-on-subfloor-message = Это не может быть построено на покрытии!
-rcd-component-cannot-build-on-occupied-tile-message = Здесь нельзя строить, место уже занято!
-rcd-component-cannot-build-identical-tile = Эта клетка уже тут имеется!
-
-
-### Category names
-
-rcd-component-walls-and-flooring = Стены и полы
-rcd-component-windows-and-grilles = Окна и решётки
-rcd-component-airlocks = Шлюзы
-rcd-component-electrical = Электроприборы
-rcd-component-lighting = Освещение
-
-
-### Prototype names (note: constructable items will be puralized)
-
-rcd-component-deconstruct = демонтаж
-rcd-component-floor-steel = стальной пол
-rcd-component-plating = корпусное покрытие
-rcd-component-plating = плита корпуса
-rcd-component-catwalk = мостик
-rcd-component-wall-reinforced = усиленная стена
-rcd-component-grille = решетка
-rcd-component-window = окно
-rcd-component-window-directional = направленное окно
-rcd-component-window-reinforced-directional = армированное направленное окно
-rcd-component-reinforced-window = армированное окно
-rcd-component-airlock = шлюз
-rcd-component-airlock-glass = шлюз с окнами
-rcd-component-firelock = противопожарный шлюз
-rcd-component-computer-frame = корпус компьютера
-rcd-component-machine-frame = корпус машины
-rcd-component-tube-light = свет
-rcd-component-window-bulb-light = маленький свет
-rcd-component-window-lv-cable = НВ кабель
-rcd-component-window-mv-cable = СВ кабель
-rcd-component-window-hv-cable = ВВ кабель
-rcd-component-window-cable-terminal = кабель терминала
+rcd-component-no-ammo-message = The RCD is out of ammo!
+rcd-component-tile-obstructed-message = That tile is obstructed!
+rcd-component-tile-indestructible-message = That tile can't be destroyed!
+rcd-component-deconstruct-target-not-on-whitelist-message = You can't deconstruct that!
+rcd-component-cannot-build-floor-tile-not-empty-message = You can only build a floor on space!
+rcd-component-cannot-build-wall-tile-not-empty-message = You cannot build a wall on space!
+rcd-component-cannot-build-airlock-tile-not-empty-message = Cannot build an airlock on space!

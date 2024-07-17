@@ -1,12 +1,12 @@
 # Damage examines
-damage-examinable-verb-text = Повреждения
-damage-examinable-verb-message = Изучить показатели урона.
+damage-examinable-verb-text = Damage
+damage-examinable-verb-message = Examine the damage values.
 
-damage-hitscan = хитсканом
-damage-projectile = снарядом
-damage-melee = ближним боем
-damage-throw = броском
+damage-hitscan = hitscan
+damage-projectile = projectile
+damage-melee = melee
+damage-throw = throw
 
-damage-examine = Наносит следующие повреждения:
-damage-examine-type = Наносит следующие повреждения {$type}:
-damage-value = - [color=red]{$amount}[/color] единиц [color=yellow]{$type}[/color].
+damage-examine = It does the following damage:
+damage-examine-type = It does the following [color=cyan]{$type}[/color] damage:
+damage-value = - [color=red]{$amount}[/color] units of [color=yellow]{$type}[/color].

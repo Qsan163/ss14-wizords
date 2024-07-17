@@ -1,22 +1,22 @@
 # sheets of steel
-materials-unit-sheet = лист
+materials-unit-sheet = sheet
 # bars of gold
-materials-unit-bar = бар
+materials-unit-bar = bar
 # planks of wood
-materials-unit-plank = доска
+materials-unit-plank = plank
 # rolls of cloth
-materials-unit-roll = рулон
+materials-unit-roll = roll
 # pieces of biomass
-materials-unit-piece = кусок
+materials-unit-piece = piece
 # bunches of bananium
-materials-unit-bunch = связка
+materials-unit-bunch = bunch
 # slabs of meat
-materials-unit-slab = плита
+materials-unit-slab = slab
 # webs of silk
-materials-unit-web = шелк
+materials-unit-web = web
 # chunks of ore
-materials-unit-chunk = куски руды
+materials-unit-chunk = chunk
 
 # bills of spesos... not very good but they are not (yet?) used for crafting anything
 # also the lathe/atm would need bigger denominations to output...
-materials-unit-bill = счет
+materials-unit-bill = bill

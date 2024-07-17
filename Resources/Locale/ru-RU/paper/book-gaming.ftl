@@ -1,33 +1,31 @@
-book-text-gaming1 = Не могу остаться на игру.
-       Инженеры хотят, чтобы я внимательно следил за сингулярностью.
-       Оставь это, чтобы ты знал, что случилось.
-       Извини.
-        - Александр
+book-text-gaming1 = Can't stay for the game.
+      Engineering want me to keep a close eye on the singularity SMESes.
+      Leaving this so you know what's up.
+      Sorry.
+       - Alexander
 
-book-text-gaming2 = Джонни Клоу
-       Класс: Друид
-       Мировоззрение: нейтрально-доброе
-       Стр: 1 294 139
-       Ловкость: 4 102 103
-       Против: 9 522 913
-       Инт: 528 491
-       Побед: 1
-       Поражений: 1
-       Где возраст?
-       Почему эти оценки способностей такие нелепые?
-       Что ты вообще пытаешься здесь сделать, Лия?
-       - Ваш дружелюбный DM
+book-text-gaming2 = Johny Clowe
+      Class: Druid
+      Alignment: Neutral Good
+      Str: 1,294,139
+      Dex: 4,102,103
+      Con: 9,522,913
+      Int: 528,491
+      Wis: 1
+      Cha: 1
+      Where's the age?
+      Why are those ability scores so ridiculous?
+      What even are you trying to do here, Leah? - Your Friendly DM
 
-book-text-gaming3 = ГИГАНТСКИЙ КОСМИЧЕСКИЙ ПОЛЕТ ИЗ КОСМОСА
-       Сессия 1: Они должны были только что узнать, что происходит с миром и Гигантской космической мухой.
-       Сессия 2: Они должны знать, чтобы спросить Двор Волшебников о сейсмических искажениях.
-       Сессия 3: На пути к подземному логову.
-       Сессия 4: Только что столкнулся с Архитектором мух.
-       Боже мой, они просто начали беспорядочно всех убивать
+book-text-gaming3 = THE GIANT SPACE FLY FROM SPACE
+      Session 1: They should have just learned what's going on with the world and the Giant Space Fly.
+      Session 2: They should know to ask the Wizard's Court about seismic distortions.
+      Session 3: On their way to underground lair.
+      Session 4: Just ran into the Architect Of Flies.
+      Oh dear goodness they just started randomly killing everybody
 
-book-text-gaming4 = Не сможет прийти на встречу, химик снова взорвал больницу.
-       Пятый раз за эту смену.
-       Это потрясающе.
-       Но не в хорошем смысле.
-       Привет.
-       - Ариэль
+book-text-gaming4 = Won't be able to come to the meet, chemist blew up the hospital again.
+      Fifth time this shift.
+      It's amazing.
+      But not in a good way.
+      Cheers, - Arielle

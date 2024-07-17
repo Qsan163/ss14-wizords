@@ -1,4 +1,4 @@
-defibrillator-not-on = Дефибриллятор не включен.
-defibrillator-no-mind = В мозгу пациента невозможно обнаружить интеллектуальный паттерн. Дальнейшие попытки тщетны
-defibrillator-ghosted = Реанимация не удалась - ошибка ментального интерфейса. Дальнейшие попытки могут быть успешными.
-defibrillator-rotten = Обнаружено разложение тела: реанимация не удалась.
+﻿defibrillator-not-on = The defibrillator isn't turned on.
+defibrillator-no-mind = No intelligence pattern can be detected in patient's brain. Further attempts futile.
+defibrillator-rotten = Body decomposition detected: resuscitation failed.
+defibrillator-unrevivable = This patient is unable to be revived due to a unique body composition.

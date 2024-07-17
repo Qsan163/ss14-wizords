@@ -1,10 +1,10 @@
 ## PointingSystem
 
-pointing-system-try-point-cannot-reach = Вы не можете туда показать!
-pointing-system-point-at-self = Вы показываете на самого себя.
-pointing-system-point-at-other = Вы показываете на {$other}.
-pointing-system-point-at-self-others = {CAPITALIZE($otherName)} показывает на {$other}.
-pointing-system-point-at-other-others = {CAPITALIZE($otherName)} показывает на {$other}.
-pointing-system-point-at-you-other = {$otherName} показывает на вас.
-pointing-system-point-at-tile = Вы показываете на {$tileName}.
-pointing-system-other-point-at-tile = {CAPITALIZE($otherName)} показывает на {$tileName}.
+pointing-system-try-point-cannot-reach = You can't reach there!
+pointing-system-point-at-self = You point at yourself.
+pointing-system-point-at-other = You point at {THE($other)}.
+pointing-system-point-at-self-others = {CAPITALIZE(THE($otherName))} points at {THE($other)}.
+pointing-system-point-at-other-others = {CAPITALIZE(THE($otherName))} points at {THE($other)}.
+pointing-system-point-at-you-other = {$otherName} points at you.
+pointing-system-point-at-tile = You point at the {$tileName}.
+pointing-system-other-point-at-tile = {CAPITALIZE(THE($otherName))} points at the {$tileName}.

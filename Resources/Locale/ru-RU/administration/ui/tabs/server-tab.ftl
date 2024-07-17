@@ -1,4 +1,3 @@
-server-shutdown = Выключить
-server-ooc-toggle = Вкл\вкл OOC
-server-looc-toggle = Вкл\выкл LOOC
-server-panicbunker-toggle = Вкл\выкл бункер
+server-shutdown = Shutdown
+server-ooc-toggle = Toggle OOC
+server-looc-toggle = Toggle LOOC

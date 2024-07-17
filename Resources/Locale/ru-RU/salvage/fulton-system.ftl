@@ -1,7 +1,7 @@
-fulton-folded = Маяк нужно развернуть
-fulton-examine = {$time} секунд до извлечения
-fulton-linked = Связанный маяк
-fulton-not-found = Маяк не найден
-fulton-invalid = Невозможно использовать Фултон
-fulton-fultoned = Уже наполнился
-fulton-remove = Удалить Фултон
+fulton-folded = Beacon needs unfolding
+fulton-examine = {$time} seconds until extraction
+fulton-linked = Linked beacon
+fulton-not-found = No beacon found
+fulton-invalid = Can't fulton
+fulton-fultoned = Already fultoned
+fulton-remove = Remove fulton

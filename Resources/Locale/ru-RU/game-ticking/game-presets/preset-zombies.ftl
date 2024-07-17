@@ -1,32 +1,32 @@
-zombie-title = Зомби
-zombie-description = На станции появился вирус, способный оживлять мертвецов! Совместно с другими членами экипажа сдержите заражение и постарайтесь выжить.
+﻿zombie-title = Zombies
+zombie-description = The undead have been unleashed on the station! Work with the crew to survive the outbreak and secure the station.
 
-zombie-not-enough-ready-players = Недостаточно игроков готовы к игре! { $readyPlayersCount } игроков из необходимых { $minimumPlayers } готовы. Нельзя начать Зомби.
-zombie-no-one-ready = Нет готовых игроков! Нельзя начать Зомби.
+zombie-not-enough-ready-players = Not enough players readied up for the game! There were {$readyPlayersCount} players readied up out of {$minimumPlayers} needed. Can't start Zombies.
+zombie-no-one-ready = No players readied up! Can't start Zombies.
 
-zombie-patientzero-role-greeting = Вы — нулевой пациент. Скрывайте свою инфекцию, добывайте припасы, и будьте готовы обратиться после смерти.
-zombie-healing = Вы чувствуете шевеление своей плоти
-zombie-infection-warning = Вы чувствуете, как зомби вирус овладевает вами
-zombie-infection-underway = Ваша кровь начинает сгущаться
+zombie-patientzero-role-greeting = You are an initial infected. Get supplies and prepare for your eventual transformation. Your goal is to overtake the station while infecting as many people as possible.
+zombie-healing = You feel a stirring in your flesh
+zombie-infection-warning = You feel the zombie virus take hold
+zombie-infection-underway = Your blood begins to thicken
 
-zombie-alone = Вы чувствуете себя совершенно одиноким.
+zombie-alone = You feel entirely alone.
 
-zombie-shuttle-call = Мы обнаружили, что станцию захватила нежить. Отправляем аварийный шаттл для сбора оставшегося персонала.
+zombie-shuttle-call = We have detected that the undead have overtaken the station. Dispatching an emergency shuttle to collect remaining personnel.
 
 zombie-round-end-initial-count = {$initialCount ->
-    [one] Единственным нулевым пациентом был:
-   *[other] Нулевых пациентов было {$initialCount}, ими были:
+    [one] There was one initial infected:
+    *[other] There were {$initialCount} initial infected:
 }
-zombie-round-end-user-was-initial = - [color=plum]{$name}[/color] ([color=gray]{$username}[/color]) был одним из нулевых пациентов.
+zombie-round-end-user-was-initial = - [color=plum]{$name}[/color] ([color=gray]{$username}[/color]) was one of the initial infected.
 
-zombie-round-end-amount-none = [color=green]Все зомби были уничтожены![/color]
-zombie-round-end-amount-low = [color=green]Почти все зомби были уничтожены.[/color]
-zombie-round-end-amount-medium = [color=yellow]{ $percent }% экипажа были обращены в зомби.[/color]
-zombie-round-end-amount-high = [color=crimson]{ $percent }% экипажа были обращены в зомби.[/color]
-zombie-round-end-amount-all = [color=darkred]Весь экипаж обратился в зомби![/color]
+zombie-round-end-amount-none = [color=green]All of the zombies were eradicated![/color]
+zombie-round-end-amount-low = [color=green]Almost all of the zombies were exterminated.[/color]
+zombie-round-end-amount-medium = [color=yellow]{$percent}% of the crew were turned into zombies.[/color]
+zombie-round-end-amount-high = [color=crimson]{$percent}% of the crew were turned into zombies.[/color]
+zombie-round-end-amount-all = [color=darkred]The entire crew became zombies![/color]
 
 zombie-round-end-survivor-count = {$count ->
-    [one] Единственным выжившим стал:
-   *[other] Осталось всего {$count} выживших, это:
+    [one] There was only one survivor left:
+    *[other] There were only {$count} survivors left:
 }
-zombie-round-end-user-was-survivor = - [color=White]{$name}[/color] ([color=gray]{$username}[/color]) пережил заражение.
+zombie-round-end-user-was-survivor = - [color=White]{$name}[/color] ([color=gray]{$username}[/color]) survived the outbreak.

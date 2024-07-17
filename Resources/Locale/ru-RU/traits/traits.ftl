@@ -1,43 +1,37 @@
-﻿trait-blindness-name = Слепота
-trait-blindness-desc = У вас ужасное зрение
+trait-blindness-name = Blindness
+trait-blindness-desc = You are legally blind, and can't see clearly past a few meters in front of you.
 
-trait-narcolepsy-name = Нарколепсия
-trait-narcolepsy-desc = Вас одолевают приступы сонливости
+trait-narcolepsy-name = Narcolepsy
+trait-narcolepsy-desc = You fall asleep randomly
 
-trait-pacifist-name = Пацифист
-trait-pacifist-desc = Вы не можете атаковать или причинить вред живым существам.
+trait-pacifist-name = Pacifist
+trait-pacifist-desc = You cannot attack or hurt any living beings.
 
-permanent-blindness-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} глаза остекленелые и расфокусированные. Не похоже, что {SUBJECT($target)} может вас видеть.[/color]
+permanent-blindness-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} eyes are glassy and unfocused. It doesn't seem like {SUBJECT($target)} can see you well, if at all.[/color]
 
-trait-lightweight-name = Быстрое опьянение
-trait-lightweight-desc = Алкоголь оказывает на вас более сильное воздействие
+trait-lightweight-name = Lightweight Drunk
+trait-lightweight-desc = Alcohol has a stronger effect on you
 
-trait-muted-name = Немота
-trait-muted-desc = Вы не можете говорить
+trait-muted-name = Muted
+trait-muted-desc = You can't speak
 
-trait-paracusia-name = Паракузия
-trait-paracusia-desc = Вы слышите звуки, которых на самом деле нет
+trait-paracusia-name = Paracusia
+trait-paracusia-desc = You hear sounds that aren't really there
 
-trait-unrevivable-name = Невозвратимый
-trait-unrevivable-desc = Вас невозможно оживить с помощью дефибриллятора.
+trait-unrevivable-name = Unrevivable
+trait-unrevivable-desc = You are unable to be revived by defibrillators.
 
-trait-pirate-accent-name = Пиратский акцент
-trait-pirate-accent-desc = Вы не можете перестать говорить как пират!
+trait-pirate-accent-name = Pirate Accent
+trait-pirate-accent-desc = You can't stop speaking like a pirate!
 
-trait-accentless-name = Без акцента
-trait-accentless-desc = У вас нет того акцента, который обычно бывает у представителей вашего вида.
+trait-accentless-name = Accentless
+trait-accentless-desc = You don't have the accent that your species would usually have
 
-trait-wheelchair-bound-name = Инвалидная коляска
-trait-wheelchair-bound-desc = Вы не можете передвигаться без инвалидной коляски. Инвалидная коляска включена в вашу стоимость.
+trait-frontal-lisp-name = Frontal Lisp
+trait-frontal-lisp-desc = You thpeak with a lithp
 
-trait-frontal-lisp-name = Сигматизм
-trait-frontal-lisp-desc = У ваф имеютшя проблемы ш произношением.
+trait-socialanxiety-name = Social Anxiety
+trait-socialanxiety-desc = You are anxious when you speak and stutter.
 
-trait-socialanxiety-name = Социальная тревожность
-trait-socialanxiety-desc = Вы беспокоитесь, когда говорите и заикаетесь.
-
-trait-southern-name = Южное растягивание
-trait-southern-desc = Вам интересно, что это делает?
-
-trait-snoring-name = Храп
-trait-snoring-desc = Вы храпите во время сна.
+trait-snoring-name = Snoring
+trait-snoring-desc = You will snore while sleeping.

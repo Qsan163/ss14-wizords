@@ -1,47 +1,26 @@
-﻿implanter-component-implanting-target = {$user} пытается вам что-то вживить!
-implanter-draw-failed-permanent = {$implant} в {$target} слился организмом и не может быть извлечен!
-implanter-draw-failed = Вы попытались извлечь имплант, но ничего не обнаружили.
-implanter-component-implant-already = {$target} уже имеет {$implant}!
+## Implanter Attempt Messages
 
+implanter-component-implanting-target = {$user} is trying to implant you with something!
+implanter-component-implant-failed = The {$implant} cannot be given to {$target}!
+implanter-draw-failed-permanent = The {$implant} in {$target} is fused with them and cannot be removed!
+implanter-draw-failed = You tried to remove an implant but found nothing.
+implanter-component-implant-already = {$target} already has the {$implant}!
 
-implanter-draw-text = Извлечение
-implanter-inject-text = Вживление
+## UI
+implanter-draw-text = Draw
+implanter-inject-text = Inject
 
-implanter-empty-text = Пусто
+implanter-empty-text = None
 
-implanter-label = Имплантат: [color=green]{$implantName}[/color] | [color=white]{$modeString}[/color]{$lineBreak}{$implantDescription}
+implanter-label = Implant: [color=green]{$implantName}[/color] | [color=white]{$modeString}[/color]{$lineBreak}{$implantDescription}
 
 implanter-contained-implant-text = [color=green]{$desc}[/color]
 
+## Implant Popups
 
+scramble-implant-activated-popup = Your appearance shifts and changes!
 
-open-storage-implant-action-name = Открыть имплант хранилище
-open-storage-implant-action-description = Открывает имплантат хранилище, установленный под кожей.
+## Implant Messages
 
-activate-micro-bomb-action-name = Активировать микробомбу
-activate-micro-bomb-action-description = Активирует вживленную микробомбу, полностью уничтожая вас и ваше снаряжение.
-
-use-freedom-implant-action-name = Вырваться на свободу
-use-freedom-implant-action-description = Активация импланта свободы снимет с вас любые оковы.
-
-open-uplink-implant-action-name = Открыть аплинк
-open-uplink-implant-action-description = Открывает аплинк синдиката, установленный под кожей.
-
-action-name-honk = Хонк!
-action-desc-honk = Активирует ваш гудящий имплант, который издаёт типичный звук клоуна.
-
-use-emp-implant-action-name = Активировать ЭМИ
-use-emp-implant-action-description = Вызывает небольшой ЭМИ импульс вокруг вас.
-
-use-dna-scrambler-implant-action-name = Переписать ДНК
-use-dna-scrambler-implant-action-description = Меняет вашу внешность до неузнаваемости.
-
-
-
-scramble-attempt-while-scrambled-popup = Обнаружено переписанное ДНК, пожалуйста, извлеките имплант перед отменой текущей маскировки.
-scramble-implant-activated-popup = Вы трансформировались в {$identity}
-
-
-
-deathrattle-implant-dead-message = {$user} умер в {$position}.
-deathrattle-implant-critical-message = {$user} жизненные показатели критические, требуется немедленная помощь по координатам {$position}.
+deathrattle-implant-dead-message = {$user} has died {$position}.
+deathrattle-implant-critical-message = {$user} life signs critical, immediate assistance required {$position}.

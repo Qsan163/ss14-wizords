@@ -1,2 +1,2 @@
-﻿verb-follow-text = Следовать
-verb-follow-me-text = Прикрепить к себе
+﻿verb-follow-text = Follow
+verb-follow-me-text = Make follow

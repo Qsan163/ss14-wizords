@@ -1,10 +1,10 @@
-﻿role-timer-department-insufficient = Требуется ещё {TOSTRING($time, "0")} минут игры за {$department}.
-role-timer-department-too-high = Требуется на {TOSTRING($time, "0")} меньше минут игры за {$department}. (Вы пытаетесь играть за роль для новичков?)
-role-timer-overall-insufficient = Требуется ещё {TOSTRING($time, "0")} минут общего игрового времени.
-role-timer-overall-too-high = Требуется на {TOSTRING($time, "0")} меньше минут общего игрового времени. (Вы пытаетесь играть за роль для новичков?)
-role-timer-role-insufficient = Требуется ещё {TOSTRING($time, "0")} минут игры в качестве {$job} для этой роли.
-role-timer-role-too-high = Требуется на {TOSTRING($time, "0")} меньше минут игры в качестве {$job} для этой роли. (Вы пытаетесь играть за роль для новичков?)
+﻿role-timer-department-insufficient = You require [color=yellow]{TOSTRING($time, "0")}[/color] more minutes of [color={$departmentColor}]{$department}[/color] department playtime to play this role.
+role-timer-department-too-high = You require [color=yellow]{TOSTRING($time, "0")}[/color] fewer minutes in [color={$departmentColor}]{$department}[/color] department to play this role. (Are you trying to play a trainee role?)
+role-timer-overall-insufficient = You require [color=yellow]{TOSTRING($time, "0")}[/color] more minutes of playtime to play this role.
+role-timer-overall-too-high = You require [color=yellow]{TOSTRING($time, "0")}[/color] fewer minutes of playtime to play this role. (Are you trying to play a trainee role?)
+role-timer-role-insufficient = You require [color=yellow]{TOSTRING($time, "0")}[/color] more minutes with [color={$departmentColor}]{$job}[/color] to play this role.
+role-timer-role-too-high = You require[color=yellow] {TOSTRING($time, "0")}[/color] fewer minutes with [color={$departmentColor}]{$job}[/color] to play this role. (Are you trying to play a trainee role?)
 
-role-timer-locked = Закрыто (наведите курсор для подробностей)
+role-timer-locked = Locked (hover for details)
 
-role-ban = Вам забанили данную роль.
+role-ban = You have been banned from this role.

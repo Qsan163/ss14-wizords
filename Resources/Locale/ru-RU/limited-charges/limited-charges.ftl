@@ -1,10 +1,10 @@
 limited-charges-charges-remaining = {$charges ->
-    [one] Остался [color=fuchsia]{$charges}[/color] заряд.
-    *[other] Осталось [color=fuchsia]{$charges}[/color] заряда.
+    [one] It has [color=fuchsia]{$charges}[/color] charge remaining.
+    *[other] It has [color=fuchsia]{$charges}[/color] charges remaining.
 }
 
-limited-charges-max-charges = Он [color=green]максимально[/color] заряжен.
+limited-charges-max-charges = It's at [color=green]maximum[/color] charges.
 limited-charges-recharging = {$seconds ->
-    [one] До следующей зарядки осталось [color=yellow]{$seconds}[/color] секунды
-    *[other] До следующей зарядки осталось [color=yellow]{$seconds}[/color] секунд.
+    [one] There is [color=yellow]{$seconds}[/color] second left until the next charge.
+    *[other] There are [color=yellow]{$seconds}[/color] seconds left until the next charge.
 }

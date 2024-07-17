@@ -1,16 +1,18 @@
-mech-verb-enter = Войти
-mech-verb-exit = Извлечь пилота
+mech-verb-enter = Enter
+mech-verb-exit = Remove pilot
 
-mech-equipment-begin-install = {$item} устанавливается...
-mech-equipment-finish-install = Установка {$item} завершена
+mech-equipment-begin-install = Installing the {THE($item)}...
+mech-equipment-finish-install = Finished installing the {THE($item)}
 
-mech-equipment-select-popup = Выбрано следующее: {$item}
-mech-equipment-select-none-popup = Ничего не выбрано
+mech-equipment-select-popup = {$item} selected
+mech-equipment-select-none-popup = Nothing selected
 
-mech-ui-open-verb = Открыть панель управления
+mech-ui-open-verb = Open control panel
 
-mech-menu-title = Панель управления меха
+mech-menu-title = mech control panel
 
-mech-integrity-display = Целостность: {$amount}%
-mech-energy-display = Энергия: {$amount}%
-mech-slot-display = Доступно слотов: {$amount}
+mech-integrity-display = Integrity: {$amount}%
+mech-energy-display = Energy: {$amount}%
+mech-slot-display = Open Slots: {$amount}
+
+mech-no-enter = You cannot pilot this.

@@ -1,1 +1,1 @@
-action-name-mapping-erase = Удалить сущность
+action-name-mapping-erase = Erase Entity

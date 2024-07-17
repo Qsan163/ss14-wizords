@@ -1,3 +1,3 @@
-advertisement-chefdrobe-1 = Наша одежда гарантированно защитит вас от пятен еды!
-advertisement-chefdrobe-2 = Идеально белый, поэтому все знают об убийстве на кухне!
-advertisement-chefdrobe-3 = Легко чистить, легко увидеть!
+advertisement-chefdrobe-1 = Our clothes are guaranteed to protect you from food splatters!
+advertisement-chefdrobe-2 = Perfectly white, so everyone knows about the murder in the kitchen!
+advertisement-chefdrobe-3 = Easy to clean, easy to see!

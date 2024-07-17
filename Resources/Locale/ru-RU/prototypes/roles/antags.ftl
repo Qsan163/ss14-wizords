@@ -1,35 +1,35 @@
-﻿roles-antag-syndicate-agent-name = Агент Синдиката
-roles-antag-syndicate-agent-objective = Выполните свои задачи и не попадитесь.
+﻿roles-antag-syndicate-agent-name = Syndicate agent
+roles-antag-syndicate-agent-objective = Complete your objectives without being caught.
 
-roles-antag-initial-infected-name = Нулевой заражённый
-roles-antag-initial-infected-objective = После превращения заразите как можно больше других членов экипажа.
+roles-antag-initial-infected-name = Initial Infected
+roles-antag-initial-infected-objective = Once you turn, infect as many other crew members as possible.
 
-roles-antag-zombie-name = Зомби
-roles-antag-zombie-objective = Превратите как можно больше членов экипажа в зомби.
+roles-antag-zombie-name = Zombie
+roles-antag-zombie-objective = Turn as many humans as possible into zombies.
 
-roles-antag-suspicion-innocent-name = Невиновный
-roles-antag-suspicion-innocent-objective = Найдите и уничтожьте всех предателей.
+roles-antag-suspicion-innocent-name = Innocent
+roles-antag-suspicion-innocent-objective = Discover and eliminate all traitors.
 
-roles-antag-suspicion-suspect-name = Предатель
-roles-antag-suspicion-suspect-objective = Убейте невиновных.
+roles-antag-suspicion-suspect-name = Suspect
+roles-antag-suspicion-suspect-objective = Kill the innocents.
 
-roles-antag-nuclear-operative-commander-name = Командир Ядерных Оперативников
-roles-antag-nuclear-operative-commander-objective = Приведите свой отряд к уничтожению станции.
+roles-antag-nuclear-operative-commander-name = Nuclear operative commander
+roles-antag-nuclear-operative-commander-objective = Lead your team to the destruction of the station.
 
-roles-antag-nuclear-operative-agent-name = Агент Ядерных Оперативников
-roles-antag-nuclear-operative-agent-objective = Задачи как и обычных оперативников, лечите своих братьев по оружию.
+roles-antag-nuclear-operative-agent-name = Nuclear operative agent
+roles-antag-nuclear-operative-agent-objective = Like default operative, the team's treatment will have priority.
 
-roles-antag-nuclear-operative-name = Ядерный Оперативник
-roles-antag-nuclear-operative-objective = Найдите ядерный диск и взорвите станцию.
+roles-antag-nuclear-operative-name = Nuclear operative
+roles-antag-nuclear-operative-objective = Find the nuke disk and blow up the station.
 
-roles-antag-subverted-silicon-name = Взломанный борг
-roles-antag-subverted-silicon-objective = Следуйте своим новым законам и делайте плохо станции.
+roles-antag-subverted-silicon-name = Subverted silicon
+roles-antag-subverted-silicon-objective = Follow your new laws and do bad unto the station.
 
-roles-antag-space-ninja-name = Космический ниндзя
-roles-antag-space-ninja-objective = Используйте свою скрытность, чтобы саботировать станцию.
+roles-antag-space-ninja-name = Space Ninja
+roles-antag-space-ninja-objective = Use your stealth to sabotage the station, nom on electrical wires.
 
-roles-antag-thief-name = Вор
-roles-antag-thief-objective = Добавьте немного собственности NT в свою личную коллекцию, не прибегая к насилию.
+roles-antag-thief-name = Thief
+roles-antag-thief-objective = Add some NT property to your personal collection without using violence.
 
-roles-antag-terminator-name = Истребитель
-roles-antag-terminator-objective = Убейте цель любой ценой, от этого зависит будущее.
+roles-antag-terminator-name = Exterminator
+roles-antag-terminator-objective = Kill the target at all costs, the future depends on it.

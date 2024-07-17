@@ -1,9 +1,8 @@
-department-Cargo-description = Покупайте и доставляйте экипажу полезные припасы.
-department-Civilian-description = Выполняйте небольшие полезные задания для поддержания нормальной работы станции.
-department-Command-description = Управляйте экипажем и обеспечивайте его эффективную работу.
-department-Engineering-description = Поддерживайте станцию в рабочем состоянии.
-department-Medical-description = Поддерживайте здоровье экипажа.
-department-Security-description = Поддерживайте порядок на станции.
-department-Science-description = Изучайте новые технологии и опасные артефакты.
-department-Specific-description = Вакансии, которые есть не на всех станциях.
-department-Juristic-description = В ваших руках правосудие на станции.
+﻿department-Cargo-description = Complete bounties, earn Spessos, and order useful supplies for the crew.
+department-Civilian-description = Perform small helpful tasks to keep the station sane and well catered.
+department-Command-description = Manage the crew and keep them working efficiently.
+department-Engineering-description = Keep the power on and the station operational.
+department-Medical-description = Keep the crew healthy.
+department-Security-description = Keep the peace around the station.
+department-Science-description = Research artifacts and anomalies to invent new equipment for the station
+department-Specific-description = Jobs that not all stations have.

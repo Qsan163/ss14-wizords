@@ -1,4 +1,4 @@
-advertisement-robodrobe-1 = Вы превращаетеменя в ХОНКА,используйте мозг!
-advertisement-robodrobe-2 = 11010000 10110100 11010001 10000011 11010001 10000000 11010000 10110000 11010000 10111010
-advertisement-robodrobe-3 = Украдите кого-нибудь из обслуживающего персонала и превратите его в робота!
-advertisement-robodrobe-4 = Робототехника – это весело!
+advertisement-robodrobe-1 = You turn me TRUE, use defines!
+advertisement-robodrobe-2 = 0110001101101100011011110111010001101000011001010111001101101000011001010111001001100101
+advertisement-robodrobe-3 = Steal someone from maintenance and turn them into a robot!
+advertisement-robodrobe-4 = Robotics is fun!

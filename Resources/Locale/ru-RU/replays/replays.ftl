@@ -1,43 +1,43 @@
-# Loading Screen
+﻿# Loading Screen
 
-replay-loading = Загрузка ({$cur}/{$total})
-replay-loading-reading = Чтение файлов
-replay-loading-processing = Обработка файлов
-replay-loading-spawning = Создание сущностей
-replay-loading-initializing = Инициализация сущностей
-replay-loading-starting= Начальные сущности
-replay-loading-failed = Не удалось загрузить повтор:
+replay-loading = Loading ({$cur}/{$total})
+replay-loading-reading = Reading Files
+replay-loading-processing = Processing Files
+replay-loading-spawning = Spawning Entities
+replay-loading-initializing = Initializing Entities
+replay-loading-starting= Starting Entities
+replay-loading-failed = Failed to load replay. Error:
                         {$reason}
-replay-loading-retry = Попробуйте загрузить с большей устойчивостью к исключениям - МОЖЕТ ВЫЗВАТЬ ОШИБКИ!
+replay-loading-retry = Try load with more exception tolerance - MAY CAUSE BUGS!
 
 # Main Menu
-replay-menu-subtext = Клиент воспроизведения
-replay-menu-load = Загрузить выбранный повтор
-replay-menu-select = Выбрать повтор
-replay-menu-open = Открыть папку с повторами
-replay-menu-none = Повторы не найдены.
+replay-menu-subtext = Replay Client
+replay-menu-load = Load Selected Replay
+replay-menu-select = Select a Replay
+replay-menu-open = Open Replay Folder
+replay-menu-none = No replays found.
 
 # Main Menu Info Box
-replay-info-title = Информация о воспроизведении
-replay-info-none-selected = Повтор не выбран
-replay-info-invalid = [color=red]Выбран неверный повтор[/color]
-replay-info-info = {"["}color=gray]Выбрано:[/color] {$name} ({$file})
-                   {"["}color=gray]Время:[/color] {$time}
-                   {"["}color=gray]Идентификатор раунда:[/color] {$roundId}
-                   {"["}color=grey]Продолжительность:[/color] {$duration}
-                   {"["}color=gray]ForkId:[/color] {$forkId}
-                   {"["}color=grey]Версия:[/color] {$version}
-                   {"["}color=grey]Движок:[/color] {$engVersion}
-                   {"["}color=grey]Хэш типа:[/color] {$hash}
-                   {"["}color=gray]Хэш комп.:[/color] {$compHash}
+replay-info-title = Replay Information
+replay-info-none-selected = No replay selected
+replay-info-invalid = [color=red]Invalid replay selected[/color]
+replay-info-info = {"["}color=gray]Selected:[/color]  {$name} ({$file})
+                   {"["}color=gray]Time:[/color]   {$time}
+                   {"["}color=gray]Round ID:[/color]   {$roundId}
+                   {"["}color=gray]Duration:[/color]   {$duration}
+                   {"["}color=gray]ForkId:[/color]   {$forkId}
+                   {"["}color=gray]Version:[/color]   {$version}
+                   {"["}color=gray]Engine:[/color]   {$engVersion}
+                   {"["}color=gray]Type Hash:[/color]   {$hash}
+                   {"["}color=gray]Comp Hash:[/color]   {$compHash}
 
 # Replay selection window
-replay-menu-select-title = Выберите повтор
+replay-menu-select-title = Select Replay
 
 # Replay related verbs
-replay-verb-spectate = Наблюдать
+replay-verb-spectate = Spectate
 
 # command
 cmd-replay-spectate-help = replay_spectate [optional entity]
-cmd-replay-spectate-desc = Присоединяет или отсоединяет локального игрока к данному идентификатору сущности.
-cmd-replay-spectate-hint = Необязательный EntityUid
+cmd-replay-spectate-desc = Attaches or detaches the local player to a given entity uid.
+cmd-replay-spectate-hint = Optional EntityUid

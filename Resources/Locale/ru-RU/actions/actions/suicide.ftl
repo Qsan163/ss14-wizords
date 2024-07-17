@@ -1,1 +1,1 @@
-suicide-action-popup = ЭТО ДЕЙСТВИЕ УБЬЕТ ВАС! Используйте еще раз для подтверждения.
+suicide-action-popup = THIS ACTION WILL KILL YOU! Use it again to confirm.

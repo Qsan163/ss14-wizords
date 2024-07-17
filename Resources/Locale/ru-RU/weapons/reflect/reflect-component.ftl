@@ -1,1 +1,1 @@
-reflect-shot = Отразил!
+reflect-shot = Reflected!

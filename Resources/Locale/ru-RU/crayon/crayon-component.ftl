@@ -1,10 +1,10 @@
 
 ## Entity
 
-crayon-drawing-label = Остаток: [color={$color}]{$state}[/color] ({$charges}/{$capacity})
-crayon-interact-not-enough-left-text = Ничего не осталось.
-crayon-interact-used-up-text = {$owner} воспользовался мелком.
-crayon-interact-invalid-location = Туда не дотянуться!
+crayon-drawing-label = Drawing: [color={$color}]{$state}[/color] ({$charges}/{$capacity})
+crayon-interact-not-enough-left-text = Not enough left.
+crayon-interact-used-up-text = The {$owner} got used up.
+crayon-interact-invalid-location = Can't reach there!
 
 ## UI
-crayon-window-title = Мелок
+crayon-window-title = Crayon

@@ -1,29 +1,29 @@
-marking-TattooHiveChest-hivechest = Татуировка, спина (Улей)
-marking-TattooHiveChest = Татуировка, спина (Улей)
+marking-TattooHiveChest-tattoo_hive_chest = Back Tattoo (Hive)
+marking-TattooHiveChest = Back Tattoo (Hive)
 
-marking-TattooNightlingChest-nightlingchest = Татуировка, грудь (Найтлинг)
-marking-TattooNightlingChest = Татуировка, грудь (Найтлинг)
+marking-TattooNightlingChest-tattoo_nightling = Chest Tattoo (nightling)
+marking-TattooNightlingChest = Chest Tattoo (Nightling)
 
-marking-TattooSilverburghLeftLeg-silverburghleftleg = Татуировка, левая нога (Силвербург)
-marking-TattooSilverburghLeftLeg = Татуировка, левая нога (Силвербург)
+marking-TattooSilverburghLeftLeg-tattoo_silverburgh_l_leg = Left Leg Tattoo (Silverburg)
+marking-TattooSilverburghLeftLeg = Left Leg Tattoo (Silverburg)
 
-marking-TattooSilverburghRightLeg-silverburghRightleg = Татуировка, правая нога (Силвербург)
-marking-TattooSilverburghRightLeg = Татуировка, правая нога (Силвербург)
+marking-TattooSilverburghRightLeg-tattoo_silverburgh_r_leg = Right Leg Tattoo (Silverburg)
+marking-TattooSilverburghRightLeg = Right Leg Tattoo (Silverburg)
 
-marking-TattooCampbellLeftArm-campbelleleftArm = Татуировка, левая рука (Кэмпбелль)
-marking-TattooCampbellLeftArm = Татуировка, левая рука (Кэмпбелль)
+marking-TattooCampbellLeftArm-tattoo_campbell_l_arm = Left Arm Tattoo (Campbelle)
+marking-TattooCampbellLeftArm = Left Arm Tattoo (Campbelle)
 
-marking-TattooCampbellRightArm-campbellrightarm = Татуировка, правая рука (Кэмпбелль)
-marking-TattooCampbellRightArm = Татуировка, правая рука (Кэмпбелль)
+marking-TattooCampbellRightArm-tattoo_campbell_r_arm = Right Arm Tattoo (Campbelle)
+marking-TattooCampbellRightArm = Right Arm Tattoo (Campbelle)
 
-marking-TattooCampbellLeftLeg-campbellleftleg = Татуировка, левая нога (Кэмпбелль)
-marking-TattooCampbellLeftLeg = Татуировка, левая нога (Кэмпбелль)
+marking-TattooCampbellLeftLeg-tattoo_campbell_l_leg = Left Leg Tattoo (Campbelle)
+marking-TattooCampbellLeftLeg = Left Leg Tattoo (Campbelle)
 
-marking-TattooCampbellRightLeg-campbellrightleg = Татуировка, правая нога (Кэмпбелль)
-marking-TattooCampbellRightLeg = Татуировка, правая нога (Кэмпбелль)
+marking-TattooCampbellRightLeg-tattoo_campbell_r_leg = Right Leg Tattoo (Campbelle)
+marking-TattooCampbellRightLeg = Right Leg Tattoo (Campbelle)
 
-marking-TattooEyeRight-eyeright = Правый глаз
-marking-TattooEyeRight = Правый глаз
+marking-TattooEyeRight-tattoo_eye_r = Right Eye
+marking-TattooEyeRight = Right Eye
 
-marking-TattooEyeLeft-eyeleft = Левый глаз
-marking-TattooEyeLeft = Левый глаз
+marking-TattooEyeLeft-tattoo_eye_l = Left Eye
+marking-TattooEyeLeft = Left Eye

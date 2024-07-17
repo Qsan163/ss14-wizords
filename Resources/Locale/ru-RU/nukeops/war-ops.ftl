@@ -1,2 +1,2 @@
-war-ops-infiltrator-unavailable = ОШИБКА: Выполняется перерасчёт БСС-перемещений. Расчётное время: {$minutes} мин. и {$seconds} сек.
-war-ops-shuttle-call-unavailable = Эвакуационный шаттл в настоящее время недоступен. Пожалуйста, подождите...
+war-ops-infiltrator-unavailable = ERROR: FTL Travel recalculation in progress. Estimated time: {$time} minutes.
+war-ops-shuttle-call-unavailable = Evacuation shuttle is currently unavailable. Please wait
