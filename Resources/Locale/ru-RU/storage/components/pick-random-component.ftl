@@ -1,2 +1,2 @@
-comp-pick-random-empty = {CAPITALIZE(THE($storage))} is empty!
-comp-pick-random-verb-text = Pick item
+comp-pick-random-empty  = {CAPITALIZE(THE($storage))} пуст!
+comp-pick-random-verb-text  = Выберите предмет
