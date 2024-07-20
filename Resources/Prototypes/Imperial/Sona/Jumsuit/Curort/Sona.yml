@@ -2,7 +2,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSonaCurort
   name: S-o.N.A Resort suit
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A beautiful set of clothes, which depicts a modern high-tech pattern.
   components:
     - type: Item
