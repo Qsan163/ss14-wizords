@@ -2,7 +2,7 @@
   parent: ClothingOuterBase
   id: OperSuitSonaOne
   name: The suit of the operative S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: An advanced spacesuit combining the technologies of several corporations at once. Probably stolen...
   components:
   - type: Item
