@@ -2,7 +2,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretSona
   name: Beret S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The stylish beret of S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Item
