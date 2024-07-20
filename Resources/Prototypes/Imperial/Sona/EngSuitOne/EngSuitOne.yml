@@ -2,7 +2,7 @@
   parent: ClothingOuterHardsuitBase
   id: EngSuitOne
   name: S-o.N.A bio-engineer's spacesuit
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: S-o.N.A. AI Dynamics Corporation has relatively poorly mastered the production of spacesuits. Nevertheless, this suit still achieved its release. Not to say that it protects well from various physical injuries, but it adequately holds radiation.
   components:
   - type: Item
