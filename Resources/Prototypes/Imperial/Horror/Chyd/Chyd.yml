@@ -7,7 +7,7 @@
   components:
     - type: Sprite
       drawdepth: Mobs
-      scale: 1.2, 1.2
+      scale: 1.1, 1.1
       layers:
       - map: ["enum.DamageStateVisualLayers.Base"]
         state: Chyd
