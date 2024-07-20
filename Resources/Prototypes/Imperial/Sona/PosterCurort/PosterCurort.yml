@@ -2,7 +2,7 @@
   parent: PosterBase
   id: PosterSonaCurort
   name: "S-o.N.A - Beach Resort"
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A poster advertising resorts where S-o.N.A synthetics are officially used.
   components:
   - type: Sprite
