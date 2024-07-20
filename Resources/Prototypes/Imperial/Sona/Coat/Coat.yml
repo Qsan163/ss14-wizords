@@ -2,7 +2,7 @@
   parent: ClothingOuterStorageBase
   id: SonaCoat
   name: Coat S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The winter coat of S-o.N.A. AI Dynamics employees used at Arctic bases.
   components:
   - type: Item
