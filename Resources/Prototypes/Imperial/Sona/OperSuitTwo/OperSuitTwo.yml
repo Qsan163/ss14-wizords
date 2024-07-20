@@ -2,7 +2,7 @@
   parent: ClothingHeadEVAHelmetBase
   id: OperSuitSonaTwo
   name: The helmet from the operatives' suit.
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The standard helmet that goes with the operatives' suit.
   components:
   - type: Item
