@@ -2,7 +2,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformCapJumpskirtSona
   name: Luxurious S-o.N.A skirt
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A comfortable and practical skirt made of the highest quality materials.
   components:
   - type: Item
