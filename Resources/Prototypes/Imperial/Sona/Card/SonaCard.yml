@@ -2,7 +2,7 @@
   parent: CentcomIDCard
   id: SonaIDCard
   name: ID Card S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Modified ID card of S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Sprite
