@@ -2,7 +2,7 @@
   parent: ClothingEyesBase
   id: SonaEyesGlassesMeson
   name: Blue Engineering Glasses
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Modified engineering glasses of S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Item
