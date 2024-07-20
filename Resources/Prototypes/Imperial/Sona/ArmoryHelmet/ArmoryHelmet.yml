@@ -2,7 +2,7 @@
   parent: ClothingHeadBase
   id: SonaArmoryHelmet
   name: Helmet S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Helmet of the elite security of the S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Item
