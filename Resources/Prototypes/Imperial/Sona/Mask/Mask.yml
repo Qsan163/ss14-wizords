@@ -2,7 +2,7 @@
   parent: ClothingMaskGas
   id: ClothingMaskGasSona
   name: Heavy gas mask S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A heavy S-o.N.A gas mask, effectively filtering gases and slightly stimulating its owner through the introduction of various stimulants.
   components:
   - type: Item
