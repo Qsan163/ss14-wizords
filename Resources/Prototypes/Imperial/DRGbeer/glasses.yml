@@ -14,8 +14,6 @@
     sprite: Imperial/DRGbeer/leaflover.rsi
     state: icon
 
-
-  
 - type: entity
   parent: DrinkGlass
   id: DrinkBlackoutStoutGlass
@@ -31,8 +29,6 @@
   - type: Icon
     sprite: Imperial/DRGbeer/blackout.rsi
     state: icon
-
-
 
 - type: entity
   parent: DrinkGlass
@@ -50,8 +46,6 @@
     sprite: Imperial/DRGbeer/arken.rsi
     state: icon
 
-
-
 - type: entity
   parent: DrinkGlass
   id: DrinkBlackreachGlass
@@ -67,8 +61,6 @@
   - type: Icon
     sprite: Imperial/DRGbeer/blackreach.rsi
     state: icon
-
-
 
 - type: entity
   parent: DrinkGlass
@@ -86,8 +78,6 @@
     sprite: Imperial/DRGbeer/wormhole.rsi
     state: icon
 
-
-
 - type: entity
   parent: DrinkGlass
   id: DrinkMacteraBrewGlass
@@ -104,8 +94,6 @@
     sprite: Imperial/DRGbeer/mactera.rsi
     state: icon
 
-
-
 - type: entity
   parent: DrinkGlass
   id: DrinkBurningloveGlass
@@ -121,8 +109,6 @@
   - type: Icon
     sprite: Imperial/DRGbeer/burning.rsi
     state: icon
-
-
 
 - type: entity
   parent: DrinkGlass

@@ -19,8 +19,6 @@
       posData: !type:TargetCasterPos
       speech: action-speech-spell-Gnomik
 
-
-
 - type: entity
   parent: BaseSubdermalImplant 
   id: BeerImplantGnome
@@ -34,8 +32,6 @@
         - SubdermalImplant
         - HideContextMenu
         - Flashlight
-
-
 
 - type: reagent
   id: GnomishBeer
@@ -61,4 +57,3 @@
         component: ForcedSleeping
         refresh: false
         type: Add
-

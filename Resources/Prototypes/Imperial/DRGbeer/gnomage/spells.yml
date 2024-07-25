@@ -58,8 +58,6 @@
         - HideContextMenu
         - Flashlight
 
-
-
 - type: entity
   id: ActionBeerGnomespawn
   name: Summon Magicarp
@@ -93,8 +91,6 @@
         - SubdermalImplant
         - HideContextMenu
         - Flashlight
-
-
 
 - type: entity
   id: ActionBeerSmoke

@@ -23,9 +23,6 @@
       - !type:Drunk
         boozePower: -0.5
 
-
-
-
 - type: reagent
   id: BlackoutStout
   name: reagent-name-Blackout
@@ -59,7 +56,6 @@
         refresh: false
         type: Add
 
-
 - type: reagent
   id: Arkenstout
   name: reagent-name-arken
@@ -84,7 +80,6 @@
         amount: 0.3
       - !type:AdjustTemperature
         amount: -10000
-
 
 - type: reagent
   id: Blackreach
@@ -194,8 +189,6 @@
       - !type:Drunk
         boozePower: 2
 
-
-
 - type: reagent
   id: Burninglove
   name: reagent-name-burninglove
@@ -220,8 +213,6 @@
         amount: 0.3
       - !type:AdjustTemperature
         amount: +10000
-
-
 
 - type: reagent
   id: RandoVeisser
@@ -261,8 +252,6 @@
         conditions:
         - !type:ReagentThreshold
             min: 20
-
-
 
 #GNOMIZATOR (SINDIKAT)
 
@@ -394,8 +383,6 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 50 
-
-
 
 - type: listing
   id: UplinkChemicalGnome
