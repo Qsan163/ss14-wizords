@@ -7,7 +7,6 @@
   exclaimSound:
     path: /Audio/Imperial/gnom/talk.ogg
 
-
 - type: emoteSounds
   id: GnomeSounds
   params:
