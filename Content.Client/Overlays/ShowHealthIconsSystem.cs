@@ -7,6 +7,7 @@ using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
 using Robust.Shared.Prototypes;
 using System.Linq;
+using Content.Shared.NoVisorVisible;
 
 namespace Content.Client.Overlays;
 
@@ -46,6 +47,11 @@ public sealed class ShowHealthIconsSystem : EquipmentHudSystem<ShowHealthIconsCo
 
     private void OnGetStatusIconsEvent(Entity<DamageableComponent> entity, ref GetStatusIconsEvent args)
     {
+        if (TryComp<NoVisorVisibleComponent>(entity, out var noVisor) && noVisor.enabled)
+        {
+            return;
+        }
+
         if (!IsActive || args.InContainer)
             return;
 

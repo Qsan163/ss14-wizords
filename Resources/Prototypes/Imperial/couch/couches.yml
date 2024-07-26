@@ -16,6 +16,8 @@
   - type: Construction
     graph: Seat
     node: couchComfy
+  - type: StaticPrice
+    price: 20
 
 
 - type: construction
@@ -58,6 +60,8 @@
   - type: Construction
     graph: Seat
     node: couchGold
+  - type: StaticPrice
+    price: 3500
 
 
 - type: construction

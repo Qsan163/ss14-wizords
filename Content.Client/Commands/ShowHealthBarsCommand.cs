@@ -16,6 +16,7 @@ public sealed class ShowHealthBarsCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
+
         var player = _playerManager.LocalSession;
         if (player == null)
         {

@@ -7,6 +7,7 @@ using Content.Shared.Security.Components;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
 using Robust.Shared.Prototypes;
+using Content.Shared.NoVisorVisible;
 
 namespace Content.Client.Overlays;
 
@@ -28,6 +29,12 @@ public sealed class ShowSecurityIconsSystem : EquipmentHudSystem<ShowSecurityIco
     private void OnGetStatusIconsEvent(EntityUid uid, StatusIconComponent _, ref GetStatusIconsEvent @event)
     {
         if (!IsActive || @event.InContainer)
+        {
+            return;
+        }
+
+        //Imperial. Remove Job icon
+        if (TryComp<NoVisorVisibleComponent>(uid, out var noVisor) && noVisor.enabled)
         {
             return;
         }
