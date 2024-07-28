@@ -2,7 +2,7 @@
   parent: ClothingBeltStorageBase
   id: SonaBeltEngineer
   name: Engineer's Belt
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Advanced Engineer belt of S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Item
