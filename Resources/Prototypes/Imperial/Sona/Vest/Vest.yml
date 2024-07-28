@@ -2,7 +2,7 @@
   parent: ClothingOuterStorageBase
   id: ClothingOuterSonaVestWeb
   name: Vest S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Vest of S-o.N.A. AI Dynamics corporation, with new generation plates.
   components:
   - type: Item
