@@ -2,7 +2,7 @@
   parent: BasePlushieCharacter
   id: PlushieOlia
   name: Olia Blake
-  suffix: COMMUNITY,TOY,Arcane
+  suffix: Vl, COMMUNITY,TOY,Arcane
   description: The nicest librarian there could be. She can show her written books and support in difficult times!
   components:
   - type: Item
