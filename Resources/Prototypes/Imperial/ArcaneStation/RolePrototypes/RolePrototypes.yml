@@ -3,7 +3,7 @@
   parent: MobHuman
   id: ArcaneTraderPreset
   name: Trader
-  suffix: Arcane
+  suffix: Vl, Arcane
   components:
     - type: RandomMetadata
       nameSegments:
@@ -34,7 +34,7 @@
   parent: MobHuman
   id: ArcaneSmugglerPreset
   name: Smuggler
-  suffix: Arcane
+  suffix: Vl, Arcane
   components:
     - type: RandomMetadata
       nameSegments:
@@ -66,7 +66,7 @@
   parent: MobHuman
   id: ArcaneMercPreset
   name: Merc
-  suffix: Arcane
+  suffix: Vl, Arcane
   components:
     - type: RandomMetadata
       nameSegments:
@@ -99,7 +99,7 @@
   parent: MobHuman
   id: ArcaneHeadMercPreset
   name: Head Merc
-  suffix: Arcane
+  suffix: Vl, Arcane
   components:
     - type: RandomMetadata
       nameSegments:
@@ -132,7 +132,7 @@
   parent: MobHuman
   id: ArcaneBomjPreset
   name: Bum
-  suffix: Arcane
+  suffix: Vl, Arcane
   components:
     - type: RandomMetadata
       nameSegments:
