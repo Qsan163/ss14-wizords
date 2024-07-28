@@ -2,7 +2,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadFlowerSona
   name: Blue flower for hair
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A beautiful blue flower, it smells like an orchid.
   components:
   - type: Item
