@@ -1,6 +1,6 @@
 - type: entity
   name: Electrified Katana
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   parent: Katana
   id: ElectroKatanaSona
   description: An electrified katana that causes small cuts, medium burns, and also acts as a shocker.
