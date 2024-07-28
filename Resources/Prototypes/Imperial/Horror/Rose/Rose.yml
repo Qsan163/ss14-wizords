@@ -45,7 +45,6 @@
   save: false
   parent:
   - BaseMobRose
-  - MobDamageable
   - MobAtmosExposed
   id: BaseSimpleMobRose
   suffix: AI
