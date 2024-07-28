@@ -2,7 +2,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSonaHead
   name: Turtleneck S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The standard turtleneck of the fighters of the S-o.N.A. AI Dynamics corporation, which has additional protection against burns.
   components:
   - type: Item
