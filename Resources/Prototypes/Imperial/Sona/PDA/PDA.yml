@@ -2,7 +2,7 @@
   parent: BasePDA
   id: SonaPDA
   name: PDA S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: A beautiful and advanced PDA of S-o.N.A. AI Dynamics Corporation.
   components:
   - type: Sprite
