@@ -2,7 +2,7 @@
   parent: ClothingOuterStorageBase
   id: SonaSecCoat
   name: Jacket S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The standard jacket of S-o.N.A. AI Dynamics corporation.
   components:
   - type: Item
