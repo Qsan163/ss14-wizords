@@ -2,7 +2,7 @@
   parent: ClothingBeltStorageBase
   id: ClothingBeltSona
   name: Belt S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The standard security belt of the S-o.N.A. AI Dynamics corporation.
   components:
   - type: Item
