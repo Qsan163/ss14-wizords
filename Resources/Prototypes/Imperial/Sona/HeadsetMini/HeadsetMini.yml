@@ -2,7 +2,7 @@
   parent: ClothingHeadset
   id: SonaHeadsetMini
   name: Headset S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   components:
   - type: Item
     size: Tiny
