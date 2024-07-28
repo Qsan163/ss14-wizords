@@ -2,7 +2,7 @@
   parent: ClothingOuterStorageBase
   id: SonaLabCoat
   name: Women's lab coat S-o.N.A
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: The standard lab coat of S-o.N.A. AI Dynamics scientists.
   components:
   - type: Item
