@@ -2,7 +2,7 @@
   parent: BookBase
   id: BestiaBook
   name: The Eridani Beast
-  suffix: Arcane
+  suffix: Vl, Arcane
   description: A dusty book that can remind someone of the old days.
   components:
     - type: Sprite
