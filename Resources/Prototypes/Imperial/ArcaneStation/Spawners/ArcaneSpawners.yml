@@ -2,7 +2,7 @@
   #noSpawn: true
   id: SpawnArcaneTrader
   name: ghost role spawn point
-  suffix: Arcane
+  suffix: Vl, Arcane
   parent: MarkerBase
   components:
     - type: GhostRole
@@ -22,7 +22,7 @@
   #noSpawn: true
   id: SpawnArcaneSmuggler
   name: ghost role spawn point
-  suffix: Arcane
+  suffix: Vl, Arcane
   parent: MarkerBase
   components:
     - type: GhostRole
@@ -42,7 +42,7 @@
   #noSpawn: true
   id: SpawnArcaneMerc
   name: ghost role spawn point
-  suffix: Arcane
+  suffix: Vl, Arcane
   parent: MarkerBase
   components:
     - type: GhostRole
@@ -62,7 +62,7 @@
   #noSpawn: true
   id: SpawnArcaneHeadMerc
   name: ghost role spawn point
-  suffix: Arcane
+  suffix: Vl, Arcane
   parent: MarkerBase
   components:
     - type: GhostRole
@@ -82,7 +82,7 @@
   #noSpawn: true
   id: SpawnArcaneBomj
   name: ghost role spawn point
-  suffix: Arcane
+  suffix: Vl, Arcane
   parent: MarkerBase
   components:
     - type: GhostRole
