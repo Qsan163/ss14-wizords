@@ -2,7 +2,7 @@
   parent: ClothingShoesBase
   id: ClothingShoesBootsMagSona
   name: Bright blue magnetic boots
-  suffix: S-o.N.A
+  suffix: Vl, S-o.N.A
   description: Bright blue magnetic boots of S-o.N.A. AI Dynamics corporation, with a built-in jetpack.
   components:
   - type: Item
