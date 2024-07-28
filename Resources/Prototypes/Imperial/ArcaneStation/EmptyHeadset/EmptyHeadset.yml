@@ -3,7 +3,7 @@
   parent: Clothing
   id: ClothingArcaneEmptyHeadset
   name: headset
-  suffix: Arcane
+  suffix: Vl, Arcane
   description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
   - type: ContainerContainer
