@@ -27,5 +27,6 @@ namespace Content.Shared.Trigger
     {
         Primed,
         Unprimed,
+        Defused,    // Imperial Space | defusing comp | KAZAK1984
     }
 }
