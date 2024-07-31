@@ -177,12 +177,12 @@
       prototypes: [ ArcaneTaxiGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
-    - type: CrewSkills
-      skills:
-        - skillBotany
-        - skillBaseMed
-        - skillBaseConstraction
-        - skillPiloting
+    # - type: CrewSkills
+    #  skills:
+    #    - skillBotany
+    #    - skillBaseMed
+    #    - skillBaseConstraction
+    #    - skillPiloting
 
 - type: entity
   noSpawn: false
@@ -203,12 +203,12 @@
       prototypes: [ ArcaneLapshaGear ]
     - type: RandomHumanoidAppearance
       randomizeName: false
-    - type: CrewSkills
-      skills:
-        - skillBotany
-        - skillBaseMed
-        - skillBaseConstraction
-        - skillPiloting
-        - skillBartending
-        - skillCooking
-        - skillMediumBotany
+    # - type: CrewSkills
+    #  skills:
+    #    - skillBotany
+    #    - skillBaseMed
+    #    - skillBaseConstraction
+    #    - skillPiloting
+    #    - skillBartending
+    #    - skillCooking
+    #    - skillMediumBotany
