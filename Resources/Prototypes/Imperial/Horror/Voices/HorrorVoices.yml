@@ -2,7 +2,7 @@
   id: RoseCryColl
   files:
   - "/Audio/Imperial/Horror/Rose/RoseCry1.ogg"
-  - "/Audio/Weapons/Guns/Casings/RoseCry2.ogg"
+  - "/Audio/Imperial/Horror/Rose/RoseCry2.ogg"
 
 - type: emoteSounds
   id: RoseVoice
