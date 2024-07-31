@@ -1,0 +1,78 @@
+- type: entity
+  id: RoseStatue
+  parent: BaseStructure
+  name: A strange statue
+  suffix: Vl, Хоррор
+  description: It's driving me crazy... It's better to try to destroy it.
+  components:
+  - type: Sprite
+    sprite: Imperial/Horror/RoseStatue
+    state: RoseStatue
+  - type: PointLight
+    radius: 5
+    energy: 3
+    color: "#FF0000"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+          - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: AmbientSound
+    volume: -5
+    range: 5
+    sound:
+      path: /Audio/Ambience/ambitech2.ogg
+  - type: AlwaysHot
+
+- type: entity
+  name: Периодический спавнер монстров (Лайт)
+  id: HorrorSpawnerOne
+  suffix: Vl, Хоррор
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Mobs/Aliens/Xenos/burrower.rsi
+        state: crit
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - HorrorMobGylOne
+      - HorrorMobGylTwo
+      - HorrorMobGylThree
+      - HorrorMobBrain
+      chance: 0.5
+      intervalSeconds: 45
+      minimumEntitiesSpawned: 2
+      maximumEntitiesSpawned: 4
+
+- type: entity
+  name: Периодический спавнер монстров (Хеви)
+  id: HorrorSpawnerTwo
+  suffix: Vl, Хоррор
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+      - state: blue
+      - sprite: Mobs/Aliens/Xenos/burrower.rsi
+        state: crit
+      - state: ai
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - HorrorMobChyd
+      - HorrorMobGylThree
+      - HorrorMobBrain
+      chance: 0.75
+      intervalSeconds: 60
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
