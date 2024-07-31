@@ -21,3 +21,36 @@ ent-HorrorMobLancer = Багровый Ланцер
 
 ent-HorrorRedRose = Алая Роза
     .desc = Молись.
+
+ent-HorrorRedRoseVTwo = Алая Роза
+    .desc = Молись.
+
+ent-RoseStatue = Странная статуя
+    .desc = Сводит с ума... Лучше уничтожить её, пока не поздно.
+
+ent-HorrorWallCorpseOne = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseTwo = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseThree = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseFour = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseFive = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseSix = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseSeven = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseEight = Подвешенный труп
+    .desc = О боже...
+
+ent-HorrorWallCorpseNine = Подвешенный труп
+    .desc = О боже...
