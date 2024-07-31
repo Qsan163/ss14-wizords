@@ -141,3 +141,70 @@
         Male: RoseVoice
         Unsexed: RoseVoice
         Female: RoseVoice
+
+- type: entity
+  name: The Scarlet Rose
+  suffix: Vl, Хоррор, 2 Версия
+  parent: SimpleSpaceMobBaseRose
+  id: HorrorRedRoseVTwo
+  description: Pray.
+  components:
+    - type: Sprite
+      color: "#f6e5e5dd"
+      drawdepth: Mobs
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        state: Rose
+        sprite: Imperial/Horror/RoseVTwo.rsi
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: Rose
+        Dead:
+          Base: Rose_dead
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        2000: Dead
+    - type: Tag
+      tags:
+      - FootstepSound
+    - type: MeleeWeapon
+      hidden: true
+      angle: 30
+      animation: WeaponArcClaw
+      soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+      damage:
+        types:
+          Piercing: 100
+    - type: FootstepModifier
+      footstepSoundCollection:
+        path: /Audio/Corvax/Effects/Footsteps/boots1.ogg
+    - type: Speech
+      speechVerb: LargeMob
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 5
+      baseSprintSpeed: 3
+    - type: NoSlip
+    - type: Body
+      prototype: Human
+    - type: Hands
+    - type: Grammar
+      attributes:
+        gender: female
+    - type: Access
+      groups:
+      - AllAccess
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.40
+          density: 80
+    - type: Vocal
+      sounds:
+        Male: RoseVoice
+        Unsexed: RoseVoice
+        Female: RoseVoice
