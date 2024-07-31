@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Designed by @KREKS",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "One"
+    },
+    {
+      "name": "Two"
+    },
+    {
+      "name": "Three"
+    },
+	{
+      "name": "Four"
+    },
+    {
+      "name": "Five"
+    },
+    {
+      "name": "Six"
+    },
+    {
+      "name": "Seven"
+    },
+    {
+      "name": "Eight"
+    },
+    {
+      "name": "Nine"
+    }
+  ]
+}
