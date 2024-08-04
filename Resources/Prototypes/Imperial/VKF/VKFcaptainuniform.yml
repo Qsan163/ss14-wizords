@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitVKFcaptain
+  name: VKF captain uniform
+  description: VKF captain uniform
+  components:
+  - type: Sprite
+    sprite: Imperial/VKF/VKFcaptainuniform.rsi
+  - type: Clothing
+    sprite: Imperial/VKF/VKFcaptainuniform.rsi
