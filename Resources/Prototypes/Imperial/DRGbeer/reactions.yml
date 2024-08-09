@@ -9,6 +9,20 @@
     LeafLover: 3
 
 - type: reaction
+  id: Burninglove
+  reactants:
+    Ale:
+      amount: 2
+    BbqSauce:
+      amount: 1
+    Sugar:
+      amount: 1
+    Oil:
+      amount: 1
+  products:
+    Burninglove: 3
+
+- type: reaction
   id: BlackoutStout
   reactants:
     ManlyDorf:

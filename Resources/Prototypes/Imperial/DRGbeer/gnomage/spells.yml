@@ -37,7 +37,7 @@
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/fireball.ogg
     icon:
-      sprite: imperial/DRGbeer/spells.rsi
+      sprite: Imperial/DRGbeer/spells.rsi
       state: Reincarnation-Clown
     event: !type:ProjectileSpellEvent
       prototype: ProjectilePolyboltGnomish
@@ -69,7 +69,7 @@
     range: 4
     itemIconStyle: BigAction
     icon:
-      sprite: imperial/DRGbeer/spells.rsi
+      sprite: Imperial/DRGbeer/spells.rsi
       state: gnomes
     event: !type:WorldSpawnSpellEvent
       prototypes:
@@ -103,7 +103,7 @@
     range: 4
     itemIconStyle: BigAction
     icon:
-      sprite: imperial/DRGbeer/spells.rsi
+      sprite: Imperial/DRGbeer/spells.rsi
       state: Soporificfog
     event: !type:WorldSpawnSpellEvent
       prototypes:
