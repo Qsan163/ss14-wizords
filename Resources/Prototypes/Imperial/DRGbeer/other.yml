@@ -10,7 +10,7 @@
   lifespan: 25
   maturation: 10
   production: 1
-  yield: 2
+  yield: 1
   potency: 1
   idealLight: 8
   idealHeat: 298
