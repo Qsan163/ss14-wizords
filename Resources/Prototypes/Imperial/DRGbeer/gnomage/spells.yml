@@ -65,7 +65,7 @@
   noSpawn: true
   components:
   - type: WorldTargetAction
-    useDelay: 50
+    useDelay: 200
     range: 4
     itemIconStyle: BigAction
     icon:
@@ -74,7 +74,7 @@
     event: !type:WorldSpawnSpellEvent
       prototypes:
       - id: MobGnome
-        amount: 3
+        amount: 2 # Нерф количества гномов из заклинания
       offset: 0, 1
       speech: action-speech-spell-SpawnGome
 

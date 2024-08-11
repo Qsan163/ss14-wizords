@@ -5,7 +5,7 @@
   noSpawn: true
   components:
   - type: WorldTargetAction
-    useDelay: 30 #ибо нехуй спамить заклинанием на сон
+    useDelay: 80 #ибо нехуй спамить заклинанием на сон
     itemIconStyle: BigAction
     checkCanAccess: false
     range: 60

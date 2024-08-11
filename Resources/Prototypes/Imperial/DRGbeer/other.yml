@@ -14,7 +14,7 @@
   potency: 1
   idealLight: 8
   idealHeat: 298
-  growthStages: 2
+  growthStages: 5 # Сильный нерф роста
   waterConsumption: 0
 
 - type: entity

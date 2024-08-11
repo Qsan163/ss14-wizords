@@ -36,7 +36,7 @@
   - type: Produce
     seedId: gnome
   - type: GhostRole
-    prob: 1
+    prob: 0.5 # Снижена вероятность разумных гномов
     makeSentient: true
     allowSpeech: true
     allowMovement: true
