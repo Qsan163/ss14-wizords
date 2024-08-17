@@ -90,6 +90,7 @@
         layer:
         - MobLayer
   - type: MeleeWeapon
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
@@ -288,6 +289,7 @@
         Airloss: -4
         Burn: -4
   - type: MeleeWeapon #Damage
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
@@ -356,6 +358,7 @@
         Airloss: -3
         Burn: -3
   - type: MeleeWeapon 
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
@@ -422,6 +425,7 @@
         Airloss: -3
         Burn: -3
   - type: MeleeWeapon 
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
@@ -504,6 +508,7 @@
         Airloss: -2.5
         Burn: -2.5
   - type: MeleeWeapon 
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
@@ -598,6 +603,7 @@
         Airloss: -0.5
         Burn: -0.5
   - type: MeleeWeapon 
+    altDisarm: false
     hidden: true
     soundHit:
       path: /Audio/Effects/bite.ogg
