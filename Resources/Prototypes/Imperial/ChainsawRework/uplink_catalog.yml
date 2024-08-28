@@ -4,6 +4,6 @@
   description: Очень большая бензопила. Обычно ее используют для спиливания деревьев... обычно.
   productEntity: Chainsaw
   cost:
-    Telecrystal: 12 #вполне оправданная цена
+    Telecrystal: 12 
   categories:
   - UplinkWeaponry
