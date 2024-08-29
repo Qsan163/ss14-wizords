@@ -16,8 +16,8 @@
 
 - type: entity
   id: SpawnPointGhostSpaceQueen 
-  name: спавнер роли королевы-пауков 
-  suffix: паук-королева
+  name: ghost role spawn 
+  suffix: spider queens
   parent: MarkerBase
   components:
   - type: GhostRole
@@ -42,7 +42,7 @@
 - type: entity
   noSpawn: true
   name: Probca
-  id: MobSpiderSpacePueen
+  id: MobBaseSpiderSpace
   parent:
   - MobAtmosStandard
   - MobSpaceBasic
@@ -182,7 +182,7 @@
 
 - type: radioChannel #Connection
   id: HiveRadio
-  name: Улей
+  name: chat-radio-hive
   keycode: 'у' 
   frequency: 2885
   color: "#cc80ff"
@@ -207,7 +207,7 @@
   name: Spider queen
   id: MobSpiderSpaceQueen
   parent:
-  - MobSpiderSpacePueen
+  - MobBaseSpiderSpace
   - MobSpiderGost
   description: spider dance
   components:
@@ -251,7 +251,7 @@
   name: spider guard
   id: MobSpiderSpaceDrone
   parent:
-  - MobSpiderSpacePueen
+  - MobBaseSpiderSpace
   - MobSpiderGost
   description: spider dance
   components:
@@ -317,7 +317,7 @@
   name: spider hunt
   id: MobSpiderSpaceHunter
   parent:
-  - MobSpiderSpacePueen
+  - MobBaseSpiderSpace
   - MobSpiderGost
   description: spider dance
   components:
@@ -381,7 +381,7 @@
   name: spider ghost
   id: MobSpiderSpaceGhost
   parent:
-  - MobSpiderSpacePueen
+  - MobBaseSpiderSpace
   - MobSpiderGost
   description: spider dance
   components:
@@ -461,7 +461,7 @@
   name: spider shooter
   id: MobSpiderSpaceShooter
   parent:
-  - MobSpiderSpacePueen
+  - MobBaseSpiderSpace
   - MobSpiderGost
   description: spider dance
   components:
@@ -554,7 +554,7 @@
 - type: entity
   name: small spider
   id: MobSpiderSpaceLittle
-  parent: MobSpiderSpacePueen
+  parent: MobBaseSpiderSpace
   description: spider dance
   components:
   - type: Sprite 

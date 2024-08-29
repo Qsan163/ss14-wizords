@@ -1,6 +1,9 @@
 ﻿spider-roy-name = Паук улья
 spider-roy-desc = Ваша задача — построить максимально большой улей. Защищайте свою королеву всеми возможными способами. Не позволяйте причинить вред потомству. Экипаж - ваша пища. 
 
+ent-SpawnPointGhostSpaceQueen = спавнер роли призрак
+    .suffix = королева пауков
+
 ent-MobSpiderSpaceQueen = королева пауков
     .desc = Он так светится, что выглядит опасным.
     .suffix = Улей пауков
@@ -124,3 +127,6 @@ spider-spawn-web-clown = Пустить клоунскую паутину
 spider-spawn-web-desc = Создаёт паутину, которая замедляет вашу добычу.
 
 action-speech-spell-spider = Кссс...!?? 
+
+
+chat-radio-hive = Улей
