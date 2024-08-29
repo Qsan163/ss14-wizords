@@ -27,6 +27,9 @@
   - Maintenance
   - Service
   - External
+  extendedAccess:
+  - Detective
+  - Armory
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
