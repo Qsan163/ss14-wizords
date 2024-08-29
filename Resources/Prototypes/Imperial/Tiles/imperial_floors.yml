@@ -5,6 +5,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeSmall1.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -20,6 +21,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeSmall2.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -35,6 +37,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeSmall3.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -50,6 +53,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeSmall4.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -65,6 +69,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeCorner1.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -80,6 +85,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeCorner2.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -95,6 +101,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeCorner3.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:
@@ -110,6 +117,7 @@
   sprite: /Textures/Tiles/Imperial/LatticeCorner4.png
   baseTurf: Space
   isSubfloor: true
+  deconstructTools: [ Cutting ]
   canWirecutter: true
   weather: true
   footstepSounds:

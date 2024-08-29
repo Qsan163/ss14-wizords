@@ -22,6 +22,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
+using Content.Shared.Clothing.Components; // Imperial Space Cryostorage Fix
 
 namespace Content.Server.Bed.Cryostorage;
 
@@ -103,6 +104,17 @@ public sealed class CryostorageSystem : SharedCryostorageSystem
 
         if (entity == null)
             return;
+
+        // Imperial Space Cryostorage Fix Start
+        if (TryComp<ClothingComponent>(entity.Value, out var clothingComponent))
+        {
+            if (clothingComponent.InSlot != null && !_inventory.TryUnequip(cryoContained, clothingComponent.InSlot, out var _))
+            {
+                _popup.PopupEntity(Loc.GetString("comp-climbable-cant-interact"), attachedEntity, attachedEntity);
+                return;
+            }
+        }
+        // Imperial Space Cryostorage Fix End
 
         AdminLog.Add(LogType.Action, LogImpact.High,
             $"{ToPrettyString(attachedEntity):player} removed item {ToPrettyString(entity)} from cryostorage-contained player " +

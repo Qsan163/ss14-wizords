@@ -143,6 +143,8 @@
   components:
   - type: Sprite
     sprite: Imperial/CaptainExtraDrip/white/capwhitecloack.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
 
 - type: entity
   id: Capwhitebackpack
@@ -161,6 +163,8 @@
   components:
   - type: Sprite
     sprite: Imperial/CaptainExtraDrip/sheriff/capsheriffcloack.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
 
 - type: entity
   id: CapSheriffbackpack
