@@ -21,7 +21,7 @@
     state: pda-adjutant
   - type: PdaBorderColor
     borderColor: "#717059"
-    accentVColor: "#A32D26"
+    accentVColor: "#42337a"
   - type: Icon
     state: pda-adjutant
 
