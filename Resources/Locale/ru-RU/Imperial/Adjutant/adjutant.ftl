@@ -9,3 +9,4 @@ ent-AdjutantIDCard = ID карта адъютанта
 
 job-name-adjutant = Адъютант
 job-description-adjutant = Постигните все тонкости управления!
+job-supervisors-command = всему командному составу
