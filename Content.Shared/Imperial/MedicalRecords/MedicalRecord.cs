@@ -1,7 +1,7 @@
-using Content.Shared.Medical;
+using Content.Shared.Imperial.Medical;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.MedicalRecords;
+namespace Content.Shared.Imperial.MedicalRecords;
 
 /// <summary>
 /// Medical record for a crewmember.
