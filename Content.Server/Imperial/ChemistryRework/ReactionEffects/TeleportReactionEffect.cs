@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server.Popups;
 using Content.Shared.Chemistry.Reagent;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
@@ -60,6 +61,49 @@ public sealed partial class Teleport : ReagentEffect
             MathF.Min((float) (args.Quantity * RadiusPerUnit), MaxRange),
             MinRange
         );
+
+        // Raffle Start
+
+        if (args.Quantity < 1)
+        {
+            var popupSystem = args.EntityManager.System<PopupSystem>();
+            var random = IoCManager.Resolve<IRobustRandom>();
+
+            List<string> raffleVerbs = [
+                "Хорошая попытка",
+                "Увынск",
+                "Не сегодня",
+                "Атата, плохой химик",
+                "Не нарушай законов природы",
+                "Рецепт блинчиков: А.. Не важно",
+                "Увы",
+                "Яша 500 метров от вас",
+                "Яша 10 метров от вас",
+                "Вобля...",
+                "Ох бля, это не к добру...",
+                "Каждое такое переливание убивает одного химика",
+                "Незя",
+                "Не-а",
+                "Лучше бы тессин сварил",
+                "Тебе не надоело?",
+                "Лучше бы в душ сходил",
+                "Ультрагеймер, прекращай",
+                "Шутка. Почему семья кенгуру не заводит второго ребенка? Он им не по карману",
+                "Шутка. В Австрии из зоопарка сбежал крокодил. Полиция 6 часов гоняла крокодила по Вене",
+                "Шутка. Заходят два дракона в бар. Один говорит другому: — Что-то здесь жарковато. А тот отвечает: — Рот закрой.",
+                "Ищи другой способ",
+                "Эту игру еще можно сломать, не расстраивайся",
+            ];
+
+            var raffleEntities = lookupSystem.GetEntitiesInRange(args.SolutionEntity, 1, LookupFlags.Dynamic);
+
+            foreach (var uid in raffleEntities)
+                popupSystem.PopupEntity(random.Pick(raffleVerbs), uid, uid);
+
+            return;
+        }
+
+        // Raffle End
 
         var entities = lookupSystem.GetEntitiesInRange(args.SolutionEntity, range, LookupFlags.Dynamic);
         var mapPosition = xformSystem.GetWorldPosition(args.SolutionEntity);

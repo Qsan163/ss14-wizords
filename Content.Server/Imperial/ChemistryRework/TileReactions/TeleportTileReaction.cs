@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server.Popups;
 using Content.Shared.Chemistry.Reaction;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
@@ -43,6 +44,12 @@ public sealed partial class TeleportTileReaction : ITileReaction
         var lookupSystem = entityManager.System<EntityLookupSystem>();
         var xformSystem = entityManager.System<TransformSystem>();
         var trufSys = entityManager.System<TurfSystem>();
+
+        // Raffle Start
+
+        if (reactVolume < 1) return reactVolume;
+
+        // Raffle End
 
         var energy = MathF.Max(
             MathF.Min((float) (reactVolume * EnergyPerUnit), MaxEnergy),
