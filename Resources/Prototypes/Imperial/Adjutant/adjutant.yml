@@ -15,8 +15,8 @@
   playTimeTracker: JobAdjutant
   psychosisGainResist: 0.4 # psychosis
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobAdjutant
+    - !type:DepartmentTimeRequirement
+      department: Command
       time: 54000 #15 hrs
       inverted: true
     - !type:OverallPlaytimeRequirement
