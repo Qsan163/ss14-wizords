@@ -17,7 +17,7 @@
     autoAttack: true
     angle: 0
     wideAnimationRotation: -135
-    attackRate: 4
+    attackRate: 2 #Измененна скорость Атаки 4<2
     damage:
       types:
         Slash: 2
@@ -30,10 +30,10 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 4
-        Structural: 4
+        Slash: 14  #Повышен урон Slash и Structural
+        Structural: 10
   - type: Item
-    size: Normal
+    size: Huge #Размер Normal < Huge, для баланса
     sprite: Objects/Weapons/Melee/chainsaw.rsi
   - type: DisarmMalus
   - type: RefillableSolution
